@@ -11,111 +11,82 @@ A lógica modal estende a lógica clássica com operadores modais como:
 
 Esses operadores permitem modelar conceitos como obrigatoriedade, possibilidade e conhecimento em contextos normais, como regras diárias, probabilidades e obrigações.
 
-### Modelo de Linguagem (T5)
-O projeto usa o modelo T5 (Text-to-Text Transfer Transformer) da Hugging Face, que trata todas as tarefas de NLP como geração de texto. Aqui, é fine-tuned para seq2seq (sequência-para-sequência), mapeando frases em português para expressões lógicas.
+### Modelo de Linguagem (mt5-small)
+O projeto utiliza o modelo **mt5-small** (Multilingual Text-to-Text Transfer Transformer) da Hugging Face. O T5 trata todas as tarefas de NLP como geração de texto. Neste projeto, ele é fine-tuned para seq2seq (sequência-para-sequência), mapeando frases em português para expressões lógicas.
 
 - **Fine-tuning supervisionado**: O modelo aprende a traduzir entradas naturais para saídas simbólicas usando pares de treinamento.
 - **Arquitetura**: Encoder-decoder, ideal para tarefas de tradução.
-- **Base**: T5-small (aprox. 60 milhões de parâmetros), adequado para protótipos e datasets pequenos.
-
-### Treinamento e Inferência
-- **Treinamento**: Usa a biblioteca Transformers para otimizar o modelo com dados supervisionados. Hiperparâmetros são configuráveis em `config.py`.
-- **Inferência**: O modelo gera fórmulas lógicas a partir de texto natural, usando beam search para melhorar a qualidade.
-- **Continuando o Treinamento**: Adicione novos exemplos ao `dataset.json` e execute `python main.py` novamente. Para datasets maiores, ajuste epochs e batch size.
+- **Base**: `google/mt5-small`, adequado para protótipos e datasets pequenos devido ao seu tamanho reduzido e eficiência.
 
 ## Estrutura do Repositório
 
-```
+```text
 Algoritmos LLM/
-├── app.py                          # Interface web com Streamlit para inferência interativa
-├── config.py                       # Configurações do treinamento (hiperparâmetros, caminhos)
-├── data_loader.py                  # Carrega e processa o dataset.json para treinamento
-├── dataset.json                    # Conjunto de dados: pares [frase natural, fórmula lógica]
-├── interface_tkinter.py            # Interface gráfica desktop com Tkinter
-├── main.py                         # Script principal para iniciar o treinamento
-├── model.py                        # Define o modelo T5 e funções de geração
-├── README.md                       # Este arquivo (documentação)
-├── requirements.txt                # Dependências Python
-├── salvar_modelo.py                # Salva o modelo treinado em disco
-├── test_model.py                   # Testa o modelo com exemplos pré-definidos
-├── trainer.py                      # Classe para gerenciar o treinamento com Transformers
-├── __pycache__/                    # Cache Python (ignorado)
-├── modelo_treinado/                # Modelo treinado salvo (checkpoints)
-│   ├── checkpoint-130/             # Checkpoint intermediário
-│   ├── ...
-│   └── checkpoint-150/
-├── results/                        # Modelo final treinado (usado para inferência)
-│   ├── checkpoint-140/             # Checkpoints finais
-│   ├── ...
-│   └── checkpoint-160/
-└── venv/                           # Ambiente virtual (não versionado)
+├── modelo_final/
+├── modelo_treinado/
+├── results/
+├── venv/
+├── configuracao.py
+├── configurar_ambiente.sh
+├── dataset.json
+├── README.md
+├── requirements.txt
+├── testar_modelo.py
+└── treinar_modelo.py
 ```
 
-### Funcionalidade dos Arquivos
+### Funcionalidade das Pastas e Arquivos
 
-- **`app.py`**: Cria uma interface web simples com Streamlit. Permite inserir frases e ver a tradução lógica em tempo real. Execute com `streamlit run app.py`.
-- **`config.py`**: Contém constantes como taxa de aprendizado, número de epochs, tamanho do lote e caminhos de diretórios. Edite para ajustar o treinamento.
-- **`data_loader.py`**: Carrega o `dataset.json`, tokeniza os dados e prepara datasets para o treinamento (usando Hugging Face Datasets).
-- **`dataset.json`**: Dataset principal. Contém pares de treinamento. Recentemente expandido com exemplos básicos de lógica modal aplicados a situações normais (ex.: possibilidade de chuva, necessidade de estudo).
-- **`interface_tkinter.py`**: Interface desktop com Tkinter. Similar ao app.py, mas em GUI nativa. Execute com `python interface_tkinter.py`.
-- **`main.py`**: Ponto de entrada para o treinamento. Carrega configurações, dados e modelo, então inicia o treino via `trainer.py`.
-- **`model.py`**: Define funções para carregar o modelo T5, tokenizar e gerar saídas. Usado em inferência.
-- **`requirements.txt`**: Lista de pacotes necessários (ex.: transformers, torch, streamlit). Instale com `pip install -r requirements.txt`.
-- **`salvar_modelo.py`**: Após o treinamento, salva o modelo em `modelo_treinado/` e opcionalmente zipa para distribuição.
-- **`test_model.py`**: Executa testes com frases de exemplo, imprimindo entradas e saídas geradas. Útil para validação rápida.
-- **`trainer.py`**: Classe `ModuloTreinamento` que configura e executa o treinamento usando `Trainer` do Transformers.
-- **`modelo_treinado/` e `results/`**: Diretórios com modelos salvos. `results/` é o modelo final para uso em produção.
+- **`modelo_final/`**: Diretório que armazena o modelo T5 após o fim do treinamento, pronto para uso.
+- **`modelo_treinado/`**: Contém os checkpoints salvos automaticamente durante o processo de treino.
+- **`results/`**: Pasta gerada pelo Trainer para armazenar logs de métricas e progresso.
+- **`venv/`**: Ambiente virtual que isola as dependências do projeto do restante do sistema.
+- **`configuracao.py`**: Centraliza todas as variáveis técnicas (épocas, batch size, learning rate) e caminhos globais.
+- **`configurar_ambiente.sh`**: Automatiza a criação da `venv` e a instalação dos pacotes necessários via `pip`.
+- **`dataset.json`**: Arquivo base com exemplos estruturados de linguagem natural e suas respectivas fórmulas lógicas.
+- **`README.md`**: Documentação técnica contendo instruções de configuração, teoria e uso do projeto.
+- **`requirements.txt`**: Lista detalhada de bibliotecas externas (Transformers, PyTorch, etc.) exigidas.
+- **`testar_modelo.py`**: Interface interativa em Tkinter para realizar inferências rápidas com o modelo treinado.
+- **`treinar_modelo.py`**: Motor principal que carrega os dados, inicializa o modelo e executa o fine-tuning.
 
 ## Como Usar
 
-### Configuração Inicial
-1. **Clone ou baixe o repositório**.
-2. **Crie um ambiente virtual**:
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # No Windows: venv\Scripts\activate
-   ```
-3. **Instale dependências**:
-   ```bash
-   pip install -r requirements.txt
-   ```
+### 1. Configuração Inicial
+O projeto inclui um script de automação para facilitar o setup inicial em ambiente Linux:
 
-### Treinamento do Modelo
-1. **Prepare o dataset**: Edite `dataset.json` para adicionar/remover exemplos. O formato é JSON com lista de pares [entrada, saída].
-2. **Execute o treinamento**:
-   ```bash
-   python main.py
-   ```
-   - Isso treina o modelo com os dados atuais. Checkpoints são salvos em `results/`.
-3. **Salve o modelo** (opcional):
-   ```bash
-   python salvar_modelo.py
-   ```
-   - Salva em `modelo_treinado/` e cria um ZIP.
+```bash
+chmod +x configurar_ambiente.sh
+./configurar_ambiente.sh
+```
 
-### Continuando o Treinamento
-- Para retreinar com novos dados: Atualize `dataset.json`, então execute `python main.py` novamente. O modelo será carregado do checkpoint mais recente em `results/` e continuará o treino.
-- Ajuste hiperparâmetros em `config.py` para datasets maiores (ex.: aumente `NUMERO_EPOCAS`).
+Isso criará a pasta `venv` e instalará tudo o que é necessário. Caso queira fazer manualmente:
+1. `python3 -m venv venv`
+2. `source venv/bin/activate`
+3. `pip install -r requirements.txt`
 
-### Teste e Inferência
-1. **Teste via linha de comando**:
-   ```bash
-   python test_model.py
-   ```
-   - Testa com exemplos hardcoded.
-2. **Interface desktop**:
-   ```bash
-   python interface_tkinter.py
-   ```
+### 2. Treinamento do Modelo
+Para treinar o modelo com os dados do `dataset.json`:
 
-### Exemplo de Uso
-- Entrada: "É possível que chova amanhã"
-- Saída esperada: "◇(chover_amanhã)"
+```bash
+python treinar_modelo.py
+```
+- O modelo será salvo automaticamente em `modelo_final/` após o término das épocas configuradas.
+- Checkpoints intermediários ficarão em `modelo_treinado/`.
 
-## Notas Adicionais
-- **Dataset**: Inclui relações familiares, profissões e agora exemplos modais básicos. Expanda para melhorar o desempenho.
-- **Limitações**: Modelo pequeno; para produção, use T5-base ou larger. Treinamento requer GPU para eficiência.
-- **Contribuições**: Adicione exemplos ao dataset ou melhore interfaces. Teste sempre após mudanças.
-- **Dependências**: Certifique-se de ter PyTorch compatível com CUDA se usar GPU.
+### 3. Teste e Inferência
+Para utilizar o modelo treinado através da interface visual:
 
-Para dúvidas, consulte a documentação do Hugging Face Transformers.
+```bash
+python testar_modelo.py
+```
+1. A interface carregará o modelo de `modelo_final/`.
+2. Digite uma frase (ex: "Talvez chova amanhã") e clique em **GERAR TRADUÇÃO**.
+3. O resultado aparecerá na caixa de texto inferior.
+
+## Personalização
+- **Adicionar Dados**: Edite o `dataset.json` seguindo o formato existente e execute `treinar_modelo.py` novamente para que o modelo aprenda os novos padrões.
+- **Ajustar Qualidade**: Se as traduções não estiverem precisas, aumente o `NUMERO_EPOCAS` ou adicione mais polimento ao `dataset.json` em `configuracao.py`.
+
+## Notas Técnicas
+- **Dispositivo**: O código detecta automaticamente se você possui uma GPU (CUDA) disponível para acelerar o treino; caso contrário, usará a CPU.
+- **mt5-small**: Escolhido por ser multilíngue e leve, ideal para rodar em hardware doméstico sem necessidade de recursos massivos.
