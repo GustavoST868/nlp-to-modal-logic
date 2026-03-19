@@ -3,7 +3,7 @@ import torch
 class Configuracao:
     # Caminhos
     CAMINHO_CONJUNTO_DADOS = "dataset.json"
-    NOME_MODELO = "google/mt5-small"  # Modelo base para seq2seq multilíngue
+    NOME_MODELO = "google/mt5-small"  
     DIRETORIO_SAIDA = "./modelo_final"
     
     # Hiperparâmetros de treinamento
