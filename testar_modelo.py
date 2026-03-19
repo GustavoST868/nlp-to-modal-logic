@@ -13,10 +13,10 @@ class InterfaceLogicaModal:
         self.root.geometry("800x600")
         self.root.configure(bg="#f0f4f8")
         
-        # Carregar configuração
+        # load configuration/carregar configuração
         self.config = Configuracao()
         
-        # Cores e Estilos
+        # colors and styles/cores e estilos
         self.PRIMARY_COLOR = "#2c3e50"
         self.ACCENT_COLOR = "#3498db"
         self.SUCCESS_COLOR = "#27ae60"
@@ -29,7 +29,7 @@ class InterfaceLogicaModal:
         
         self.criar_layout()
         
-        # Carregar modelo em uma thread separada para não travar a UI
+        # load model in a separate thread to avoid freezing the ui/carregar modelo em uma thread separada para não travar a ui
         self.status_label.config(text=f"Carregando modelo de {self.config.DIRETORIO_SAIDA}... Aguarde.", fg=self.ACCENT_COLOR)
         threading.Thread(target=self.inicializar_modelo, daemon=True).start()
     
@@ -51,11 +51,11 @@ class InterfaceLogicaModal:
             self.root.after(0, lambda: self.status_label.config(text="Erro ao carregar modelo.", fg=self.ERROR_COLOR))
     
     def criar_layout(self):
-        # Container principal
+        # main container/container principal
         main_frame = tk.Frame(self.root, bg=self.BG_COLOR, padx=20, pady=20)
         main_frame.pack(fill=tk.BOTH, expand=True)
         
-        # Cabeçalho
+        # header/cabeçalho
         header = tk.Label(
             main_frame, 
             text="Tradutor de Linguagem Natural → Lógica Modal",
@@ -65,7 +65,7 @@ class InterfaceLogicaModal:
         )
         header.pack(pady=(0, 20))
         
-        # Painel de Entrada
+        # input panel/painel de entrada
         input_frame = tk.LabelFrame(
             main_frame, 
             text=" Texto de Entrada ", 
@@ -86,7 +86,7 @@ class InterfaceLogicaModal:
         self.entrada_texto.pack(fill=tk.X, padx=5, pady=5)
         self.entrada_texto.bind("<Return>", lambda e: self.gerar_logica())
         
-        # Botões de exemplos
+        # examples buttons/botões de exemplos
         exemplos_frame = tk.Frame(input_frame, bg=self.BG_COLOR)
         exemplos_frame.pack(fill=tk.X, pady=5)
         
@@ -109,7 +109,7 @@ class InterfaceLogicaModal:
             )
             btn.pack(side=tk.LEFT, padx=2)
         
-        # Botões de Ação
+        # action buttons/botões de ação
         actions_frame = tk.Frame(main_frame, bg=self.BG_COLOR)
         actions_frame.pack(pady=10)
         
@@ -141,7 +141,7 @@ class InterfaceLogicaModal:
         )
         btn_limpar.pack(side=tk.LEFT, padx=10)
         
-        # Painel de Saída
+        # output panel/painel de saída
         output_frame = tk.LabelFrame(
             main_frame, 
             text=" Tradução Gerada ", 
@@ -162,7 +162,7 @@ class InterfaceLogicaModal:
         )
         self.saida_texto.pack(fill=tk.BOTH, expand=True, padx=5, pady=5)
         
-        # Barra de Status
+        # status bar/barra de status
         self.status_label = tk.Label(
             main_frame, 
             text="Pronto.", 
@@ -194,7 +194,7 @@ class InterfaceLogicaModal:
         self.status_label.config(text="Gerando tradução...", fg=self.ACCENT_COLOR)
         self.btn_gerar.config(state=tk.DISABLED)
         
-        # Rodar geração em background para não travar a UI
+        # run generation in the background to avoid freezing the ui/rodar geração em background para não travar a ui
         threading.Thread(target=self.tarefa_geracao, args=(texto_entrada,), daemon=True).start()
     
     def tarefa_geracao(self, texto):

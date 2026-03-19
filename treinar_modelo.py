@@ -14,7 +14,7 @@ class CarregadorDados:
         with open(self.configuracao.CAMINHO_CONJUNTO_DADOS, 'r', encoding='utf-8') as f:
             dados = json.load(f)["data"]
         
-        # Converter para dict para Dataset
+        # convert to dict for dataset/converter para dict para dataset
         dicionario_conjunto = {"input": [item[0] for item in dados], "output": [item[1] for item in dados]}
         conjunto_dados = Dataset.from_dict(dicionario_conjunto)
         return conjunto_dados
@@ -26,7 +26,7 @@ class CarregadorDados:
         entradas_modelo = self.tokenizador(entradas, max_length=self.configuracao.COMPRIMENTO_MAXIMO_ENTRADA, truncation=True, padding="max_length")
         rotulos = self.tokenizador(alvos, max_length=self.configuracao.COMPRIMENTO_MAXIMO_ALVO, truncation=True, padding="max_length")
         
-        # Mascarar o token de preenchimento (padding) nos rótulos para que o Trainer os ignore
+        # mask padding token in labels so that the trainer ignores them/mascarar o token de preenchimento (padding) nos rótulos para que o trainer os ignore
         labels = rotulos["input_ids"]
         labels = [[(l if l != self.tokenizador.pad_token_id else -100) for l in label] for label in labels]
         
@@ -94,9 +94,9 @@ def main():
     modulo_treinamento = ModuloTreinamento(configuracao, modelo, conjunto_dados, carregador_dados.tokenizador)
     treinador = modulo_treinamento.treinar()
     
-    # Salvar o modelo final no diretório configurado
+    # save the final model in the configured directory/salvar o modelo final no diretório configurado
     treinador.save_model(configuracao.DIRETORIO_SAIDA)
-    # Também salvar o tokenizador separadamente para garantir
+    # also save the tokenizer separately to ensure/também salvar o tokenizador separadamente para garantir
     carregador_dados.tokenizador.save_pretrained(configuracao.DIRETORIO_SAIDA)
     
     print("-" * 30)
