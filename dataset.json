@@ -1,118 +1,788 @@
 {
   "data": [
-    ["a é pai de b", "paide(a,b) ∧ pessoa(a) ∧ pessoa(b)"],
-    ["b é filho de a", "filho(b,a) ∧ pessoa(b) ∧ pessoa(a)"],
-    ["c é mãe de d", "mae(c,d) ∧ pessoa(c) ∧ pessoa(d)"],
-    ["e é irmão de f", "irmao(e,f) ∧ pessoa(e) ∧ pessoa(f)"],
-    ["g é avô de h", "avo(g,h) ∧ pessoa(g) ∧ pessoa(h)"],
-    ["i é tia de j", "tia(i,j) ∧ pessoa(i) ∧ pessoa(j)"],
-    ["k é primo de l", "primo(k,l) ∧ pessoa(k) ∧ pessoa(l)"],
-    ["m é neto de n", "neto(m,n) ∧ pessoa(m) ∧ pessoa(n)"],
-    ["o é sogro de p", "sogro(o,p) ∧ pessoa(o) ∧ pessoa(p)"],
-    ["q é cunhado de r", "cunhado(q,r) ∧ pessoa(q) ∧ pessoa(r)"],
-    ["s é esposa de t", "esposa(s,t) ∧ pessoa(s) ∧ pessoa(t)"],
-    ["u é marido de v", "marido(u,v) ∧ pessoa(u) ∧ pessoa(v)"],
-    ["w é filha de x", "filha(w,x) ∧ pessoa(w) ∧ pessoa(x)"],
-    ["y é sobrinho de z", "sobrinho(y,z) ∧ pessoa(y) ∧ pessoa(z)"],
-    ["aa é avó de bb", "avo(aa,bb) ∧ pessoa(aa) ∧ pessoa(bb)"],
-    ["cc é bisavô de dd", "bisavo(cc,dd) ∧ pessoa(cc) ∧ pessoa(dd)"],
-    ["ee é padrastro de ff", "padrastro(ee,ff) ∧ pessoa(ee) ∧ pessoa(ff)"],
-    ["gg é madrasta de hh", "madrasta(gg,hh) ∧ pessoa(gg) ∧ pessoa(hh)"],
-    ["ii é enteado de jj", "enteado(ii,jj) ∧ pessoa(ii) ∧ pessoa(jj)"],
-    ["kk é enteada de ll", "enteada(kk,ll) ∧ pessoa(kk) ∧ pessoa(ll)"],
-    ["mm é cunhada de nn", "cunhada(mm,nn) ∧ pessoa(mm) ∧ pessoa(nn)"],
-    ["oo é genro de pp", "genro(oo,pp) ∧ pessoa(oo) ∧ pessoa(pp)"],
-    ["qq é nora de rr", "nora(qq,rr) ∧ pessoa(qq) ∧ pessoa(rr)"],
-    ["ss é viúvo de tt", "viuvo(ss,tt) ∧ pessoa(ss) ∧ pessoa(tt)"],
-    ["uu é viúva de vv", "viuva(uu,vv) ∧ pessoa(uu) ∧ pessoa(vv)"],
-    ["ww é divorciado de xx", "divorciado(ww,xx) ∧ pessoa(ww) ∧ pessoa(xx)"],
-    ["yy é noivo de zz", "noivo(yy,zz) ∧ pessoa(yy) ∧ pessoa(zz)"],
-    ["aaa é noiva de bbb", "noiva(aaa,bbb) ∧ pessoa(aaa) ∧ pessoa(bbb)"],
-    ["ccc é namorado de ddd", "namorado(ccc,ddd) ∧ pessoa(ccc) ∧ pessoa(ddd)"],
-    ["eee é namorada de fff", "namorada(eee,fff) ∧ pessoa(eee) ∧ pessoa(fff)"],
-    ["ggg é amigo de hhh", "amigo(ggg,hhh) ∧ pessoa(ggg) ∧ pessoa(hhh)"],
-    ["iii é colega de jjj", "colega(iii,jjj) ∧ pessoa(iii) ∧ pessoa(jjj)"],
-    ["kkk é vizinho de lll", "vizinho(kkk,lll) ∧ pessoa(kkk) ∧ pessoa(lll)"],
-    ["mmm é professor de nnn", "professor(mmm,nnn) ∧ pessoa(mmm) ∧ pessoa(nnn)"],
-    ["ooo é aluno de ppp", "aluno(ooo,ppp) ∧ pessoa(ooo) ∧ pessoa(ppp)"],
-    ["qqq é chefe de rrr", "chefe(qqq,rrr) ∧ pessoa(qqq) ∧ pessoa(rrr)"],
-    ["sss é empregado de ttt", "empregado(sss,ttt) ∧ pessoa(sss) ∧ pessoa(ttt)"],
-    ["uuu é dono de vvv", "dono(uuu,vvv) ∧ pessoa(uuu) ∧ objeto(vvv)"],
-    ["www é proprietário de xxx", "proprietario(www,xxx) ∧ pessoa(www) ∧ objeto(xxx)"],
-    ["yyy é comprador de zzz", "comprador(yyy,zzz) ∧ pessoa(yyy) ∧ objeto(zzz)"],
-    ["aaaa é vendedor de bbbb", "vendedor(aaaa,bbbb) ∧ pessoa(aaaa) ∧ objeto(bbbb)"],
-    ["cccc é usuário de dddd", "usuario(cccc,dddd) ∧ pessoa(cccc) ∧ objeto(dddd)"],
-    ["eeee é fabricante de ffff", "fabricante(eeee,ffff) ∧ pessoa(eeee) ∧ objeto(ffff)"],
-    ["gggg é consumidor de hhhh", "consumidor(gggg,hhhh) ∧ pessoa(gggg) ∧ objeto(hhhh)"],
-    ["iiii é criador de jjjj", "criador(iiii,jjjj) ∧ pessoa(iiii) ∧ objeto(jjjj)"],
-    ["kkkk é inventor de llll", "inventor(kkkk,llll) ∧ pessoa(kkkk) ∧ objeto(llll)"],
-    ["mmmm é artista de nnnn", "artista(mmmm,nnnn) ∧ pessoa(mmmm) ∧ obra(nnnn)"],
-    ["oooo é escritor de pppp", "escritor(oooo,pppp) ∧ pessoa(oooo) ∧ obra(pppp)"],
-    ["qqqq é músico de rrrr", "musico(qqqq,rrrr) ∧ pessoa(qqqq) ∧ obra(rrrr)"],
-    ["ssss é pintor de tttt", "pintor(ssss,tttt) ∧ pessoa(ssss) ∧ obra(tttt)"],
-    ["uuuu é escultor de vvvv", "escultor(uuuu,vvvv) ∧ pessoa(uuuu) ∧ obra(vvvv)"],
-    ["wwww é diretor de xxxx", "diretor(wwww,xxxx) ∧ pessoa(wwww) ∧ filme(xxxx)"],
-    ["yyyy é ator de zzzz", "ator(yyyy,zzzz) ∧ pessoa(yyyy) ∧ filme(zzzz)"],
-    ["aaaaa é jogador de bbbbb", "jogador(aaaaa,bbbbb) ∧ pessoa(aaaaa) ∧ esporte(bbbbb)"],
-    ["ccccc é treinador de ddddd", "treinador(ccccc,ddddd) ∧ pessoa(ccccc) ∧ esporte(ddddd)"],
-    ["eeeee é médico de fffff", "medico(eeeee,fffff) ∧ pessoa(eeeee) ∧ pessoa(fffff)"],
-    ["ggggg é paciente de hhhhh", "paciente(ggggg,hhhhh) ∧ pessoa(ggggg) ∧ pessoa(hhhhh)"],
-    ["iiiii é advogado de jjjjj", "advogado(iiiii,jjjjj) ∧ pessoa(iiiii) ∧ pessoa(jjjjj)"],
-    ["kkkkk é cliente de lllll", "cliente(kkkkk,lllll) ∧ pessoa(kkkkk) ∧ pessoa(lllll)"],
-    
-    ["É possível que chova amanhã", "◇chover_amanha"],
-    ["É necessário estudar para passar no exame", "□(estudar → passar_exame)"],
-    ["Pode ser que eu me atrase", "◇atrasar_eu"],
-    ["Deve ser que o sol nasça no leste", "□sol_nasce_leste"],
-    ["Talvez eu coma pizza hoje", "◇comer_pizza_eu"],
-    ["É obrigatório usar cinto de segurança", "□usar_cinto"],
-    ["É possível ganhar na loteria", "◇ganhar_loteria"],
-    ["É necessário respirar para viver", "□(respirar → viver)"],
-    ["Pode ser que o filme seja bom", "◇filme_bom"],
-    ["Deve ser verdade que 2+2=4", "□(dois_mais_dois_igual_quatro)"],
-    
-    ["João sabe que Maria está em casa", "□(João_sabe → Maria_em_casa)"],
-    ["Todos acreditam que a Terra é redonda", "□acredita_todos_terra_redonda"],
-    ["É proibido fumar aqui", "□¬fumar_aqui"],
-    ["É permitido estacionar", "◇estacionar"],
-    ["Necessariamente, se chove, então a rua fica molhada", "□(chover → rua_molhada)"],
-    ["Possivelmente, João e Maria vão viajar", "◇(viajar_joao ∧ viajar_maria)"],
-    ["É obrigatório que todos os alunos estudem", "□(aluno(x) → estudar(x))"],
-    ["Nunca chove no deserto do Atacama", "□¬chover_atacama"],
-    ["Eventualmente, todos morrem", "◇morrer_todos"],
-    ["Em algum momento, o Brasil será campeão", "◇campeao_brasil"],
-    ["É vedado dirigir sem habilitação", "□¬(dirigir ∧ ¬habilitacao)"],
-    ["É facultativo votar aos 16 anos", "◇votar_16 ∨ ◇¬votar_16"],
-    ["Certeza que o Flamengo vence", "□vencer_flamengo"],
-    ["Quem estuda, passa necessariamente", "□(estudar → passar)"],
-    ["O que é belo, necessariamente agrada", "□(belo → agrada)"],
-    ["Talvez exista vida extraterrestre", "◇vida_extraterrestre"],
-    ["É obrigatório respeitar as leis", "□respeitar_leis"],
-    ["Possivelmente, vou faltar amanhã", "◇faltar_amanha"],
-    ["Necessariamente, ímpar + ímpar = par", "□(impar(x) ∧ impar(y) → par(x+y))"],
-    ["Pode ocorrer um terremoto em SP", "◇terremoto_sp"],
-    ["É certo que amanhã será sexta", "□amanha_sexta"],
-    ["Talvez fique famoso", "◇famoso"],
-    ["É possível que haja vida em Marte", "◇vida_marte"],
-    ["Deve chover no fim de semana", "□chover_fim_semana"],
-    ["É permitido usar celular na sala", "◇usar_celular_sala"],
-    ["Toda rosa é necessariamente uma flor", "□(rosa → flor)"],
-    ["Eventualmente, a tecnologia nos superará", "◇superar_tecnologia"],
-    ["É proibido pisar na grama", "□¬pisar_grama"],
-    ["Possivelmente, encontraremos uma cura", "◇encontrar_cura"],
-    ["É vedado fumar em locais fechados", "□¬fumar_fechado"],
-    ["É possível que o time vença", "◇vencer_time"],
-    ["Todos os homens são mortais", "□(homem → mortal)"],
-    ["Nenhum quadrado é redondo", "□(quadrado → ¬redondo)"],
-    ["Sócrates é necessariamente um homem", "□socrates_homem"],
-    ["O universo é infinito, possivelmente", "◇universo_infinito"],
-    ["É obrigatório declarar imposto de renda", "□declarar_ir"],
-    ["É permitido doar sangue", "◇doar_sangue"],
-    ["Talvez eu viaje nas férias", "◇viajar_ferias"],
-    ["Deve ser que todos que estudam aprendem", "□(estudar → aprender)"],
-    ["É possível que haja contradições", "◇contradicao"],
-    ["Necessariamente, água molha", "□(agua → molha)"],
-    ["Pode ser que o João não venha", "◇¬vir_joao"],
-    ["É certo que 1+1=2", "□(um_mais_um_igual_dois)"]
+    [
+      "a é pai de b",
+      "paide(a,b) ∧ pessoa(a) ∧ pessoa(b)"
+    ],
+    [
+      "b é filho de a",
+      "filho(b,a) ∧ pessoa(b) ∧ pessoa(a)"
+    ],
+    [
+      "c é mãe de d",
+      "mae(c,d) ∧ pessoa(c) ∧ pessoa(d)"
+    ],
+    [
+      "e é irmão de f",
+      "irmao(e,f) ∧ pessoa(e) ∧ pessoa(f)"
+    ],
+    [
+      "g é avô de h",
+      "avo(g,h) ∧ pessoa(g) ∧ pessoa(h)"
+    ],
+    [
+      "i é tia de j",
+      "tia(i,j) ∧ pessoa(i) ∧ pessoa(j)"
+    ],
+    [
+      "k é primo de l",
+      "primo(k,l) ∧ pessoa(k) ∧ pessoa(l)"
+    ],
+    [
+      "m é neto de n",
+      "neto(m,n) ∧ pessoa(m) ∧ pessoa(n)"
+    ],
+    [
+      "o é sogro de p",
+      "sogro(o,p) ∧ pessoa(o) ∧ pessoa(p)"
+    ],
+    [
+      "q é cunhado de r",
+      "cunhado(q,r) ∧ pessoa(q) ∧ pessoa(r)"
+    ],
+    [
+      "s é esposa de t",
+      "esposa(s,t) ∧ pessoa(s) ∧ pessoa(t)"
+    ],
+    [
+      "u é marido de v",
+      "marido(u,v) ∧ pessoa(u) ∧ pessoa(v)"
+    ],
+    [
+      "w é filha de x",
+      "filha(w,x) ∧ pessoa(w) ∧ pessoa(x)"
+    ],
+    [
+      "y é sobrinho de z",
+      "sobrinho(y,z) ∧ pessoa(y) ∧ pessoa(z)"
+    ],
+    [
+      "aa é avó de bb",
+      "avo(aa,bb) ∧ pessoa(aa) ∧ pessoa(bb)"
+    ],
+    [
+      "cc é bisavô de dd",
+      "bisavo(cc,dd) ∧ pessoa(cc) ∧ pessoa(dd)"
+    ],
+    [
+      "ee é padrastro de ff",
+      "padrastro(ee,ff) ∧ pessoa(ee) ∧ pessoa(ff)"
+    ],
+    [
+      "gg é madrasta de hh",
+      "madrasta(gg,hh) ∧ pessoa(gg) ∧ pessoa(hh)"
+    ],
+    [
+      "ii é enteado de jj",
+      "enteado(ii,jj) ∧ pessoa(ii) ∧ pessoa(jj)"
+    ],
+    [
+      "kk é enteada de ll",
+      "enteada(kk,ll) ∧ pessoa(kk) ∧ pessoa(ll)"
+    ],
+    [
+      "mm é cunhada de nn",
+      "cunhada(mm,nn) ∧ pessoa(mm) ∧ pessoa(nn)"
+    ],
+    [
+      "oo é genro de pp",
+      "genro(oo,pp) ∧ pessoa(oo) ∧ pessoa(pp)"
+    ],
+    [
+      "qq é nora de rr",
+      "nora(qq,rr) ∧ pessoa(qq) ∧ pessoa(rr)"
+    ],
+    [
+      "ss é viúvo de tt",
+      "viuvo(ss,tt) ∧ pessoa(ss) ∧ pessoa(tt)"
+    ],
+    [
+      "uu é viúva de vv",
+      "viuva(uu,vv) ∧ pessoa(uu) ∧ pessoa(vv)"
+    ],
+    [
+      "ww é divorciado de xx",
+      "divorciado(ww,xx) ∧ pessoa(ww) ∧ pessoa(xx)"
+    ],
+    [
+      "yy é noivo de zz",
+      "noivo(yy,zz) ∧ pessoa(yy) ∧ pessoa(zz)"
+    ],
+    [
+      "aaa é noiva de bbb",
+      "noiva(aaa,bbb) ∧ pessoa(aaa) ∧ pessoa(bbb)"
+    ],
+    [
+      "ccc é namorado de ddd",
+      "namorado(ccc,ddd) ∧ pessoa(ccc) ∧ pessoa(ddd)"
+    ],
+    [
+      "eee é namorada de fff",
+      "namorada(eee,fff) ∧ pessoa(eee) ∧ pessoa(fff)"
+    ],
+    [
+      "ggg é amigo de hhh",
+      "amigo(ggg,hhh) ∧ pessoa(ggg) ∧ pessoa(hhh)"
+    ],
+    [
+      "iii é colega de jjj",
+      "colega(iii,jjj) ∧ pessoa(iii) ∧ pessoa(jjj)"
+    ],
+    [
+      "kkk é vizinho de lll",
+      "vizinho(kkk,lll) ∧ pessoa(kkk) ∧ pessoa(lll)"
+    ],
+    [
+      "mmm é professor de nnn",
+      "professor(mmm,nnn) ∧ pessoa(mmm) ∧ pessoa(nnn)"
+    ],
+    [
+      "ooo é aluno de ppp",
+      "aluno(ooo,ppp) ∧ pessoa(ooo) ∧ pessoa(ppp)"
+    ],
+    [
+      "qqq é chefe de rrr",
+      "chefe(qqq,rrr) ∧ pessoa(qqq) ∧ pessoa(rrr)"
+    ],
+    [
+      "sss é empregado de ttt",
+      "empregado(sss,ttt) ∧ pessoa(sss) ∧ pessoa(ttt)"
+    ],
+    [
+      "uuu é dono de vvv",
+      "dono(uuu,vvv) ∧ pessoa(uuu) ∧ objeto(vvv)"
+    ],
+    [
+      "www é proprietário de xxx",
+      "proprietario(www,xxx) ∧ pessoa(www) ∧ objeto(xxx)"
+    ],
+    [
+      "yyy é comprador de zzz",
+      "comprador(yyy,zzz) ∧ pessoa(yyy) ∧ objeto(zzz)"
+    ],
+    [
+      "aaaa é vendedor de bbbb",
+      "vendedor(aaaa,bbbb) ∧ pessoa(aaaa) ∧ objeto(bbbb)"
+    ],
+    [
+      "cccc é usuário de dddd",
+      "usuario(cccc,dddd) ∧ pessoa(cccc) ∧ objeto(dddd)"
+    ],
+    [
+      "eeee é fabricante de ffff",
+      "fabricante(eeee,ffff) ∧ pessoa(eeee) ∧ objeto(ffff)"
+    ],
+    [
+      "gggg é consumidor de hhhh",
+      "consumidor(gggg,hhhh) ∧ pessoa(gggg) ∧ objeto(hhhh)"
+    ],
+    [
+      "iiii é criador de jjjj",
+      "criador(iiii,jjjj) ∧ pessoa(iiii) ∧ objeto(jjjj)"
+    ],
+    [
+      "kkkk é inventor de llll",
+      "inventor(kkkk,llll) ∧ pessoa(kkkk) ∧ objeto(llll)"
+    ],
+    [
+      "mmmm é artista de nnnn",
+      "artista(mmmm,nnnn) ∧ pessoa(mmmm) ∧ obra(nnnn)"
+    ],
+    [
+      "oooo é escritor de pppp",
+      "escritor(oooo,pppp) ∧ pessoa(oooo) ∧ obra(pppp)"
+    ],
+    [
+      "qqqq é músico de rrrr",
+      "musico(qqqq,rrrr) ∧ pessoa(qqqq) ∧ obra(rrrr)"
+    ],
+    [
+      "ssss é pintor de tttt",
+      "pintor(ssss,tttt) ∧ pessoa(ssss) ∧ obra(tttt)"
+    ],
+    [
+      "uuuu é escultor de vvvv",
+      "escultor(uuuu,vvvv) ∧ pessoa(uuuu) ∧ obra(vvvv)"
+    ],
+    [
+      "wwww é diretor de xxxx",
+      "diretor(wwww,xxxx) ∧ pessoa(wwww) ∧ filme(xxxx)"
+    ],
+    [
+      "yyyy é ator de zzzz",
+      "ator(yyyy,zzzz) ∧ pessoa(yyyy) ∧ filme(zzzz)"
+    ],
+    [
+      "aaaaa é jogador de bbbbb",
+      "jogador(aaaaa,bbbbb) ∧ pessoa(aaaaa) ∧ esporte(bbbbb)"
+    ],
+    [
+      "ccccc é treinador de ddddd",
+      "treinador(ccccc,ddddd) ∧ pessoa(ccccc) ∧ esporte(ddddd)"
+    ],
+    [
+      "eeeee é médico de fffff",
+      "medico(eeeee,fffff) ∧ pessoa(eeeee) ∧ pessoa(fffff)"
+    ],
+    [
+      "ggggg é paciente de hhhhh",
+      "paciente(ggggg,hhhhh) ∧ pessoa(ggggg) ∧ pessoa(hhhhh)"
+    ],
+    [
+      "iiiii é advogado de jjjjj",
+      "advogado(iiiii,jjjjj) ∧ pessoa(iiiii) ∧ pessoa(jjjjj)"
+    ],
+    [
+      "kkkkk é cliente de lllll",
+      "cliente(kkkkk,lllll) ∧ pessoa(kkkkk) ∧ pessoa(lllll)"
+    ],
+    [
+      "É possível que chova amanhã",
+      "◇chover_amanha"
+    ],
+    [
+      "É necessário estudar para passar no exame",
+      "□(estudar → passar_exame)"
+    ],
+    [
+      "Pode ser que eu me atrase",
+      "◇atrasar_eu"
+    ],
+    [
+      "Deve ser que o sol nasça no leste",
+      "□sol_nasce_leste"
+    ],
+    [
+      "Talvez eu coma pizza hoje",
+      "◇comer_pizza_eu"
+    ],
+    [
+      "É obrigatório usar cinto de segurança",
+      "□usar_cinto"
+    ],
+    [
+      "É possível ganhar na loteria",
+      "◇ganhar_loteria"
+    ],
+    [
+      "É necessário respirar para viver",
+      "□(respirar → viver)"
+    ],
+    [
+      "Pode ser que o filme seja bom",
+      "◇filme_bom"
+    ],
+    [
+      "Deve ser verdade que 2+2=4",
+      "□(dois_mais_dois_igual_quatro)"
+    ],
+    [
+      "João sabe que Maria está em casa",
+      "□(João_sabe → Maria_em_casa)"
+    ],
+    [
+      "Todos acreditam que a Terra é redonda",
+      "□acredita_todos_terra_redonda"
+    ],
+    [
+      "É proibido fumar aqui",
+      "□¬fumar_aqui"
+    ],
+    [
+      "É permitido estacionar",
+      "◇estacionar"
+    ],
+    [
+      "Necessariamente, se chove, então a rua fica molhada",
+      "□(chover → rua_molhada)"
+    ],
+    [
+      "Possivelmente, João e Maria vão viajar",
+      "◇(viajar_joao ∧ viajar_maria)"
+    ],
+    [
+      "É obrigatório que todos os alunos estudem",
+      "□(aluno(x) → estudar(x))"
+    ],
+    [
+      "Nunca chove no deserto do Atacama",
+      "□¬chover_atacama"
+    ],
+    [
+      "Eventualmente, todos morrem",
+      "◇morrer_todos"
+    ],
+    [
+      "Em algum momento, o Brasil será campeão",
+      "◇campeao_brasil"
+    ],
+    [
+      "É vedado dirigir sem habilitação",
+      "□¬(dirigir ∧ ¬habilitacao)"
+    ],
+    [
+      "É facultativo votar aos 16 anos",
+      "◇votar_16 ∨ ◇¬votar_16"
+    ],
+    [
+      "Certeza que o Flamengo vence",
+      "□vencer_flamengo"
+    ],
+    [
+      "Quem estuda, passa necessariamente",
+      "□(estudar → passar)"
+    ],
+    [
+      "O que é belo, necessariamente agrada",
+      "□(belo → agrada)"
+    ],
+    [
+      "Talvez exista vida extraterrestre",
+      "◇vida_extraterrestre"
+    ],
+    [
+      "É obrigatório respeitar as leis",
+      "□respeitar_leis"
+    ],
+    [
+      "Possivelmente, vou faltar amanhã",
+      "◇faltar_amanha"
+    ],
+    [
+      "Necessariamente, ímpar + ímpar = par",
+      "□(impar(x) ∧ impar(y) → par(x+y))"
+    ],
+    [
+      "Pode ocorrer um terremoto em SP",
+      "◇terremoto_sp"
+    ],
+    [
+      "É certo que amanhã será sexta",
+      "□amanha_sexta"
+    ],
+    [
+      "Talvez fique famoso",
+      "◇famoso"
+    ],
+    [
+      "É possível que haja vida em Marte",
+      "◇vida_marte"
+    ],
+    [
+      "Deve chover no fim de semana",
+      "□chover_fim_semana"
+    ],
+    [
+      "É permitido usar celular na sala",
+      "◇usar_celular_sala"
+    ],
+    [
+      "Toda rosa é necessariamente uma flor",
+      "□(rosa → flor)"
+    ],
+    [
+      "Eventualmente, a tecnologia nos superará",
+      "◇superar_tecnologia"
+    ],
+    [
+      "É proibido pisar na grama",
+      "□¬pisar_grama"
+    ],
+    [
+      "Possivelmente, encontraremos uma cura",
+      "◇encontrar_cura"
+    ],
+    [
+      "É vedado fumar em locais fechados",
+      "□¬fumar_fechado"
+    ],
+    [
+      "É possível que o time vença",
+      "◇vencer_time"
+    ],
+    [
+      "Todos os homens são mortais",
+      "□(homem → mortal)"
+    ],
+    [
+      "Nenhum quadrado é redondo",
+      "□(quadrado → ¬redondo)"
+    ],
+    [
+      "Sócrates é necessariamente um homem",
+      "□socrates_homem"
+    ],
+    [
+      "O universo é infinito, possivelmente",
+      "◇universo_infinito"
+    ],
+    [
+      "É obrigatório declarar imposto de renda",
+      "□declarar_ir"
+    ],
+    [
+      "É permitido doar sangue",
+      "◇doar_sangue"
+    ],
+    [
+      "Talvez eu viaje nas férias",
+      "◇viajar_ferias"
+    ],
+    [
+      "Deve ser que todos que estudam aprendem",
+      "□(estudar → aprender)"
+    ],
+    [
+      "É possível que haja contradições",
+      "◇contradicao"
+    ],
+    [
+      "Necessariamente, água molha",
+      "□(agua → molha)"
+    ],
+    [
+      "Pode ser que o João não venha",
+      "◇¬vir_joao"
+    ],
+    [
+      "É certo que 1+1=2",
+      "□(um_mais_um_igual_dois)"
+    ],
+    [
+      "a é tio de b",
+      "tio(a,b) → pessoa(a) ∧ pessoa(b)"
+    ],
+    [
+      "c é sobrinha de d",
+      "sobrinha(c,d) → pessoa(c) ∧ pessoa(d)"
+    ],
+    [
+      "e é padrinho de f",
+      "padrinho(e,f) → pessoa(e) ∧ pessoa(f)"
+    ],
+    [
+      "g é madrinha de h",
+      "madrinha(g,h) → pessoa(g) ∧ pessoa(h)"
+    ],
+    [
+      "i é descendente de j",
+      "descendente(i,j) → pessoa(i) ∧ pessoa(j)"
+    ],
+    [
+      "k é ancestral de l",
+      "ancestral(k,l) → pessoa(k) ∧ pessoa(l)"
+    ],
+    [
+      "m é colega de trabalho de n",
+      "colega_trabalho(m,n) → pessoa(m) ∧ pessoa(n)"
+    ],
+    [
+      "o é supervisor de p",
+      "supervisor(o,p) → pessoa(o) ∧ pessoa(p)"
+    ],
+    [
+      "q é subordinado de r",
+      "subordinado(q,r) → pessoa(q) ∧ pessoa(r)"
+    ],
+    [
+      "s possui t",
+      "possui(s,t) → pessoa(s) ∧ objeto(t)"
+    ],
+    [
+      "u usa v",
+      "usa(u,v) → pessoa(u) ∧ objeto(v)"
+    ],
+    [
+      "w criou x",
+      "criou(w,x) → pessoa(w) ∧ objeto(x)"
+    ],
+    [
+      "y escreveu z",
+      "escreveu(y,z) → pessoa(y) ∧ obra(z)"
+    ],
+    [
+      "aa compôs bb",
+      "compos(aa,bb) → pessoa(aa) ∧ obra(bb)"
+    ],
+    [
+      "cc dirigiu dd",
+      "dirigiu(cc,dd) → pessoa(cc) ∧ filme(dd)"
+    ],
+    [
+      "ee trabalha em ff",
+      "trabalha_em(ee,ff) → pessoa(ee) ∧ organizacao(ff)"
+    ],
+    [
+      "gg estuda em hh",
+      "estuda_em(gg,hh) → pessoa(gg) ∧ organizacao(hh)"
+    ],
+    [
+      "ii comprou jj",
+      "comprou(ii,jj) → pessoa(ii) ∧ objeto(jj)"
+    ],
+    [
+      "kk vendeu ll",
+      "vendeu(kk,ll) → pessoa(kk) ∧ objeto(ll)"
+    ],
+    [
+      "mm mora em nn",
+      "mora(mm,nn) → pessoa(mm) ∧ lugar(nn)"
+    ],
+    [
+      "oo nasceu em pp",
+      "nasceu_em(oo,pp) → pessoa(oo) ∧ lugar(pp)"
+    ],
+    [
+      "qq visitou rr",
+      "visitou(qq,rr) → pessoa(qq) ∧ lugar(rr)"
+    ],
+    [
+      "ss viajou para tt",
+      "viajou(ss,tt) → pessoa(ss) ∧ lugar(tt)"
+    ],
+    [
+      "uu abriu vv",
+      "abriu(uu,vv) → pessoa(uu) ∧ objeto(vv)"
+    ],
+    [
+      "ww fechou xx",
+      "fechou(ww,xx) → pessoa(ww) ∧ objeto(xx)"
+    ],
+    [
+      "yy construiu zz",
+      "construiu(yy,zz) → pessoa(yy) ∧ objeto(zz)"
+    ],
+    [
+      "aaa destruiu bbb",
+      "destruiu(aaa,bbb) → pessoa(aaa) ∧ objeto(bbb)"
+    ],
+    [
+      "ccc ajudou ddd",
+      "ajudou(ccc,ddd) → pessoa(ccc) ∧ pessoa(ddd)"
+    ],
+    [
+      "eee prejudicou fff",
+      "prejudicou(eee,fff) → pessoa(eee) ∧ pessoa(fff)"
+    ],
+    [
+      "ggg respeita hhh",
+      "respeita(ggg,hhh) → pessoa(ggg) ∧ pessoa(hhh)"
+    ],
+    [
+      "iii admira jjj",
+      "admira(iii,jjj) → pessoa(iii) ∧ pessoa(jjj)"
+    ],
+    [
+      "kkk ama lll",
+      "ama(kkk,lll) → pessoa(kkk) ∧ pessoa(lll)"
+    ],
+    [
+      "mmm odeia nnn",
+      "odeia(mmm,nnn) → pessoa(mmm) ∧ pessoa(nnn)"
+    ],
+    [
+      "ooo confia em ppp",
+      "confia(ooo,ppp) → pessoa(ooo) ∧ pessoa(ppp)"
+    ],
+    [
+      "qqq desconfia de rrr",
+      "desconfia(qqq,rrr) → pessoa(qqq) ∧ pessoa(rrr)"
+    ],
+    [
+      "sss ensina ttt",
+      "ensina(sss,ttt) → pessoa(sss) ∧ pessoa(ttt)"
+    ],
+    [
+      "uuu aprende com vvv",
+      "aprende(uuu,vvv) → pessoa(uuu) ∧ pessoa(vvv)"
+    ],
+    [
+      "www lidera xxx",
+      "lidera(www,xxx) → pessoa(www) ∧ grupo(xxx)"
+    ],
+    [
+      "yyy participa de zzz",
+      "participa(yyy,zzz) → pessoa(yyy) ∧ evento(zzz)"
+    ],
+    [
+      "aaaa organiza bbbb",
+      "organiza(aaaa,bbbb) → pessoa(aaaa) ∧ evento(bbbb)"
+    ],
+    [
+      "cccc assiste dddd",
+      "assiste(cccc,dddd) → pessoa(cccc) ∧ evento(dddd)"
+    ],
+    [
+      "eeee lê ffff",
+      "le(eeee,ffff) → pessoa(eeee) ∧ obra(ffff)"
+    ],
+    [
+      "gggg escreve hhhh",
+      "escreve(gggg,hhhh) → pessoa(gggg) ∧ obra(hhhh)"
+    ],
+    [
+      "iiii pinta jjjj",
+      "pinta(iiii,jjjj) → pessoa(iiii) ∧ obra(jjjj)"
+    ],
+    [
+      "kkkk desenha llll",
+      "desenha(kkkk,llll) → pessoa(kkkk) ∧ obra(llll)"
+    ],
+    [
+      "mmmm canta nnnn",
+      "canta(mmmm,nnnn) → pessoa(mmmm) ∧ musica(nnnn)"
+    ],
+    [
+      "oooo toca pppp",
+      "toca(oooo,pppp) → pessoa(oooo) ∧ instrumento(pppp)"
+    ],
+    [
+      "qqqq dirige rrrr",
+      "dirige(qqqq,rrrr) → pessoa(qqqq) ∧ veiculo(rrrr)"
+    ],
+    [
+      "ssss pilota tttt",
+      "pilota(ssss,tttt) → pessoa(ssss) ∧ veiculo(tttt)"
+    ],
+    [
+      "É possível que chova hoje",
+      "◇chover_hoje"
+    ],
+    [
+      "É possível que faça calor",
+      "◇calor"
+    ],
+    [
+      "Talvez ele chegue cedo",
+      "◇chegar(eles,cedo)"
+    ],
+    [
+      "Pode ser que ela estude",
+      "◇estudar(ela)"
+    ],
+    [
+      "É necessário trabalhar para viver",
+      "□(trabalhar → viver)"
+    ],
+    [
+      "É necessário dormir para descansar",
+      "□(dormir → descansar)"
+    ],
+    [
+      "João acredita que vai chover",
+      "B(joao, chover)"
+    ],
+    [
+      "Maria sabe que estudou",
+      "K(maria, estudou)"
+    ],
+    [
+      "Todos os gatos são mamíferos",
+      "∀x (gato(x) → mamifero(x))"
+    ],
+    [
+      "Todos os cães latem",
+      "∀x (cao(x) → late(x))"
+    ],
+    [
+      "Algum aluno passou",
+      "∃x (aluno(x) ∧ passou(x))"
+    ],
+    [
+      "Existe um número par",
+      "∃x par(x)"
+    ],
+    [
+      "Nenhum peixe voa",
+      "∀x (peixe(x) → ¬voa(x))"
+    ],
+    [
+      "Nenhum humano é imortal",
+      "∀x (humano(x) → ¬imortal(x))"
+    ],
+    [
+      "Todo professor ensina",
+      "∀x (professor(x) → ensina(x))"
+    ],
+    [
+      "Todo aluno aprende",
+      "∀x (aluno(x) → aprende(x))"
+    ],
+    [
+      "Se estuda, então aprende",
+      "estudar → aprender"
+    ],
+    [
+      "Se chove, então molha",
+      "chover → molhar"
+    ],
+    [
+      "É obrigatório pagar impostos",
+      "□pagar_impostos"
+    ],
+    [
+      "É obrigatório obedecer a lei",
+      "□obedecer_lei"
+    ],
+    [
+      "É permitido correr no parque",
+      "◇correr_parque"
+    ],
+    [
+      "É permitido estudar à noite",
+      "◇estudar_noite"
+    ],
+    [
+      "É proibido roubar",
+      "□¬roubar"
+    ],
+    [
+      "É proibido mentir",
+      "□¬mentir"
+    ],
+    [
+      "Possivelmente haverá chuva",
+      "◇haver_chuva"
+    ],
+    [
+      "Possivelmente haverá vento",
+      "◇haver_vento"
+    ],
+    [
+      "Necessariamente 2 é par",
+      "□par(2)"
+    ],
+    [
+      "Necessariamente 3 é ímpar",
+      "□impar(3)"
+    ],
+    [
+      "Talvez exista vida em outro planeta",
+      "◇∃x vida(x)"
+    ],
+    [
+      "Talvez exista água em Marte",
+      "◇∃x agua(x)"
+    ],
+    [
+      "Todo número par é divisível por 2",
+      "∀x (par(x) → divisivel(x,2))"
+    ],
+    [
+      "Todo múltiplo de 4 é par",
+      "∀x (multiplo(x,4) → par(x))"
+    ],
+    [
+      "Algum professor é pesquisador",
+      "∃x (professor(x) ∧ pesquisador(x))"
+    ],
+    [
+      "Algum aluno trabalha",
+      "∃x (aluno(x) ∧ trabalha(x))"
+    ],
+    [
+      "Se alguém estuda, então passa",
+      "∀x (estudar(x) → passar(x))"
+    ]
   ]
 }

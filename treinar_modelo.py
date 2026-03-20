@@ -1,23 +1,26 @@
 import json
 import torch
 import os
+import numpy as np
+import evaluate
 from datasets import Dataset
-from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, Trainer, TrainingArguments
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, Seq2SeqTrainer, Seq2SeqTrainingArguments
 from configuracao import Configuracao
 
 class CarregadorDados:
+    """
+    Carrega os arquivos JSON de treino e teste e realiza o pré-processamento.
+    Loads the training and test JSON files and performs preprocessing.
+    """
     def __init__(self, configuracao):
         self.configuracao = configuracao
-        self.tokenizador = AutoTokenizer.from_pretrained(configuracao.NOME_MODELO)
+        self.tokenizador = AutoTokenizer.from_pretrained(configuracao.NOME_MODELO, use_fast=False)
     
-    def carregar_conjunto_dados(self):
-        with open(self.configuracao.CAMINHO_CONJUNTO_DADOS, 'r', encoding='utf-8') as f:
+    def carregar(self, caminho):
+        with open(caminho, 'r', encoding='utf-8') as f:
             dados = json.load(f)["data"]
-        
-        # convert to dict for dataset/converter para dict para dataset
-        dicionario_conjunto = {"input": [item[0] for item in dados], "output": [item[1] for item in dados]}
-        conjunto_dados = Dataset.from_dict(dicionario_conjunto)
-        return conjunto_dados
+        dicionario = {"input": [item[0] for item in dados], "output": [item[1] for item in dados]}
+        return Dataset.from_dict(dicionario)
     
     def funcao_preprocessamento(self, exemplos):
         entradas = [self.configuracao.PREFIXO_TASK + e for e in exemplos["input"]]
@@ -26,82 +29,87 @@ class CarregadorDados:
         entradas_modelo = self.tokenizador(entradas, max_length=self.configuracao.COMPRIMENTO_MAXIMO_ENTRADA, truncation=True, padding="max_length")
         rotulos = self.tokenizador(alvos, max_length=self.configuracao.COMPRIMENTO_MAXIMO_ALVO, truncation=True, padding="max_length")
         
-        # mask padding token in labels so that the trainer ignores them/mascarar o token de preenchimento (padding) nos rótulos para que o trainer os ignore
         labels = rotulos["input_ids"]
         labels = [[(l if l != self.tokenizador.pad_token_id else -100) for l in label] for label in labels]
         
         entradas_modelo["labels"] = labels
         return entradas_modelo
     
-    def obter_conjunto_processado(self):
-        conjunto_dados = self.carregar_conjunto_dados()
-        conjunto_processado = conjunto_dados.map(self.funcao_preprocessamento, batched=True)
-        return conjunto_processado
-
-class Modelo:
-    def __init__(self, configuracao):
-        self.configuracao = configuracao
-        self.modelo = AutoModelForSeq2SeqLM.from_pretrained(configuracao.NOME_MODELO)
-    
-    def obter_modelo(self):
-        return self.modelo
+    def obter_datasets(self):
+        ds_treino = self.carregar(self.configuracao.CAMINHO_CONJUNTO_TRAIN).map(self.funcao_preprocessamento, batched=True)
+        ds_teste = self.carregar(self.configuracao.CAMINHO_CONJUNTO_TEST).map(self.funcao_preprocessamento, batched=True)
+        return ds_treino, ds_teste
 
 class ModuloTreinamento:
-    def __init__(self, configuracao, modelo, conjunto_dados, tokenizador):
+    """
+    Gerencia o processo de treinamento e avaliação com suporte a Seq2Seq.
+    Manages the training and evaluation process with Seq2Seq support.
+    """
+    def __init__(self, configuracao, modelo, ds_treino, ds_teste, tokenizador):
         self.configuracao = configuracao
         self.modelo = modelo
-        self.conjunto_dados = conjunto_dados
+        self.ds_treino = ds_treino
+        self.ds_teste = ds_teste
         self.tokenizador = tokenizador
-    
+        self.metric = evaluate.load("rouge")
+
+    def calcular_metricas(self, pred):
+        labels_ids = pred.label_ids
+        pred_ids = pred.predictions
+        
+        decoded_preds = self.tokenizador.batch_decode(pred_ids, skip_special_tokens=True)
+        labels_ids[labels_ids == -100] = self.tokenizador.pad_token_id
+        decoded_labels = self.tokenizador.batch_decode(labels_ids, skip_special_tokens=True)
+        
+        result = self.metric.compute(predictions=decoded_preds, references=decoded_labels, use_stemmer=True)
+        return {k: round(v, 4) for k, v in result.items()}
+
     def treinar(self):
-        argumentos_treinamento = TrainingArguments(
+        args = Seq2SeqTrainingArguments(
             output_dir=self.configuracao.DIRETORIO_SAIDA,
-            eval_strategy="epoch",
+            evaluation_strategy="epoch",
             learning_rate=self.configuracao.TAXA_APRENDIZADO,
             per_device_train_batch_size=self.configuracao.TAMANHO_LOTE,
             per_device_eval_batch_size=self.configuracao.TAMANHO_LOTE,
             num_train_epochs=self.configuracao.NUMERO_EPOCAS,
             weight_decay=self.configuracao.DECAIMENTO_PESO,
             save_total_limit=3,
-            save_steps=50,
             logging_steps=10,
+            predict_with_generate=True,
+            fp16=False, # AMD ROCm might work better without fp16 unless specifically configured
+            report_to="none"
         )
         
-        treinador = Trainer(
+        treinador = Seq2SeqTrainer(
             model=self.modelo,
-            args=argumentos_treinamento,
-            train_dataset=self.conjunto_dados,
-            eval_dataset=self.conjunto_dados, 
+            args=args,
+            train_dataset=self.ds_treino,
+            eval_dataset=self.ds_teste,
             processing_class=self.tokenizador,
+            compute_metrics=self.calcular_metricas
         )
         
         treinador.train()
+        
+        with open(os.path.join(self.configuracao.DIRETORIO_SAIDA, "historico_treinamento.json"), "w") as f:
+            json.dump(treinador.state.log_history, f)
+            
         return treinador
 
 def main():
     configuracao = Configuracao()
     torch.manual_seed(configuracao.SEMENTE)
     
-    print("Iniciando carregamento de dados...")
-    carregador_dados = CarregadorDados(configuracao)
-    conjunto_dados = carregador_dados.obter_conjunto_processado()
+    carregador = CarregadorDados(configuracao)
+    ds_treino, ds_teste = carregador.obter_datasets()
     
-    print("Iniciando carregamento do modelo...")
-    modulo_modelo = Modelo(configuracao)
-    modelo = modulo_modelo.obter_modelo()
+    modelo_obj = AutoModelForSeq2SeqLM.from_pretrained(configuracao.NOME_MODELO)
     
-    print("Iniciando treinamento...")
-    modulo_treinamento = ModuloTreinamento(configuracao, modelo, conjunto_dados, carregador_dados.tokenizador)
-    treinador = modulo_treinamento.treinar()
+    modulo = ModuloTreinamento(configuracao, modelo_obj, ds_treino, ds_teste, carregador.tokenizador)
+    treinador = modulo.treinar()
     
-    # save the final model in the configured directory/salvar o modelo final no diretório configurado
     treinador.save_model(configuracao.DIRETORIO_SAIDA)
-    # also save the tokenizer separately to ensure/também salvar o tokenizador separadamente para garantir
-    carregador_dados.tokenizador.save_pretrained(configuracao.DIRETORIO_SAIDA)
-    
-    print("-" * 30)
-    print(f"Treinamento concluído e modelo final salvo em: {configuracao.DIRETORIO_SAIDA}")
-    print("-" * 30)
+    carregador.tokenizador.save_pretrained(configuracao.DIRETORIO_SAIDA)
 
 if __name__ == "__main__":
     main()

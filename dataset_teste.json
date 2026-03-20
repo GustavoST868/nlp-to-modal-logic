@@ -1,0 +1,64 @@
+{
+  "data": [
+    [
+      "João é pai de Lucas",
+      "paide(joao,lucas) ∧ pessoa(joao) ∧ pessoa(lucas)"
+    ],
+    [
+      "Ana é mãe de Beatriz",
+      "mae(ana,beatriz) ∧ pessoa(ana) ∧ pessoa(beatriz)"
+    ],
+    [
+      "É possível que o sol brilhe",
+      "◇brilhar_sol"
+    ],
+    [
+      "É necessário beber água",
+      "□beber_agua"
+    ],
+    [
+      "Pode ser que amanhã seja feriado",
+      "◇amanha_feriado"
+    ],
+    [
+      "Todo pássaro voa",
+      "∀x (passaro(x) → voa(x))"
+    ],
+    [
+      "Algum homem é mortal",
+      "∃x (homem(x) ∧ mortal(x))"
+    ],
+    [
+      "Se está nublado, então não chove necessariamente",
+      "nublado → ◇¬chover"
+    ],
+    [
+      "É proibido entrar sem máscara",
+      "□¬entrar_sem_mascara"
+    ],
+    [
+      "Maria acredita que é inteligente",
+      "B(maria, inteligente(maria))"
+    ],
+    [
+      "É permitido sorrir",
+      "◇sorrir"
+    ],
+    [
+      "Necessariamente 4 é par",
+      "□par(4)"
+    ],
+    [
+      "Talvez exista vida em Vênus",
+      "◇∃x vida(x)"
+    ],
+    [
+      "Nenhum gato late",
+      "∀x (gato(x) → ¬late(x))"
+    ],
+    [
+      "Se eu estudo muito, então eu passo",
+      "estudar_muito → passar"
+    ]
+  ]
+}
