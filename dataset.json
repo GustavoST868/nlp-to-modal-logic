@@ -1,788 +1,1436 @@
 {
   "data": [
     [
-      "a é pai de b",
-      "paide(a,b) ∧ pessoa(a) ∧ pessoa(b)"
+      "João é pai de Maria, sendo ele o responsável legal e biológico por ela, exercendo a função paterna em todas as instâncias familiares e sociais.",
+      "Pessoa(joao) \n Pessoa(maria) \n pai(joao, maria) -> Pessoa(joao) ∧ Pessoa(maria)"
     ],
     [
-      "b é filho de a",
-      "filho(b,a) ∧ pessoa(b) ∧ pessoa(a)"
+      "Ana é filha de Carlos, estabelecendo uma relação de descendência direta onde Ana herda características genéticas e sobrenome de Carlos.",
+      "Pessoa(ana) \n Pessoa(carlos) \n filha(ana, carlos) -> Pessoa(ana) ∧ Pessoa(carlos)"
     ],
     [
-      "c é mãe de d",
-      "mae(c,d) ∧ pessoa(c) ∧ pessoa(d)"
+      "Beatriz é mãe de Diego, sendo ela a responsável pela gestação, parto e criação primária de Diego, com vínculo materno inquestionável.",
+      "Pessoa(beatriz) \n Pessoa(diego) \n mae(beatriz, diego) -> Pessoa(beatriz) ∧ Pessoa(diego)"
     ],
     [
-      "e é irmão de f",
-      "irmao(e,f) ∧ pessoa(e) ∧ pessoa(f)"
+      "Eduardo é irmão de Fernanda, compartilhando ambos os genitores ou pelo menos um deles, crescendo juntos no mesmo núcleo familiar.",
+      "Pessoa(eduardo) \n Pessoa(fernanda) \n irmao(eduardo, fernanda) -> Pessoa(eduardo) ∧ Pessoa(fernanda)"
     ],
     [
-      "g é avô de h",
-      "avo(g,h) ∧ pessoa(g) ∧ pessoa(h)"
+      "Helena é avó de Igor, representando um relacionamento de duas gerações ascendentes, onde ela é mãe do pai ou da mãe de Igor.",
+      "Pessoa(helena) \n Pessoa(igor) \n avo(helena, igor) -> Pessoa(helena) ∧ Pessoa(igor)"
     ],
     [
-      "i é tia de j",
-      "tia(i,j) ∧ pessoa(i) ∧ pessoa(j)"
+      "Júlia é tia de Lucas, pois ela é irmã do pai ou da mãe de Lucas, sendo responsável muitas vezes por cuidados e conselhos na família extensa.",
+      "Pessoa(julia) \n Pessoa(lucas) \n tia(julia, lucas) -> Pessoa(julia) ∧ Pessoa(lucas)"
     ],
     [
-      "k é primo de l",
-      "primo(k,l) ∧ pessoa(k) ∧ pessoa(l)"
+      "Marcelo é primo de Natália, sendo filhos de irmãos, compartilhando avós em comum e estabelecendo vínculos de parentesco colateral de segundo grau.",
+      "Pessoa(marcelo) \n Pessoa(natalia) \n primo(marcelo, natalia) -> Pessoa(marcelo) ∧ Pessoa(natalia)"
     ],
     [
-      "m é neto de n",
-      "neto(m,n) ∧ pessoa(m) ∧ pessoa(n)"
+      "Otávio é neto de Paula, representando uma relação de descendência de segunda geração, sendo filho de um filho ou filha de Paula.",
+      "Pessoa(otavio) \n Pessoa(paula) \n neto(otavio, paula) -> Pessoa(otavio) ∧ Pessoa(paula)"
     ],
     [
-      "o é sogro de p",
-      "sogro(o,p) ∧ pessoa(o) ∧ pessoa(p)"
+      "Rafael é sogro de Sofia, estabelecendo uma relação de afinidade onde ele é pai do cônjuge de Sofia, criando laços familiares por casamento.",
+      "Pessoa(rafael) \n Pessoa(sofia) \n sogro(rafael, sofia) -> Pessoa(rafael) ∧ Pessoa(sofia)"
     ],
     [
-      "q é cunhado de r",
-      "cunhado(q,r) ∧ pessoa(q) ∧ pessoa(r)"
+      "Tomás é cunhado de Úrsula, sendo ele irmão do cônjuge de Úrsula, formando um vínculo de parentesco por afinidade sem consanguinidade direta.",
+      "Pessoa(tomas) \n Pessoa(ursula) \n cunhado(tomas, ursula) -> Pessoa(tomas) ∧ Pessoa(ursula)"
     ],
     [
-      "s é esposa de t",
-      "esposa(s,t) ∧ pessoa(s) ∧ pessoa(t)"
+      "Verônica é esposa de Wagner, unindo-se a ele em matrimônio civil e religioso, compartilhando responsabilidades, patrimônio e projetos de vida.",
+      "Pessoa(veronica) \n Pessoa(wagner) \n esposa(veronica, wagner) -> Pessoa(veronica) ∧ Pessoa(wagner)"
     ],
     [
-      "u é marido de v",
-      "marido(u,v) ∧ pessoa(u) ∧ pessoa(v)"
+      "Xavier é marido de Yara, constituindo com ela uma sociedade conjugal baseada em afeto, cooperação mútua e parceria em todos os aspectos da existência.",
+      "Pessoa(xavier) \n Pessoa(yara) \n marido(xavier, yara) -> Pessoa(xavier) ∧ Pessoa(yara)"
     ],
     [
-      "w é filha de x",
-      "filha(w,x) ∧ pessoa(w) ∧ pessoa(x)"
+      "Zélia é filha de Artur, sendo descendente direta em primeiro grau, com direitos sucessórios e vínculo de parentesco biológico ou adotivo inquestionável.",
+      "Pessoa(zelia) \n Pessoa(artur) \n filha(zelia, artur) -> Pessoa(zelia) ∧ Pessoa(artur)"
     ],
     [
-      "y é sobrinho de z",
-      "sobrinho(y,z) ∧ pessoa(y) ∧ pessoa(z)"
+      "Bruno é sobrinho de Cecília, pois ele é filho do irmão ou irmã de Cecília, caracterizando uma relação de parentesco colateral em segundo grau.",
+      "Pessoa(bruno) \n Pessoa(cecilia) \n sobrinho(bruno, cecilia) -> Pessoa(bruno) ∧ Pessoa(cecilia)"
     ],
     [
-      "aa é avó de bb",
-      "avo(aa,bb) ∧ pessoa(aa) ∧ pessoa(bb)"
+      "Diana é avó de Elias, significando que ela é mãe do pai ou da mãe de Elias, exercendo papel fundamental na transmissão de valores e memória familiar.",
+      "Pessoa(diana) \n Pessoa(elias) \n avo(diana, elias) -> Pessoa(diana) ∧ Pessoa(elias)"
     ],
     [
-      "cc é bisavô de dd",
-      "bisavo(cc,dd) ∧ pessoa(cc) ∧ pessoa(dd)"
+      "Fabrício é bisavô de Gabriela, com três gerações de distância na ascendência, sendo ele pai do avô ou avó de Gabriela.",
+      "Pessoa(fabricio) \n Pessoa(gabriela) \n bisavo(fabricio, gabriela) -> Pessoa(fabricio) ∧ Pessoa(gabriela)"
     ],
     [
-      "ee é padrastro de ff",
-      "padrastro(ee,ff) ∧ pessoa(ee) ∧ pessoa(ff)"
+      "Henrique é padrastro de Isadora, assumindo papel paterno sem vínculo biológico por ser casado com a mãe de Isadora em uma família reconstituída.",
+      "Pessoa(henrique) \n Pessoa(isadora) \n padrastro(henrique, isadora) -> Pessoa(henrique) ∧ Pessoa(isadora)"
     ],
     [
-      "gg é madrasta de hh",
-      "madrasta(gg,hh) ∧ pessoa(gg) ∧ pessoa(hh)"
+      "Joana é madrasta de Kauã, integrando-se à família como esposa do pai de Kauã e assumindo responsabilidades de criação e cuidado.",
+      "Pessoa(joana) \n Pessoa(kaua) \n madrasta(joana, kaua) -> Pessoa(joana) ∧ Pessoa(kaua)"
     ],
     [
-      "ii é enteado de jj",
-      "enteado(ii,jj) ∧ pessoa(ii) ∧ pessoa(jj)"
+      "Leandro é enteado de Márcia, sendo filho do cônjuge de Márcia e estabelecendo com ela uma relação de parentesco civil e afetivo.",
+      "Pessoa(leandro) \n Pessoa(marcia) \n enteado(leandro, marcia) -> Pessoa(leandro) ∧ Pessoa(marcia)"
     ],
     [
-      "kk é enteada de ll",
-      "enteada(kk,ll) ∧ pessoa(kk) ∧ pessoa(ll)"
+      "Natália é enteada de Olavo, por ser filha da esposa de Olavo, formando uma relação familiar sem consanguinidade com ele.",
+      "Pessoa(natalia) \n Pessoa(olavo) \n enteada(natalia, olavo) -> Pessoa(natalia) ∧ Pessoa(olavo)"
     ],
     [
-      "mm é cunhada de nn",
-      "cunhada(mm,nn) ∧ pessoa(mm) ∧ pessoa(nn)"
+      "Priscila é cunhada de Ricardo, sendo irmã do cônjuge de Ricardo, estabelecendo laços de afinidade dentro da estrutura familiar ampliada.",
+      "Pessoa(priscila) \n Pessoa(ricardo) \n cunhada(priscila, ricardo) -> Pessoa(priscila) ∧ Pessoa(ricardo)"
     ],
     [
-      "oo é genro de pp",
-      "genro(oo,pp) ∧ pessoa(oo) ∧ pessoa(pp)"
+      "Samuel é genro de Teresa, pois ele é esposo da filha de Teresa, integrando-se à família por meio do casamento e compartilhando laços de afinidade.",
+      "Pessoa(samuel) \n Pessoa(teresa) \n genro(samuel, teresa) -> Pessoa(samuel) ∧ Pessoa(teresa)"
     ],
     [
-      "qq é nora de rr",
-      "nora(qq,rr) ∧ pessoa(qq) ∧ pessoa(rr)"
+      "Vera é nora de Walter, sendo esposa do filho de Walter, estabelecendo com ele uma relação de parentesco por afinidade.",
+      "Pessoa(vera) \n Pessoa(walter) \n nora(vera, walter) -> Pessoa(vera) ∧ Pessoa(walter)"
     ],
     [
-      "ss é viúvo de tt",
-      "viuvo(ss,tt) ∧ pessoa(ss) ∧ pessoa(tt)"
+      "Antônio é viúvo de Clara, após o falecimento de sua esposa, mantendo os laços afetivos e memórias do casamento mesmo com a dissolução do vínculo conjugal.",
+      "Pessoa(antonio) \n Pessoa(clara) \n viuvo(antonio, clara) -> Pessoa(antonio) ∧ Pessoa(clara)"
     ],
     [
-      "uu é viúva de vv",
-      "viuva(uu,vv) ∧ pessoa(uu) ∧ pessoa(vv)"
+      "Eliane é viúva de Jorge, permanecendo como herdeira e mantendo o nome de casada mesmo após a perda de seu marido.",
+      "Pessoa(eliane) \n Pessoa(jorge) \n viuva(eliane, jorge) -> Pessoa(eliane) ∧ Pessoa(jorge)"
     ],
     [
-      "ww é divorciado de xx",
-      "divorciado(ww,xx) ∧ pessoa(ww) ∧ pessoa(xx)"
+      "César é divorciado de Lúcia, tendo dissolvido legalmente o vínculo matrimonial, mas mantendo eventualmente responsabilidades compartilhadas.",
+      "Pessoa(cesar) \n Pessoa(lucia) \n divorciado(cesar, lucia) -> Pessoa(cesar) ∧ Pessoa(lucia)"
     ],
     [
-      "yy é noivo de zz",
-      "noivo(yy,zz) ∧ pessoa(yy) ∧ pessoa(zz)"
+      "Fernando é noivo de Patrícia, estando prometido em matrimônio com planos concretos de união futura e compartilhamento de vida.",
+      "Pessoa(fernando) \n Pessoa(patricia) \n noivo(fernando, patricia) -> Pessoa(fernando) ∧ Pessoa(patricia)"
     ],
     [
-      "aaa é noiva de bbb",
-      "noiva(aaa,bbb) ∧ pessoa(aaa) ∧ pessoa(bbb)"
+      "Sílvia é noiva de Roberto, com compromisso formal de casamento estabelecido e celebração programada para breve.",
+      "Pessoa(silvia) \n Pessoa(roberto) \n noiva(silvia, roberto) -> Pessoa(silvia) ∧ Pessoa(roberto)"
     ],
     [
-      "ccc é namorado de ddd",
-      "namorado(ccc,ddd) ∧ pessoa(ccc) ∧ pessoa(ddd)"
+      "Davi é namorado de Letícia, mantendo um relacionamento afetivo estável com planos de construir um futuro em comum.",
+      "Pessoa(davi) \n Pessoa(leticia) \n namorado(davi, leticia) -> Pessoa(davi) ∧ Pessoa(leticia)"
     ],
     [
-      "eee é namorada de fff",
-      "namorada(eee,fff) ∧ pessoa(eee) ∧ pessoa(fff)"
+      "Camila é namorada de Felipe, com quem compartilha sentimentos, projetos e uma relação de parceria e companheirismo.",
+      "Pessoa(camila) \n Pessoa(felipe) \n namorada(camila, felipe) -> Pessoa(camila) ∧ Pessoa(felipe)"
     ],
     [
-      "ggg é amigo de hhh",
-      "amigo(ggg,hhh) ∧ pessoa(ggg) ∧ pessoa(hhh)"
+      "Gustavo é amigo de Renata, mantendo uma relação de confiança, lealdade e afeto construída ao longo de anos de convivência e experiências compartilhadas.",
+      "Pessoa(gustavo) \n Pessoa(renata) \n amigo(gustavo, renata) -> Pessoa(gustavo) ∧ Pessoa(renata)"
     ],
     [
-      "iii é colega de jjj",
-      "colega(iii,jjj) ∧ pessoa(iii) ∧ pessoa(jjj)"
+      "Maurício é colega de Elaine, trabalhando juntos na mesma organização e compartilhando responsabilidades profissionais e ambiente laboral.",
+      "Pessoa(mauricio) \n Pessoa(elaine) \n colega(mauricio, elaine) -> Pessoa(mauricio) ∧ Pessoa(elaine)"
     ],
     [
-      "kkk é vizinho de lll",
-      "vizinho(kkk,lll) ∧ pessoa(kkk) ∧ pessoa(lll)"
+      "Ricardo é vizinho de Alice, residindo em imóveis próximos ou no mesmo condomínio, mantendo relações de cordialidade e eventual cooperação comunitária.",
+      "Pessoa(ricardo) \n Pessoa(alice) \n vizinho(ricardo, alice) -> Pessoa(ricardo) ∧ Pessoa(alice)"
     ],
     [
-      "mmm é professor de nnn",
-      "professor(mmm,nnn) ∧ pessoa(mmm) ∧ pessoa(nnn)"
+      "Um meteorologista renomado analisou as condições atmosféricas e concluiu que é possível que ocorra um volume significativo de precipitação pluviométrica durante a tarde de amanhã na região metropolitana.",
+      "Evento(chuva_amanha) \n ◇chuva_amanha -> ◇chuva_amanha"
     ],
     [
-      "ooo é aluno de ppp",
-      "aluno(ooo,ppp) ∧ pessoa(ooo) ∧ pessoa(ppp)"
+      "No contexto educacional, é uma verdade incontestável que o ato de dedicar tempo ao estudo sistemático e à revisão do conteúdo programático constitui uma condição necessária para obter aprovação no exame final.",
+      "Pessoa(qualquer) \n □(estuda → passa_exame) -> □(estuda → passa_exame)"
     ],
     [
-      "qqq é chefe de rrr",
-      "chefe(qqq,rrr) ∧ pessoa(qqq) ∧ pessoa(rrr)"
+      "Devido ao trânsito intenso característico dos horários de pico e à possibilidade de imprevistos no transporte público, existe a contingência legítima de que eu não consiga chegar ao compromisso no horário previamente estabelecido.",
+      "Pessoa(eu) \n ◇atraso(eu) -> ◇atraso(eu)"
     ],
     [
-      "sss é empregado de ttt",
-      "empregado(sss,ttt) ∧ pessoa(sss) ∧ pessoa(ttt)"
+      "Baseado em princípios astronômicos imutáveis e nas leis da física que regem o movimento dos corpos celestes, é uma necessidade absoluta que o astro-rei apareça no horizonte a leste todas as manhãs.",
+      "Evento(nascer_sol) \n □nascer_sol_leste -> □nascer_sol_leste"
     ],
     [
-      "uuu é dono de vvv",
-      "dono(uuu,vvv) ∧ pessoa(uuu) ∧ objeto(vvv)"
+      "É uma possibilidade em aberto que eu opte por consumir uma refeição à base de massa coberta com molho de tomate e queijo derretido ainda hoje, dependendo do meu apetite e da disponibilidade dos ingredientes.",
+      "Pessoa(eu) \n Alimento(pizza) \n ◇come(eu, pizza) -> ◇come(eu, pizza)"
     ],
     [
-      "www é proprietário de xxx",
-      "proprietario(www,xxx) ∧ pessoa(www) ∧ objeto(xxx)"
+      "De acordo com a legislação de trânsito vigente, constitui uma obrigação inegociável para qualquer condutor ou passageiro utilizar o dispositivo de retenção denominado cinto de segurança enquanto o veículo estiver em movimento.",
+      "Pessoa(condutor) \n □usa_cinto -> □usa_cinto"
     ],
     [
-      "yyy é comprador de zzz",
-      "comprador(yyy,zzz) ∧ pessoa(yyy) ∧ objeto(zzz)"
+      "Embora as probabilidades sejam estatisticamente reduzidas, existe a possibilidade remota, porém não nula, de que um bilhete adquirido venha a ser contemplado com o prêmio máximo da loteria federal.",
+      "Evento(ganhar_loteria) \n ◇ganha_loteria -> ◇ganha_loteria"
     ],
     [
-      "aaaa é vendedor de bbbb",
-      "vendedor(aaaa,bbbb) ∧ pessoa(aaaa) ∧ objeto(bbbb)"
+      "Do ponto de vista biológico, é uma condição sine qua non que o processo de respiração pulmonar ocorra de forma contínua para que um organismo humano mantenha suas funções vitais e permaneça vivo.",
+      "Pessoa(humano) \n □(respira → vive) -> □(respira → vive)"
     ],
     [
-      "cccc é usuário de dddd",
-      "usuario(cccc,dddd) ∧ pessoa(cccc) ∧ objeto(dddd)"
+      "Sem qualquer garantia antecipada, existe a possibilidade subjetiva de que a produção cinematográfica em questão possua qualidade artística superior, agradando crítica e público.",
+      "Obra(filme) \n ◇filme_bom -> ◇filme_bom"
     ],
     [
-      "eeee é fabricante de ffff",
-      "fabricante(eeee,ffff) ∧ pessoa(eeee) ∧ objeto(ffff)"
+      "No âmbito da matemática fundamental, configura-se como verdade necessária e inquestionável que a soma da unidade com a unidade resulta exatamente no numeral dois, independentemente de contexto ou interpretação.",
+      "Numero(2) \n □(1+1=2) -> □(1+1=2)"
     ],
     [
-      "gggg é consumidor de hhhh",
-      "consumidor(gggg,hhhh) ∧ pessoa(gggg) ∧ objeto(hhhh)"
+      "Considerando a posição epistemológica, é correto afirmar que João possui conhecimento assertivo de que Maria encontra-se dentro de sua residência neste momento.",
+      "Pessoa(joao) \n Pessoa(maria) \n K(joao, em_casa(maria)) -> K(joao, em_casa(maria))"
     ],
     [
-      "iiii é criador de jjjj",
-      "criador(iiii,jjjj) ∧ pessoa(iiii) ∧ objeto(jjjj)"
+      "Em um consenso científico praticamente universal, todos os pesquisadores e a população em geral aceitam como verdadeiro o fato de que a forma do planeta Terra é aproximadamente esférica, assemelhando-se a um geoide.",
+      "Pessoa(todos) \n Crença(todos, terra_redonda) -> Crença(todos, terra_redonda)"
     ],
     [
-      "kkkk é inventor de llll",
-      "inventor(kkkk,llll) ∧ pessoa(kkkk) ∧ objeto(llll)"
+      "As normas de convivência e a legislação sanitária estabelecem de maneira categórica que é vedado o ato de queimar produtos derivados do tabaco em recintos fechados e ambientes coletivos.",
+      "Evento(fumar) \n □¬fumar_local_fechado -> □¬fumar_local_fechado"
     ],
     [
-      "mmmm é artista de nnnn",
-      "artista(mmmm,nnnn) ∧ pessoa(mmmm) ∧ obra(nnnn)"
+      "Conforme as regras de estacionamento regulamentado, existe permissão legal para que veículos automotores permaneçam estacionados nas vagas demarcadas para esse fim, respeitando os horários estabelecidos.",
+      "Acao(estacionar) \n ◇estacionar -> ◇estacionar"
     ],
     [
-      "oooo é escritor de pppp",
-      "escritor(oooo,pppp) ∧ pessoa(oooo) ∧ obra(pppp)"
+      "Uma lei natural e observável empiricamente estabelece que, inevitavelmente, se houver precipitação atmosférica significativa, então as superfícies expostas ao tempo tornar-se-ão úmidas em consequência direta.",
+      "Evento(chuva) \n Evento(molhar) \n □(chove → molha_rua) -> □(chove → molha_rua)"
     ],
     [
-      "qqqq é músico de rrrr",
-      "musico(qqqq,rrrr) ∧ pessoa(qqqq) ∧ obra(rrrr)"
+      "Existe uma probabilidade concreta, ainda que não seja uma certeza absoluta, de que os indivíduos João e Maria realizem em conjunto um deslocamento com finalidade turística ou de lazer.",
+      "Pessoa(joao) \n Pessoa(maria) \n ◇(viaja(joao) ∧ viaja(maria)) -> ◇(viaja(joao) ∧ viaja(maria))"
     ],
     [
-      "ssss é pintor de tttt",
-      "pintor(ssss,tttt) ∧ pessoa(ssss) ∧ obra(tttt)"
+      "O regimento interno da instituição de ensino estabelece como obrigação compulsória que todos os indivíduos matriculados dediquem-se às atividades acadêmicas e à preparação para as avaliações.",
+      "Pessoa(x) \n Aluno(x) \n □(aluno(x) → estuda(x)) -> □(aluno(x) → estuda(x))"
     ],
     [
-      "uuuu é escultor de vvvv",
-      "escultor(uuuu,vvvv) ∧ pessoa(uuuu) ∧ obra(vvvv)"
+      "Com base em registros históricos e dados climatológicos consistentes, verifica-se que nunca ocorrem eventos de precipitação na região desértica do Atacama, sendo esse um padrão permanente.",
+      "Local(atacama) \n □¬chove(atacama) -> □¬chove(atacama)"
     ],
     [
-      "wwww é diretor de xxxx",
-      "diretor(wwww,xxxx) ∧ pessoa(wwww) ∧ filme(xxxx)"
+      "É um desfecho inevitável no ciclo da existência que todos os seres vivos, em algum momento, experimentarão o fim de sua trajetória biológica, independentemente de suas características individuais.",
+      "Pessoa(todos) \n ◇morte(todos) -> ◇morte(todos)"
     ],
     [
-      "yyyy é ator de zzzz",
-      "ator(yyyy,zzzz) ∧ pessoa(yyyy) ∧ filme(zzzz)"
+      "Existe uma possibilidade legítima, respaldada por análises técnicas e potencial esportivo, de que a seleção nacional de futebol venha a conquistar o título do campeonato mundial em alguma edição futura.",
+      "Evento(campeonato) \n ◇campeao_brasil -> ◇campeao_brasil"
     ],
     [
-      "aaaaa é jogador de bbbbb",
-      "jogador(aaaaa,bbbbb) ∧ pessoa(aaaaa) ∧ esporte(bbbbb)"
+      "O código de trânsito brasileiro proíbe terminantemente que qualquer condutor opere veículo automotor sem portar o documento de permissão para dirigir devidamente expedido pelo órgão competente.",
+      "Pessoa(condutor) \n □¬(dirige ∧ ¬habilitação) -> □¬(dirige ∧ ¬habilitação)"
     ],
     [
-      "ccccc é treinador de ddddd",
-      "treinador(ccccc,ddddd) ∧ pessoa(ccccc) ∧ esporte(ddddd)"
+      "Aos cidadãos que completaram dezesseis anos, a legislação eleitoral faculta a opção de realizar ou não o cadastro e a participação nos pleitos, sendo esse um direito não obrigatório.",
+      "Pessoa(cidadao) \n Idade(16) \n ◇vota ∨ ◇¬vota -> ◇vota ∨ ◇¬vota"
     ],
     [
-      "eeeee é médico de fffff",
-      "medico(eeeee,fffff) ∧ pessoa(eeeee) ∧ pessoa(fffff)"
+      "Dada a superioridade técnica demonstrada ao longo do campeonato, há certeza absoluta de que a equipe rubro-negra será a vencedora da competição nacional.",
+      "Time(flamengo) \n □vence(flamengo) -> □vence(flamengo)"
     ],
     [
-      "ggggg é paciente de hhhhh",
-      "paciente(ggggg,hhhhh) ∧ pessoa(ggggg) ∧ pessoa(hhhhh)"
+      "Estabelece-se como princípio pedagógico fundamental que aquele que se dedica com afinco às atividades de aprendizagem, consequentemente, alcançará o sucesso nas avaliações de proficiência.",
+      "Pessoa(x) \n □(estuda(x) → passa(x)) -> □(estuda(x) → passa(x))"
     ],
     [
-      "iiiii é advogado de jjjjj",
-      "advogado(iiiii,jjjjj) ∧ pessoa(iiiii) ∧ pessoa(jjjjj)"
+      "No campo da estética, postula-se que qualquer manifestação artística que possua qualidades de beleza intrínseca necessariamente provocará reação positiva e apreciação por parte do observador sensível.",
+      "Obra(obra) \n □(bela(obra) → agrada(obra)) -> □(bela(obra) → agrada(obra))"
     ],
     [
-      "kkkkk é cliente de lllll",
-      "cliente(kkkkk,lllll) ∧ pessoa(kkkkk) ∧ pessoa(lllll)"
+      "A ciência atual admite como hipótese não refutada, ainda sem confirmação empírica definitiva, a possibilidade de existência de formas de vida inteligente originárias de outros planetas.",
+      "Evento(vida) \n ◇vida_extraterrestre -> ◇vida_extraterrestre"
     ],
     [
-      "É possível que chova amanhã",
-      "◇chover_amanha"
+      "O contrato social implícito e as constituições democráticas impõem a todos os cidadãos o dever de observar e cumprir o conjunto de normas jurídicas estabelecidas pelo estado.",
+      "Pessoa(cidadao) \n □respeita_leis -> □respeita_leis"
     ],
     [
-      "É necessário estudar para passar no exame",
-      "□(estudar → passar_exame)"
+      "Circunstâncias imprevistas relacionadas à minha condição de saúde ou a obrigações profissionais urgentes podem levar à minha ausência no compromisso agendado para a data de amanhã.",
+      "Pessoa(eu) \n ◇falta(eu, amanha) -> ◇falta(eu, amanha)"
     ],
     [
-      "Pode ser que eu me atrase",
-      "◇atrasar_eu"
+      "No domínio da aritmética fundamental, é verdade necessária e logicamente incontornável que a adição de dois números classificados como ímpares resulta em um número de classificação par.",
+      "Numero(x) \n Numero(y) \n □(impar(x) ∧ impar(y) → par(x+y)) -> □(impar(x) ∧ impar(y) → par(x+y))"
     ],
     [
-      "Deve ser que o sol nasça no leste",
-      "□sol_nasce_leste"
+      "Estudos sismológicos indicam que existe probabilidade mensurável, embora de magnitude variável, de ocorrência de abalo telúrico significativo na região metropolitana da capital paulista.",
+      "Evento(terremoto) \n Local(sp) \n ◇terremoto(sp) -> ◇terremoto(sp)"
     ],
     [
-      "Talvez eu coma pizza hoje",
-      "◇comer_pizza_eu"
+      "Com base na rotação terrestre e no calendário gregoriano, é absolutamente certo que o dia subsequente ao de hoje corresponderá ao quinto dia útil da semana.",
+      "Dia(sexta) \n □amanha_sexta -> □amanha_sexta"
     ],
     [
-      "É obrigatório usar cinto de segurança",
-      "□usar_cinto"
+      "Há uma possibilidade não desprezível, dependendo de uma combinação favorável de fatores, de que minha trajetória profissional alcance amplo reconhecimento e notoriedade pública.",
+      "Pessoa(eu) \n ◇famoso(eu) -> ◇famoso(eu)"
     ],
     [
-      "É possível ganhar na loteria",
-      "◇ganhar_loteria"
+      "Investigações astrobiológicas mantêm em aberto a hipótese de que o planeta vermelho tenha abrigado, ou ainda abrigue, formas microbianas de vida em seu subsolo ou calotas polares.",
+      "Local(marte) \n ◇vida(marte) -> ◇vida(marte)"
     ],
     [
-      "É necessário respirar para viver",
-      "□(respirar → viver)"
+      "Modelos meteorológicos de alta precisão convergem para a alta probabilidade de que o próximo final de semana será marcado por precipitação intensa em toda a faixa litorânea.",
+      "Evento(chuva) \n □chove_fim_semana -> □chove_fim_semana"
     ],
     [
-      "Pode ser que o filme seja bom",
-      "◇filme_bom"
+      "O regulamento interno da instituição educacional estabelece permissão explícita para que os alunos utilizem seus dispositivos móveis de comunicação durante os intervalos entre as aulas.",
+      "Pessoa(aluno) \n Local(sala_aula) \n ◇usa_celular(aluno, sala) -> ◇usa_celular(aluno, sala)"
     ],
     [
-      "Deve ser verdade que 2+2=4",
-      "□(dois_mais_dois_igual_quatro)"
+      "Na taxonomia botânica, define-se como verdade analítica e necessária que qualquer exemplar da espécie classificada como rosa pertence, obrigatoriamente, à categoria superior das angiospermas denominadas flores.",
+      "Planta(x) \n Rosa(x) \n □(rosa(x) → flor(x)) -> □(rosa(x) → flor(x))"
     ],
     [
-      "João sabe que Maria está em casa",
-      "□(João_sabe → Maria_em_casa)"
+      "Há uma possibilidade concreta, considerando o ritmo acelerado das inovações, de que a inteligência artificial e as máquinas venham a exceder as capacidades cognitivas humanas em todas as dimensões.",
+      "Evento(superacao) \n ◇supera_tecnologia -> ◇supera_tecnologia"
     ],
     [
-      "Todos acreditam que a Terra é redonda",
-      "□acredita_todos_terra_redonda"
+      "As normas de conservação de áreas verdes proíbem terminantemente que pessoas transitem ou pisem sobre as superfícies gramadas destinadas à ornamentação e proteção do solo.",
+      "Local(gramado) \n □¬pisa_gramado -> □¬pisa_gramado"
     ],
     [
-      "É proibido fumar aqui",
-      "□¬fumar_aqui"
+      "No horizonte da pesquisa médica, existe a possibilidade auspiciosa de que a comunidade científica desenvolva uma intervenção terapêutica definitiva para enfermidades até então incuráveis.",
+      "Evento(cura) \n ◇encontra_cura -> ◇encontra_cura"
     ],
     [
-      "É permitido estacionar",
-      "◇estacionar"
+      "A legislação antitabagista determina de forma categórica que não é permitido o consumo de derivados do tabaco em ambientes de uso coletivo e espaços fechados.",
+      "Local(fechado) \n □¬fuma_fechado -> □¬fuma_fechado"
     ],
     [
-      "Necessariamente, se chove, então a rua fica molhada",
-      "□(chover → rua_molhada)"
+      "A análise de desempenho e as condições favoráveis indicam que a equipe possui condições concretas de obter o resultado positivo na próxima partida.",
+      "Time(time) \n ◇vence(time) -> ◇vence(time)"
     ],
     [
-      "Possivelmente, João e Maria vão viajar",
-      "◇(viajar_joao ∧ viajar_maria)"
+      "A partir do conhecimento empírico acumulado, infere-se como verdade universal que todos os indivíduos da espécie humana estão sujeitos à finitude biológica.",
+      "Pessoa(x) \n □(homem(x) → mortal(x)) -> □(homem(x) → mortal(x))"
     ],
     [
-      "É obrigatório que todos os alunos estudem",
-      "□(aluno(x) → estudar(x))"
+      "Por definição geométrica, é logicamente impossível que uma figura de quatro lados iguais e ângulos retos possua simultaneamente características de circularidade.",
+      "Forma(quadrado) \n □(quadrado(x) → ¬redondo(x)) -> □(quadrado(x) → ¬redondo(x))"
     ],
     [
-      "Nunca chove no deserto do Atacama",
-      "□¬chover_atacama"
+      "O filósofo grego Sócrates, por sua natureza biológica e pertencimento à espécie humana, enquadra-se necessariamente na categoria dos seres humanos.",
+      "Pessoa(socrates) \n □humano(socrates) -> □humano(socrates)"
     ],
     [
-      "Eventualmente, todos morrem",
-      "◇morrer_todos"
+      "Modelos cosmológicos contemporâneos admitem como hipótese em aberto a possibilidade de que o cosmos não possua limites espaciais discerníveis.",
+      "Cosmo(universo) \n ◇infinito(universo) -> ◇infinito(universo)"
     ],
     [
-      "Em algum momento, o Brasil será campeão",
-      "◇campeao_brasil"
+      "A legislação tributária nacional estabelece como obrigação compulsória de todos os cidadãos que auferem renda acima do limite estabelecido a entrega da declaração anual ao fisco.",
+      "Pessoa(cidadao) \n □declara_ir -> □declara_ir"
     ],
     [
-      "É vedado dirigir sem habilitação",
-      "□¬(dirigir ∧ ¬habilitacao)"
+      "Os critérios médicos estabelecem que pessoas saudáveis, dentro de parâmetros específicos de peso e condições clínicas, estão autorizadas a realizar a doação voluntária de sangue.",
+      "Pessoa(voluntario) \n ◇doa_sangue -> ◇doa_sangue"
     ],
     [
-      "É facultativo votar aos 16 anos",
-      "◇votar_16 ∨ ◇¬votar_16"
+      "Existe uma possibilidade em aberto, dependendo de condições financeiras e disponibilidade de tempo, de que eu realize uma viagem de lazer durante o recesso escolar programado.",
+      "Pessoa(eu) \n ◇viaja(eu, ferias) -> ◇viaja(eu, ferias)"
     ],
     [
-      "Certeza que o Flamengo vence",
-      "□vencer_flamengo"
+      "Na teoria educacional, postula-se como princípio fundamental que todo indivíduo que se engaja em processo sistemático de estudo adquire competências e conhecimentos novos.",
+      "Pessoa(x) \n □(estuda(x) → aprende(x)) -> □(estuda(x) → aprende(x))"
     ],
     [
-      "Quem estuda, passa necessariamente",
-      "□(estudar → passar)"
+      "No campo da lógica e da matemática, admite-se teoricamente a possibilidade de que sistemas formais possam conter proposições que levem a resultados inconsistentes.",
+      "Sistema(sistema) \n ◇contradicao(sistema) -> ◇contradicao(sistema)"
     ],
     [
-      "O que é belo, necessariamente agrada",
-      "□(belo → agrada)"
+      "Uma propriedade física essencial e necessária é que a substância composta por duas moléculas de hidrogênio e uma de oxigênio tem a capacidade inerente de tornar úmidas as superfícies com as quais entra em contato.",
+      "Substancia(agua) \n □(agua → molha) -> □(agua → molha)"
     ],
     [
-      "Talvez exista vida extraterrestre",
-      "◇vida_extraterrestre"
+      "Há uma contingência legítima, baseada em compromissos conflitantes, de que o indivíduo chamado João não compareça ao evento para o qual foi convidado.",
+      "Pessoa(joao) \n ◇¬vem(joao) -> ◇¬vem(joao)"
     ],
     [
-      "É obrigatório respeitar as leis",
-      "□respeitar_leis"
+      "Na matemática fundamental, é verdade necessária e incontestável que a adição da unidade com a unidade produz exatamente o numeral dois.",
+      "Numero(2) \n □(1+1=2) -> □(1+1=2)"
     ],
     [
-      "Possivelmente, vou faltar amanhã",
-      "◇faltar_amanha"
+      "Considerando a estrutura de parentesco, Carlos é tio de Daniela, sendo ele irmão do pai ou da mãe de Daniela, ocupando um lugar de destaque nas relações familiares.",
+      "Pessoa(carlos) \n Pessoa(daniela) \n tio(carlos, daniela) -> Pessoa(carlos) ∧ Pessoa(daniela)"
     ],
     [
-      "Necessariamente, ímpar + ímpar = par",
-      "□(impar(x) ∧ impar(y) → par(x+y))"
+      "Em uma análise genealógica, Érica é sobrinha de Felipe, pois ela é filha do irmão ou irmã de Felipe, estabelecendo um vínculo familiar de segundo grau.",
+      "Pessoa(erica) \n Pessoa(felipe) \n sobrinha(erica, felipe) -> Pessoa(erica) ∧ Pessoa(felipe)"
     ],
     [
-      "Pode ocorrer um terremoto em SP",
-      "◇terremoto_sp"
+      "No contexto de relações espirituais e comunitárias, Gabriel é padrinho de Helena, assumindo compromisso de apoiar e guiar sua afilhada em momentos importantes da vida.",
+      "Pessoa(gabriel) \n Pessoa(helena) \n padrinho(gabriel, helena) -> Pessoa(gabriel) ∧ Pessoa(helena)"
     ],
     [
-      "É certo que amanhã será sexta",
-      "□amanha_sexta"
+      "Em cerimônias religiosas e celebrações familiares, Isabel é madrinha de João, escolhida para exercer papel de tutela espiritual e apoio moral.",
+      "Pessoa(isabel) \n Pessoa(joao) \n madrinha(isabel, joao) -> Pessoa(isabel) ∧ Pessoa(joao)"
     ],
     [
-      "Talvez fique famoso",
-      "◇famoso"
+      "Na árvore genealógica, Lucas é descendente de Mariana, significando que existe uma linha de parentesco que conecta Lucas a Mariana por meio de uma ou mais gerações.",
+      "Pessoa(lucas) \n Pessoa(mariana) \n descendente(lucas, mariana) -> Pessoa(lucas) ∧ Pessoa(mariana)"
     ],
     [
-      "É possível que haja vida em Marte",
-      "◇vida_marte"
+      "Reconstituindo a história familiar, Natália é ancestral de Otávio, ocupando uma posição na linha ascendente que precede Otávio em várias gerações.",
+      "Pessoa(natalia) \n Pessoa(otavio) \n ancestral(natalia, otavio) -> Pessoa(natalia) ∧ Pessoa(otavio)"
     ],
     [
-      "Deve chover no fim de semana",
-      "□chover_fim_semana"
+      "Em um ambiente corporativo, Patrícia é colega de trabalho de Renato, dividindo o mesmo espaço profissional e colaborando em projetos comuns dentro da organização.",
+      "Pessoa(patricia) \n Pessoa(renato) \n colega_trabalho(patricia, renato) -> Pessoa(patricia) ∧ Pessoa(renato)"
     ],
     [
-      "É permitido usar celular na sala",
-      "◇usar_celular_sala"
+      "Na estrutura hierárquica empresarial, Sérgio é supervisor de Tatiana, cabendo a ele orientar, avaliar e coordenar as atividades desempenhadas por ela.",
+      "Pessoa(sergio) \n Pessoa(tatiana) \n supervisor(sergio, tatiana) -> Pessoa(sergio) ∧ Pessoa(tatiana)"
     ],
     [
-      "Toda rosa é necessariamente uma flor",
-      "□(rosa → flor)"
+      "No organograma institucional, Ulisses é subordinado de Vânia, reportando-se a ela e seguindo suas diretrizes e orientações profissionais.",
+      "Pessoa(ulisses) \n Pessoa(vania) \n subordinado(ulisses, vania) -> Pessoa(ulisses) ∧ Pessoa(vania)"
     ],
     [
-      "Eventualmente, a tecnologia nos superará",
-      "◇superar_tecnologia"
+      "Após longo período de economia, Wilson possui um automóvel de luxo, adquirido com recursos próprios e registrado em seu nome no departamento de trânsito.",
+      "Pessoa(wilson) \n Objeto(carro) \n possui(wilson, carro) -> Pessoa(wilson) ∧ Objeto(carro)"
     ],
     [
-      "É proibido pisar na grama",
-      "□¬pisar_grama"
+      "Para seu trabalho de conclusão de curso, Bárbara usa um equipamento de medição de última geração emprestado pelo laboratório de pesquisa.",
+      "Pessoa(barbara) \n Objeto(equipamento) \n usa(barbara, equipamento) -> Pessoa(barbara) ∧ Objeto(equipamento)"
     ],
     [
-      "Possivelmente, encontraremos uma cura",
-      "◇encontrar_cura"
+      "Na antiguidade clássica, um artesão desconhecido criou uma escultura de mármore que se tornaria mundialmente famosa séculos depois.",
+      "Pessoa(artesao) \n Objeto(escultura) \n criou(artesao, escultura) -> Pessoa(artesao) ∧ Objeto(escultura)"
     ],
     [
-      "É vedado fumar em locais fechados",
-      "□¬fumar_fechado"
+      "Machado de Assis escreveu 'Dom Casmurro', obra-prima da literatura brasileira que transcendeu seu tempo e continua sendo objeto de estudo acadêmico.",
+      "Pessoa(machado_assis) \n Obra(dom_casmurro) \n escreveu(machado_assis, dom_casmurro) -> Pessoa(machado_assis) ∧ Obra(dom_casmurro)"
     ],
     [
-      "É possível que o time vença",
-      "◇vencer_time"
+      "Antonio Carlos Jobim compôs 'Garota de Ipanema', canção que se tornou um dos maiores símbolos da bossa nova e da cultura musical brasileira no mundo.",
+      "Pessoa(tom_jobim) \n Obra(garota_ipanema) \n compos(tom_jobim, garota_ipanema) -> Pessoa(tom_jobim) ∧ Obra(garota_ipanema)"
     ],
     [
-      "Todos os homens são mortais",
-      "□(homem → mortal)"
+      "No cinema brasileiro, Fernando Meirelles dirigiu 'Cidade de Deus', filme aclamado pela crítica e indicado ao Oscar de melhor direção.",
+      "Pessoa(meirelles) \n Filme(cidade_deus) \n dirigiu(meirelles, cidade_deus) -> Pessoa(meirelles) ∧ Filme(cidade_deus)"
     ],
     [
-      "Nenhum quadrado é redondo",
-      "□(quadrado → ¬redondo)"
+      "Como engenheira de software, Camila trabalha em uma multinacional de tecnologia, desenvolvendo soluções inovadoras para o setor financeiro.",
+      "Pessoa(camila) \n Organizacao(empresa) \n trabalha_em(camila, empresa) -> Pessoa(camila) ∧ Organizacao(empresa)"
     ],
     [
-      "Sócrates é necessariamente um homem",
-      "□socrates_homem"
+      "Para aprofundar seus conhecimentos em inteligência artificial, Diego estuda em uma universidade de prestígio reconhecida internacionalmente.",
+      "Pessoa(diego) \n Organizacao(universidade) \n estuda_em(diego, universidade) -> Pessoa(diego) ∧ Organizacao(universidade)"
     ],
     [
-      "O universo é infinito, possivelmente",
-      "◇universo_infinito"
+      "No último leilão de arte, um colecionador anônimo comprou uma pintura renascentista por um valor recorde, mantendo a obra em acervo privado.",
+      "Pessoa(colecionador) \n Objeto(pintura) \n comprou(colecionador, pintura) -> Pessoa(colecionador) ∧ Objeto(pintura)"
     ],
     [
-      "É obrigatório declarar imposto de renda",
-      "□declarar_ir"
+      "Um pequeno comerciante vendeu sua coleção de selos raros para financiar o tratamento de saúde de um familiar próximo.",
+      "Pessoa(comerciante) \n Objeto(selos) \n vendeu(comerciante, selos) -> Pessoa(comerciante) ∧ Objeto(selos)"
     ],
     [
-      "É permitido doar sangue",
-      "◇doar_sangue"
+      "Após anos planejando, Ricardo mora em um apartamento no centro da cidade, próximo ao seu local de trabalho e a serviços essenciais.",
+      "Pessoa(ricardo) \n Lugar(apartamento) \n mora(ricardo, apartamento) -> Pessoa(ricardo) ∧ Lugar(apartamento)"
     ],
     [
-      "Talvez eu viaje nas férias",
-      "◇viajar_ferias"
+      "A escritora Clarice Lispector nasceu em Ucrânia, mas sua obra é considerada essencialmente brasileira e marcou profundamente a literatura nacional.",
+      "Pessoa(clarice) \n Lugar(ucrania) \n nasceu_em(clarice, ucrania) -> Pessoa(clarice) ∧ Lugar(ucrania)"
     ],
     [
-      "Deve ser que todos que estudam aprendem",
-      "□(estudar → aprender)"
+      "Durante as férias escolares, a família visitou as ruínas de Machu Picchu, impressionando-se com a grandiosidade da arquitetura inca.",
+      "Pessoa(familia) \n Lugar(machu_picchu) \n visitou(familia, machu_picchu) -> Pessoa(familia) ∧ Lugar(machu_picchu)"
     ],
     [
-      "É possível que haja contradições",
-      "◇contradicao"
+      "Realizando um antigo sonho, o casal viajou para o Japão durante a temporada de floração das cerejeiras.",
+      "Pessoa(casal) \n Lugar(japao) \n viajou(casal, japao) -> Pessoa(casal) ∧ Lugar(japao)"
     ],
     [
-      "Necessariamente, água molha",
-      "□(agua → molha)"
+      "Com uma chave especial, o ourives abriu o antigo cofre que continha joias históricas da família real.",
+      "Pessoa(ourives) \n Objeto(cofre) \n abriu(ourives, cofre) -> Pessoa(ourives) ∧ Objeto(cofre)"
     ],
     [
-      "Pode ser que o João não venha",
-      "◇¬vir_joao"
+      "Após anos de litígio, as partes envolvidas fecharam o acordo comercial com a mediação do tribunal arbitral.",
+      "Pessoa(partes) \n Objeto(acordo) \n fechou(partes, acordo) -> Pessoa(partes) ∧ Objeto(acordo)"
     ],
     [
-      "É certo que 1+1=2",
-      "□(um_mais_um_igual_dois)"
+      "A construtora construiu um edifício residencial com tecnologias sustentáveis e certificação ambiental de alto padrão.",
+      "Pessoa(construtora) \n Objeto(edificio) \n construiu(construtora, edificio) -> Pessoa(construtora) ∧ Objeto(edificio)"
     ],
     [
-      "a é tio de b",
-      "tio(a,b) → pessoa(a) ∧ pessoa(b)"
+      "Um furacão de categoria cinco destruiu completamente a infraestrutura da pequena cidade litorânea.",
+      "Pessoa(furacao) \n Objeto(cidade) \n destruiu(furacao, cidade) -> Pessoa(furacao) ∧ Objeto(cidade)"
     ],
     [
-      "c é sobrinha de d",
-      "sobrinha(c,d) → pessoa(c) ∧ pessoa(d)"
+      "A organização não governamental ajudou milhares de refugiados a reconstruir suas vidas em novo território.",
+      "Pessoa(ong) \n Pessoa(refugiados) \n ajudou(ong, refugiados) -> Pessoa(ong) ∧ Pessoa(refugiados)"
     ],
     [
-      "e é padrinho de f",
-      "padrinho(e,f) → pessoa(e) ∧ pessoa(f)"
+      "A política econômica equivocada prejudicou os pequenos empresários e gerou desemprego em massa.",
+      "Pessoa(politica) \n Pessoa(empresarios) \n prejudicou(politica, empresarios) -> Pessoa(politica) ∧ Pessoa(empresarios)"
     ],
     [
-      "g é madrinha de h",
-      "madrinha(g,h) → pessoa(g) ∧ pessoa(h)"
+      "Em uma sociedade democrática, todo cidadão respeita as instituições e o estado de direito como fundamento da convivência pacífica.",
+      "Pessoa(cidadao) \n Pessoa(instituicoes) \n respeita(cidadao, instituicoes) -> Pessoa(cidadao) ∧ Pessoa(instituicoes)"
     ],
     [
-      "i é descendente de j",
-      "descendente(i,j) → pessoa(i) ∧ pessoa(j)"
+      "A comunidade acadêmica admira profundamente a trajetória da pesquisadora que dedicou sua vida à ciência básica.",
+      "Pessoa(comunidade) \n Pessoa(pesquisadora) \n admira(comunidade, pesquisadora) -> Pessoa(comunidade) ∧ Pessoa(pesquisadora)"
     ],
     [
-      "k é ancestral de l",
-      "ancestral(k,l) → pessoa(k) ∧ pessoa(l)"
+      "Uma mãe ama incondicionalmente seu filho, independentemente de quaisquer circunstâncias ou desafios que a vida apresente.",
+      "Pessoa(mae) \n Pessoa(filho) \n ama(mae, filho) -> Pessoa(mae) ∧ Pessoa(filho)"
     ],
     [
-      "m é colega de trabalho de n",
-      "colega_trabalho(m,n) → pessoa(m) ∧ pessoa(n)"
+      "Após divergências políticas irreconciliáveis, o grupo odeia seu antigo líder que traiu os princípios do movimento.",
+      "Pessoa(grupo) \n Pessoa(lider) \n odeia(grupo, lider) -> Pessoa(grupo) ∧ Pessoa(lider)"
     ],
     [
-      "o é supervisor de p",
-      "supervisor(o,p) → pessoa(o) ∧ pessoa(p)"
+      "O paciente confia plenamente no médico que o acompanha há mais de duas décadas e já realizou diversos procedimentos bem-sucedidos.",
+      "Pessoa(paciente) \n Pessoa(medico) \n confia(paciente, medico) -> Pessoa(paciente) ∧ Pessoa(medico)"
     ],
     [
-      "q é subordinado de r",
-      "subordinado(q,r) → pessoa(q) ∧ pessoa(r)"
+      "O auditor desconfia das movimentações financeiras atípicas detectadas no sistema de controle interno da empresa.",
+      "Pessoa(auditor) \n Pessoa(gestor) \n desconfia(auditor, gestor) -> Pessoa(auditor) ∧ Pessoa(gestor)"
     ],
     [
-      "s possui t",
-      "possui(s,t) → pessoa(s) ∧ objeto(t)"
+      "Um professor experiente ensina conceitos complexos de maneira acessível, utilizando analogias e exemplos práticos do cotidiano.",
+      "Pessoa(professor) \n Pessoa(aluno) \n ensina(professor, aluno) -> Pessoa(professor) ∧ Pessoa(aluno)"
     ],
     [
-      "u usa v",
-      "usa(u,v) → pessoa(u) ∧ objeto(v)"
+      "O estagiário aprende rapidamente com seu supervisor, absorvendo conhecimentos técnicos e comportamentais essenciais.",
+      "Pessoa(estagiario) \n Pessoa(supervisor) \n aprende(estagiario, supervisor) -> Pessoa(estagiario) ∧ Pessoa(supervisor)"
     ],
     [
-      "w criou x",
-      "criou(w,x) → pessoa(w) ∧ objeto(x)"
+      "Um CEO visionário lidera uma equipe multidisciplinar composta por profissionais de diferentes nacionalidades e expertises.",
+      "Pessoa(ceo) \n Grupo(equipe) \n lidera(ceo, equipe) -> Pessoa(ceo) ∧ Grupo(equipe)"
     ],
     [
-      "y escreveu z",
-      "escreveu(y,z) → pessoa(y) ∧ obra(z)"
+      "Centenas de atletas participam do maior evento esportivo do planeta, representando seus países e competindo em diversas modalidades.",
+      "Pessoa(atletas) \n Evento(olimpiadas) \n participa(atletas, olimpiadas) -> Pessoa(atletas) ∧ Evento(olimpiadas)"
     ],
     [
-      "aa compôs bb",
-      "compos(aa,bb) → pessoa(aa) ∧ obra(bb)"
+      "Uma produtora cultural organiza um festival de música independente que reúne artistas emergentes de todo o continente.",
+      "Pessoa(produtora) \n Evento(festival) \n organiza(produtora, festival) -> Pessoa(produtora) ∧ Evento(festival)"
     ],
     [
-      "cc dirigiu dd",
-      "dirigiu(cc,dd) → pessoa(cc) ∧ filme(dd)"
+      "Milhares de espectadores assistem à final do campeonato em um estádio lotado e também pela transmissão televisiva.",
+      "Pessoa(espectadores) \n Evento(final) \n assiste(espectadores, final) -> Pessoa(espectadores) ∧ Evento(final)"
     ],
     [
-      "ee trabalha em ff",
-      "trabalha_em(ee,ff) → pessoa(ee) ∧ organizacao(ff)"
+      "Um bibliófilo ávido lê obras clássicas da literatura universal em seu tempo livre, enriquecendo seu repertório cultural.",
+      "Pessoa(bibliofilo) \n Obra(livro) \n le(bibliofilo, livro) -> Pessoa(bibliofilo) ∧ Obra(livro)"
     ],
     [
-      "gg estuda em hh",
-      "estuda_em(gg,hh) → pessoa(gg) ∧ organizacao(hh)"
+      "A autora escreve um novo romance inspirado em acontecimentos históricos e em memórias familiares preservadas por gerações.",
+      "Pessoa(autora) \n Obra(romance) \n escreve(autora, romance) -> Pessoa(autora) ∧ Obra(romance)"
     ],
     [
-      "ii comprou jj",
-      "comprou(ii,jj) → pessoa(ii) ∧ objeto(jj)"
+      "Um artista plástico pinta um mural de grandes dimensões em uma parede do centro urbano, transformando a paisagem da cidade.",
+      "Pessoa(artista) \n Obra(mural) \n pinta(artista, mural) -> Pessoa(artista) ∧ Obra(mural)"
     ],
     [
-      "kk vendeu ll",
-      "vendeu(kk,ll) → pessoa(kk) ∧ objeto(ll)"
+      "Uma ilustradora desenha personagens para uma graphic novel que aborda temas de diversidade e inclusão social.",
+      "Pessoa(ilustradora) \n Obra(personagens) \n desenha(ilustradora, personagens) -> Pessoa(ilustradora) ∧ Obra(personagens)"
     ],
     [
-      "mm mora em nn",
-      "mora(mm,nn) → pessoa(mm) ∧ lugar(nn)"
+      "Uma cantora lírica canta árias de óperas renomadas em teatros históricos da Europa, recebendo aclamação da crítica especializada.",
+      "Pessoa(cantora) \n Musica(arias) \n canta(cantora, arias) -> Pessoa(cantora) ∧ Musica(arias)"
     ],
     [
-      "oo nasceu em pp",
-      "nasceu_em(oo,pp) → pessoa(oo) ∧ lugar(pp)"
+      "Um músico virtuoso toca um violino Stradivarius do século XVIII, produzindo um som de beleza incomparável.",
+      "Pessoa(musico) \n Instrumento(violino) \n toca(musico, violino) -> Pessoa(musico) ∧ Instrumento(violino)"
     ],
     [
-      "qq visitou rr",
-      "visitou(qq,rr) → pessoa(qq) ∧ lugar(rr)"
+      "Um motorista profissional dirige um caminhão de carga pesada em estradas perigosas da região amazônica.",
+      "Pessoa(motorista) \n Veiculo(caminhao) \n dirige(motorista, caminhao) -> Pessoa(motorista) ∧ Veiculo(caminhao)"
     ],
     [
-      "ss viajou para tt",
-      "viajou(ss,tt) → pessoa(ss) ∧ lugar(tt)"
+      "Um piloto de testes pilota um protótipo de avião supersônico em condições extremas para avaliar seus limites.",
+      "Pessoa(piloto) \n Veiculo(aviao) \n pilota(piloto, aviao) -> Pessoa(piloto) ∧ Veiculo(aviao)"
     ],
     [
-      "uu abriu vv",
-      "abriu(uu,vv) → pessoa(uu) ∧ objeto(vv)"
+      "As previsões meteorológicas indicam a possibilidade de precipitação intensa na região sudeste nas próximas horas.",
+      "Evento(chuva) \n ◇chuva_hoje -> ◇chuva_hoje"
     ],
     [
-      "ww fechou xx",
-      "fechou(ww,xx) → pessoa(ww) ∧ objeto(xx)"
+      "Com a chegada do verão, existe a possibilidade de que as temperaturas ultrapassem os recordes históricos.",
+      "Evento(calor) \n ◇calor_extremo -> ◇calor_extremo"
     ],
     [
-      "yy construiu zz",
-      "construiu(yy,zz) → pessoa(yy) ∧ objeto(zz)"
+      "Devido à ausência de trânsito, há a possibilidade de que ele chegue ao aeroporto antes do horário previsto.",
+      "Pessoa(ele) \n ◇chega(ele, cedo) -> ◇chega(ele, cedo)"
     ],
     [
-      "aaa destruiu bbb",
-      "destruiu(aaa,bbb) → pessoa(aaa) ∧ objeto(bbb)"
+      "Se ela se dedicar integralmente aos estudos nas próximas semanas, é possível que obtenha êxito na seleção.",
+      "Pessoa(ela) \n ◇estuda(ela) -> ◇estuda(ela)"
     ],
     [
-      "ccc ajudou ddd",
-      "ajudou(ccc,ddd) → pessoa(ccc) ∧ pessoa(ddd)"
+      "No contexto econômico atual, é necessário que as pessoas exerçam atividade laboral para garantir sua subsistência.",
+      "Pessoa(pessoa) \n □(trabalha(pessoa) → vive(pessoa)) -> □(trabalha(pessoa) → vive(pessoa))"
     ],
     [
-      "eee prejudicou fff",
-      "prejudicou(eee,fff) → pessoa(eee) ∧ pessoa(fff)"
+      "Do ponto de vista fisiológico, é necessário que o organismo durma para que ocorra a restauração das funções cognitivas e físicas.",
+      "Pessoa(pessoa) \n □(dorme(pessoa) → descansa(pessoa)) -> □(dorme(pessoa) → descansa(pessoa))"
     ],
     [
-      "ggg respeita hhh",
-      "respeita(ggg,hhh) → pessoa(ggg) ∧ pessoa(hhh)"
+      "Com base nas nuvens escuras no horizonte, João acredita firmemente que ocorrerá uma tempestade nas próximas horas.",
+      "Pessoa(joao) \n Crenca(joao, chover) -> B(joao, chover)"
     ],
     [
-      "iii admira jjj",
-      "admira(iii,jjj) → pessoa(iii) ∧ pessoa(jjj)"
+      "Após revisar todo o conteúdo, Maria tem a certeza de que se preparou adequadamente para a avaliação.",
+      "Pessoa(maria) \n Conhecimento(maria, estudou) -> K(maria, estudou)"
     ],
     [
-      "kkk ama lll",
-      "ama(kkk,lll) → pessoa(kkk) ∧ pessoa(lll)"
+      "Na classificação biológica, todo indivíduo classificado como felino pertence necessariamente à categoria dos mamíferos.",
+      "Animal(x) \n □(gato(x) → mamifero(x)) -> □(gato(x) → mamifero(x))"
     ],
     [
-      "mmm odeia nnn",
-      "odeia(mmm,nnn) → pessoa(mmm) ∧ pessoa(nnn)"
+      "É uma característica intrínseca da espécie canina que todos os seus representantes emitem vocalização como forma de comunicação.",
+      "Animal(x) \n □(cao(x) → late(x)) -> □(cao(x) → late(x))"
     ],
     [
-      "ooo confia em ppp",
-      "confia(ooo,ppp) → pessoa(ooo) ∧ pessoa(ppp)"
+      "No conjunto de estudantes, existe pelo menos um indivíduo que obteve sucesso nas avaliações finais do período letivo.",
+      "Pessoa(x) \n ∃x (aluno(x) ∧ passou(x)) -> ∃x (aluno(x) ∧ passou(x))"
     ],
     [
-      "qqq desconfia de rrr",
-      "desconfia(qqq,rrr) → pessoa(qqq) ∧ pessoa(rrr)"
+      "No domínio da matemática, há pelo menos um número que pode ser dividido igualmente por dois.",
+      "Numero(x) \n ∃x par(x) -> ∃x par(x)"
     ],
     [
-      "sss ensina ttt",
-      "ensina(sss,ttt) → pessoa(sss) ∧ pessoa(ttt)"
+      "Por definição biológica, nenhum ser classificado como peixe possui a capacidade de voar através do ar.",
+      "Animal(x) \n □(peixe(x) → ¬voa(x)) -> □(peixe(x) → ¬voa(x))"
     ],
     [
-      "uuu aprende com vvv",
-      "aprende(uuu,vvv) → pessoa(uuu) ∧ pessoa(vvv)"
+      "Todos os seres humanos, independentemente de quaisquer características, estão sujeitos à finitude existencial.",
+      "Pessoa(x) \n □(humano(x) → ¬imortal(x)) -> □(humano(x) → ¬imortal(x))"
     ],
     [
-      "www lidera xxx",
-      "lidera(www,xxx) → pessoa(www) ∧ grupo(xxx)"
+      "Na carreira docente, todo profissional que ocupa o cargo de professor tem a responsabilidade de transmitir conhecimento.",
+      "Pessoa(x) \n □(professor(x) → ensina(x)) -> □(professor(x) → ensina(x))"
     ],
     [
-      "yyy participa de zzz",
-      "participa(yyy,zzz) → pessoa(yyy) ∧ evento(zzz)"
+      "Na trajetória educacional, todo indivíduo matriculado tem como função primordial a aquisição de novos conhecimentos.",
+      "Pessoa(x) \n □(aluno(x) → aprende(x)) -> □(aluno(x) → aprende(x))"
     ],
     [
-      "aaaa organiza bbbb",
-      "organiza(aaaa,bbbb) → pessoa(aaaa) ∧ evento(bbbb)"
+      "No processo de aprendizagem, verifica-se que o engajamento nos estudos acarreta necessariamente a aquisição de competências.",
+      "Pessoa(x) \n estudar → aprender -> estudar → aprender"
     ],
     [
-      "cccc assiste dddd",
-      "assiste(cccc,dddd) → pessoa(cccc) ∧ evento(dddd)"
+      "Uma lei física observável determina que a precipitação atmosférica resulta inevitavelmente na umidade das superfícies expostas.",
+      "Evento(x) \n chover → molhar -> chover → molhar"
     ],
     [
-      "eeee lê ffff",
-      "le(eeee,ffff) → pessoa(eeee) ∧ obra(ffff)"
+      "A legislação tributária estabelece como obrigação compulsória o recolhimento dos tributos devidos por todos os cidadãos.",
+      "Pessoa(cidadao) \n □paga_impostos -> □paga_impostos"
     ],
     [
-      "gggg escreve hhhh",
-      "escreve(gggg,hhhh) → pessoa(gggg) ∧ obra(hhhh)"
+      "Nas democracias contemporâneas, espera-se que todos os cidadãos cumpram as normas estabelecidas pelo estado de direito.",
+      "Pessoa(cidadao) \n □obedece_lei -> □obedece_lei"
     ],
     [
-      "iiii pinta jjjj",
-      "pinta(iiii,jjjj) → pessoa(iiii) ∧ obra(jjjj)"
+      "A legislação ambiental permite que os cidadãos utilizem os parques públicos para a prática de atividades físicas ao ar livre.",
+      "Pessoa(cidadao) \n ◇corre_parque -> ◇corre_parque"
     ],
     [
-      "kkkk desenha llll",
-      "desenha(kkkk,llll) → pessoa(kkkk) ∧ obra(llll)"
+      "As instituições de ensino oferecem a possibilidade de que os estudantes realizem suas atividades acadêmicas no período noturno.",
+      "Pessoa(estudante) \n ◇estuda_noite -> ◇estuda_noite"
     ],
     [
-      "mmmm canta nnnn",
-      "canta(mmmm,nnnn) → pessoa(mmmm) ∧ musica(nnnn)"
+      "O código penal e os princípios éticos universais proíbem terminantemente que alguém se aproprie de bens alheios mediante violência ou grave ameaça.",
+      "Pessoa(x) \n □¬rouba(x) -> □¬rouba(x)"
     ],
     [
-      "oooo toca pppp",
-      "toca(oooo,pppp) → pessoa(oooo) ∧ instrumento(pppp)"
+      "A conduta ética e a honestidade pessoal exigem que o indivíduo se abstenha de proferir inverdades com intenção de prejudicar.",
+      "Pessoa(x) \n □¬mente(x) -> □¬mente(x)"
     ],
     [
-      "qqqq dirige rrrr",
-      "dirige(qqqq,rrrr) → pessoa(qqqq) ∧ veiculo(rrrr)"
+      "As condições climáticas instáveis podem ocasionar a ocorrência de precipitação significativa em curto espaço de tempo.",
+      "Evento(chuva) \n ◇haver_chuva -> ◇haver_chuva"
     ],
     [
-      "ssss pilota tttt",
-      "pilota(ssss,tttt) → pessoa(ssss) ∧ veiculo(tttt)"
+      "A formação de sistemas de baixa pressão atmosférica pode resultar em episódios de ventos fortes e tempestades.",
+      "Evento(vento) \n ◇haver_vento -> ◇haver_vento"
     ],
     [
-      "É possível que chova hoje",
-      "◇chover_hoje"
+      "Na teoria dos números, é verdade necessária que o numeral dois apresenta a propriedade de ser divisível por dois sem deixar resto.",
+      "Numero(2) \n □par(2) -> □par(2)"
     ],
     [
-      "É possível que faça calor",
-      "◇calor"
+      "A definição matemática estabelece que o numeral três não é divisível por dois, caracterizando-o como número ímpar.",
+      "Numero(3) \n □impar(3) -> □impar(3)"
     ],
     [
-      "Talvez ele chegue cedo",
-      "◇chegar(eles,cedo)"
+      "A astrobiologia considera como hipótese em aberto a existência de formas de vida em outros sistemas planetários.",
+      "Evento(vida) \n ◇∃x vida_extraterrestre(x) -> ◇∃x vida_extraterrestre(x)"
     ],
     [
-      "Pode ser que ela estude",
-      "◇estudar(ela)"
+      "Investigações científicas recentes sugerem a possibilidade de existência de água líquida em subsolos marcianos.",
+      "Evento(agua) \n Local(marte) \n ◇∃x agua_marte(x) -> ◇∃x agua_marte(x)"
     ],
     [
-      "É necessário trabalhar para viver",
-      "□(trabalhar → viver)"
+      "A definição aritmética estabelece que todo número que possui a propriedade de paridade é múltiplo de dois.",
+      "Numero(x) \n □(par(x) → divisivel(x,2)) -> □(par(x) → divisivel(x,2))"
     ],
     [
-      "É necessário dormir para descansar",
-      "□(dormir → descansar)"
+      "Na hierarquia dos números inteiros, se um número é múltiplo de quatro, então ele possui necessariamente a propriedade da paridade.",
+      "Numero(x) \n □(multiplo(x,4) → par(x)) -> □(multiplo(x,4) → par(x))"
     ],
     [
-      "João acredita que vai chover",
-      "B(joao, chover)"
+      "No corpo docente de uma universidade de pesquisa, há pelo menos um professor que também atua como pesquisador produtivo.",
+      "Pessoa(x) \n ∃x (professor(x) ∧ pesquisador(x)) -> ∃x (professor(x) ∧ pesquisador(x))"
     ],
     [
-      "Maria sabe que estudou",
-      "K(maria, estudou)"
+      "Entre os estudantes de pós-graduação, existe pelo menos um que concilia suas atividades acadêmicas com o mercado de trabalho.",
+      "Pessoa(x) \n ∃x (aluno(x) ∧ trabalha(x)) -> ∃x (aluno(x) ∧ trabalha(x))"
     ],
     [
-      "Todos os gatos são mamíferos",
-      "∀x (gato(x) → mamifero(x))"
+      "O princípio de causalidade educacional estabelece que, para qualquer indivíduo, o engajamento nos estudos resulta em aprovação nas avaliações.",
+      "Pessoa(x) \n □(estuda(x) → passa(x)) -> □(estuda(x) → passa(x))"
     ],
     [
-      "Todos os cães latem",
-      "∀x (cao(x) → late(x))"
+      "Na complexa teia de relações familiares dos Monteiro, temos que Arthur é tio-avô de Bento, uma vez que Arthur é irmão do avô de Bento, estabelecendo um parentesco colateral de três gerações de distância.",
+      "Pessoa(arthur) \n Pessoa(bento) \n tio_avo(arthur, bento) -> Pessoa(arthur) ∧ Pessoa(bento)"
     ],
     [
-      "Algum aluno passou",
-      "∃x (aluno(x) ∧ passou(x))"
+      "Considerando a linhagem materna dos Oliveira, verifica-se que Camila é bisneta de Davi, pois ela é filha da neta de Davi, representando uma descendência direta em quarta geração.",
+      "Pessoa(camila) \n Pessoa(davi) \n bisneta(camila, davi) -> Pessoa(camila) ∧ Pessoa(davi)"
     ],
     [
-      "Existe um número par",
-      "∃x par(x)"
+      "No contexto de afinidade gerada por uniões sucessivas, Elisa é meia-irmã de Felipe, compartilhando apenas um dos genitores em comum, seja o pai ou a mãe.",
+      "Pessoa(elisa) \n Pessoa(felipe) \n meia_irma(elisa, felipe) -> Pessoa(elisa) ∧ Pessoa(felipe)"
     ],
     [
-      "Nenhum peixe voa",
-      "∀x (peixe(x) → ¬voa(x))"
+      "Após o falecimento de seu primeiro cônjuge, Gustavo tornou-se viúvo e posteriormente contraiu novas núpcias, mantendo vínculos de afeto com a memória de Helena.",
+      "Pessoa(gustavo) \n Pessoa(helena) \n viuvo(gustavo, helena) -> Pessoa(gustavo) ∧ Pessoa(helena)"
     ],
     [
-      "Nenhum humano é imortal",
-      "∀x (humano(x) → ¬imortal(x))"
+      "Na constelação familiar dos Pereiras, Igor é primo em segundo grau de Júlia, significando que os avós de Igor são irmãos dos avós de Júlia.",
+      "Pessoa(igor) \n Pessoa(julia) \n primo_segundo_grau(igor, julia) -> Pessoa(igor) ∧ Pessoa(julia)"
     ],
     [
-      "Todo professor ensina",
-      "∀x (professor(x) → ensina(x))"
+      "Em uma complexa disputa de terras no interior do país, o fazendeiro Leandro é litigante contra o estado, reivindicando a posse de áreas que considera suas por direito hereditário.",
+      "Pessoa(leandro) \n Pessoa(estado) \n litigante(leandro, estado) -> Pessoa(leandro) ∧ Pessoa(estado)"
     ],
     [
-      "Todo aluno aprende",
-      "∀x (aluno(x) → aprende(x))"
+      "No âmbito do direito sucessório, Mariana é herdeira universal de Nestor, cabendo a ela a totalidade dos bens deixados por seu falecido tio, conforme testamento lavrado em cartório.",
+      "Pessoa(mariana) \n Pessoa(nestor) \n herdeira_universal(mariana, nestor) -> Pessoa(mariana) ∧ Pessoa(nestor)"
     ],
     [
-      "Se estuda, então aprende",
-      "estudar → aprender"
+      "Em uma relação de tutela legal, Otávio é curador de Paula, pois ela foi judicialmente declarada incapaz de gerir seus próprios negócios e necessita de assistência permanente.",
+      "Pessoa(otavio) \n Pessoa(paula) \n curador(otavio, paula) -> Pessoa(otavio) ∧ Pessoa(paula)"
     ],
     [
-      "Se chove, então molha",
-      "chover → molhar"
+      "Na estrutura corporativa da maior empresa de tecnologia do país, Ricardo é diretor-presidente de Sofia, reportando-se a ela como membro do conselho de administração.",
+      "Pessoa(ricardo) \n Pessoa(sofia) \n diretor_presidente(ricardo, sofia) -> Pessoa(ricardo) ∧ Pessoa(sofia)"
     ],
     [
-      "É obrigatório pagar impostos",
-      "□pagar_impostos"
+      "No ambiente acadêmico da pós-graduação, Tatiana é orientadora de Ulisses, supervisionando sua pesquisa de doutorado em física quântica aplicada.",
+      "Pessoa(tatiana) \n Pessoa(ulisses) \n orientadora(tatiana, ulisses) -> Pessoa(tatiana) ∧ Pessoa(ulisses)"
     ],
     [
-      "É obrigatório obedecer a lei",
-      "□obedecer_lei"
+      "Em um julgamento histórico no Supremo Tribunal, a ministra Vanessa é relatora de um processo que trata de direitos fundamentais e limites da atuação estatal.",
+      "Pessoa(vanessa) \n Processo(processo) \n relatora(vanessa, processo) -> Pessoa(vanessa) ∧ Processo(processo)"
     ],
     [
-      "É permitido correr no parque",
-      "◇correr_parque"
+      "Na cadeia produtiva do agronegócio, o produtor rural Wilson é fornecedor exclusivo de Xavier, abastecendo suas indústrias de processamento de grãos.",
+      "Pessoa(wilson) \n Pessoa(xavier) \n fornecedor(wilson, xavier) -> Pessoa(wilson) ∧ Pessoa(xavier)"
     ],
     [
-      "É permitido estudar à noite",
-      "◇estudar_noite"
+      "Em uma relação de franquia empresarial, Yara é franqueada de Zélio, operando uma unidade de sua rede de fast food sob contrato de licenciamento de marca.",
+      "Pessoa(yara) \n Pessoa(zelio) \n franqueada(yara, zelio) -> Pessoa(yara) ∧ Pessoa(zelio)"
     ],
     [
-      "É proibido roubar",
-      "□¬roubar"
+      "No contexto esportivo de alto rendimento, o técnico Abel é mentor de Bruno, tendo descoberto seu talento ainda na infância e conduzido toda sua formação profissional.",
+      "Pessoa(abel) \n Pessoa(bruno) \n mentor(abel, bruno) -> Pessoa(abel) ∧ Pessoa(bruno)"
     ],
     [
-      "É proibido mentir",
-      "□¬mentir"
+      "Em uma relação artística frutífera, a coreógrafa Carla é colaboradora de Danilo, com quem já criou mais de dez espetáculos de dança contemporânea aclamados pela crítica.",
+      "Pessoa(carla) \n Pessoa(danilo) \n colaboradora(carla, danilo) -> Pessoa(carla) ∧ Pessoa(danilo)"
     ],
     [
-      "Possivelmente haverá chuva",
-      "◇haver_chuva"
+      "No sistema de justiça criminal, o promotor Eduardo é acusador de Flávia, imputando-lhe a prática de crimes contra a administração pública e lavagem de dinheiro.",
+      "Pessoa(eduardo) \n Pessoa(flavia) \n acusador(eduardo, flavia) -> Pessoa(eduardo) ∧ Pessoa(flavia)"
     ],
     [
-      "Possivelmente haverá vento",
-      "◇haver_vento"
+      "Em uma relação de defesa legal, a advogada Gabriela é patrona de Henrique, representando seus interesses em um contencioso cível de alta complexidade.",
+      "Pessoa(gabriela) \n Pessoa(henrique) \n patrona(gabriela, henrique) -> Pessoa(gabriela) ∧ Pessoa(henrique)"
     ],
     [
-      "Necessariamente 2 é par",
-      "□par(2)"
+      "No contexto diplomático internacional, a embaixadora Isabel é representante de João perante a Organização das Nações Unidas, defendendo os interesses de sua nação.",
+      "Pessoa(isabel) \n Pessoa(joao) \n representante(isabel, joao) -> Pessoa(isabel) ∧ Pessoa(joao)"
     ],
     [
-      "Necessariamente 3 é ímpar",
-      "□impar(3)"
+      "Em uma relação de patrocínio esportivo, a empresa KLM é patrocinadora de Laura, custeando sua preparação olímpica em troca de exposição de sua marca.",
+      "Pessoa(klm) \n Pessoa(laura) \n patrocinadora(klm, laura) -> Pessoa(klm) ∧ Pessoa(laura)"
     ],
     [
-      "Talvez exista vida em outro planeta",
-      "◇∃x vida(x)"
+      "Na estrutura hierárquica da igreja católica, o cardeal Miguel é superior eclesiástico de Nestor, com autoridade canônica sobre sua diocese.",
+      "Pessoa(miguel) \n Pessoa(nestor) \n superior_eclesiastico(miguel, nestor) -> Pessoa(miguel) ∧ Pessoa(nestor)"
     ],
     [
-      "Talvez exista água em Marte",
-      "◇∃x agua(x)"
+      "Em uma relação de mecenato cultural, a fundação Olavo é benfeitora de Pablo, viabilizando financeiramente sua obra literária de caráter experimental.",
+      "Pessoa(olavo) \n Pessoa(pablo) \n benfeitor(olavo, pablo) -> Pessoa(olavo) ∧ Pessoa(pablo)"
     ],
     [
-      "Todo número par é divisível por 2",
-      "∀x (par(x) → divisivel(x,2))"
+      "No ambiente corporativo de startups, a investidora Quintina é sócia de Ricardo, compartilhando o capital social e as decisões estratégicas do negócio.",
+      "Pessoa(quintina) \n Pessoa(ricardo) \n socia(quintina, ricardo) -> Pessoa(quintina) ∧ Pessoa(ricardo)"
     ],
     [
-      "Todo múltiplo de 4 é par",
-      "∀x (multiplo(x,4) → par(x))"
+      "Em uma relação de concorrência mercadológica, as empresas Sabrina e Telma são concorrentes diretas, disputando o mesmo nicho de consumidores no setor de cosméticos.",
+      "Pessoa(sabrina) \n Pessoa(telma) \n concorrente(sabrina, telma) -> Pessoa(sabrina) ∧ Pessoa(telma)"
     ],
     [
-      "Algum professor é pesquisador",
-      "∃x (professor(x) ∧ pesquisador(x))"
+      "No contexto de parceria comercial, as companhias Urbano e Valéria são coligadas, compartilhando interesses recíprocos e participações acionárias cruzadas.",
+      "Pessoa(urbano) \n Pessoa(valeria) \n coligada(urbano, valeria) -> Pessoa(urbano) ∧ Pessoa(valeria)"
     ],
     [
-      "Algum aluno trabalha",
-      "∃x (aluno(x) ∧ trabalha(x))"
+      "Em uma relação de subcontratação, a construtora Wagner é subordinada de Xavier, executando serviços terceirizados em suas obras de infraestrutura.",
+      "Pessoa(wagner) \n Pessoa(xavier) \n subcontratada(wagner, xavier) -> Pessoa(wagner) ∧ Pessoa(xavier)"
     ],
     [
-      "Se alguém estuda, então passa",
-      "∀x (estudar(x) → passar(x))"
+      "No âmbito da pesquisa científica, a universidade Yale é instituição de vínculo de Zara, onde ela concluiu seu pós-doutorado em neurociência comportamental.",
+      "Pessoa(yale) \n Pessoa(zara) \n instituicao_vinculo(yale, zara) -> Pessoa(yale) ∧ Pessoa(zara)"
+    ],
+    [
+      "Em uma relação de responsabilidade parental ampliada, a avó materna Ana é guardiã de Bernardo, criando-o desde tenra idade após o falecimento de seus pais.",
+      "Pessoa(ana) \n Pessoa(bernardo) \n guardia(ana, bernardo) -> Pessoa(ana) ∧ Pessoa(bernardo)"
+    ],
+    [
+      "Na constelação familiar dos descendentes de imigrantes italianos, Carlos é patriarca de uma linhagem que já se estende por cinco gerações no sul do Brasil.",
+      "Pessoa(carlos) \n Grupo(familia) \n patriarca(carlos, familia) -> Pessoa(carlos) ∧ Grupo(familia)"
+    ],
+    [
+      "Em uma relação de sucessão empresarial, Denise é sucessora de Eduardo, assumindo o controle acionário e a gestão do conglomerado familiar.",
+      "Pessoa(denise) \n Pessoa(eduardo) \n sucessora(denise, eduardo) -> Pessoa(denise) ∧ Pessoa(eduardo)"
+    ],
+    [
+      "No contexto de laços comunitários, o líder religioso Francisco é guia espiritual de Gerônimo, oferecendo aconselhamento e suporte em momentos de crise existencial.",
+      "Pessoa(francisco) \n Pessoa(geronimo) \n guia_espiritual(francisco, geronimo) -> Pessoa(francisco) ∧ Pessoa(geronimo)"
+    ],
+    [
+      "Após anos de amizade construída em movimentos sociais, Helena é camarada de Inácio, compartilhando ideais políticos e lutas por direitos humanos.",
+      "Pessoa(helena) \n Pessoa(inacio) \n camarada(helena, inacio) -> Pessoa(helena) ∧ Pessoa(inacio)"
+    ],
+    [
+      "No contexto acadêmico, a professora emérita Joana é referência teórica para Lúcio, cuja tese de doutorado foi profundamente influenciada por suas obras.",
+      "Pessoa(joana) \n Pessoa(lucio) \n referencia_teorica(joana, lucio) -> Pessoa(joana) ∧ Pessoa(lucio)"
+    ],
+    [
+      "Em uma relação de intermediação profissional, a agente Marisa é representante comercial de Natan, captando oportunidades de trabalho para ele no mercado publicitário.",
+      "Pessoa(marisa) \n Pessoa(natan) \n representante_comercial(marisa, natan) -> Pessoa(marisa) ∧ Pessoa(natan)"
+    ],
+    [
+      "No sistema judiciário, o desembargador Olavo é revisor de Paulo, examinando os recursos interpostos contra as decisões proferidas pelo juiz de primeira instância.",
+      "Pessoa(olavo) \n Pessoa(paulo) \n revisor(olavo, paulo) -> Pessoa(olavo) ∧ Pessoa(paulo)"
+    ],
+    [
+      "Em uma relação de parceria científica, as pesquisadoras Quésia e Renata são colaboradoras, coautoras de mais de trinta artigos publicados em periódicos de alto impacto.",
+      "Pessoa(quesia) \n Pessoa(renata) \n colaboradora(quesia, renata) -> Pessoa(quesia) ∧ Pessoa(renata)"
+    ],
+    [
+      "No contexto de relações internacionais, a chanceler Sônia é negociadora-chefe do Tratado de Cooperação Amazônica, representando os interesses de sua nação.",
+      "Pessoa(sonia) \n Tratado(tratado) \n negociadora_chefe(sonia, tratado) -> Pessoa(sonia) ∧ Tratado(tratado)"
+    ],
+    [
+      "Em uma relação de fidúcia e confiança, o banco Itaú é fiduciário de Túlio, administrando seu patrimônio conforme as cláusulas estabelecidas no contrato de trust.",
+      "Pessoa(banco) \n Pessoa(tulio) \n fiduciario(banco, tulio) -> Pessoa(banco) ∧ Pessoa(tulio)"
+    ],
+    [
+      "No contexto esportivo, o preparador físico Ubiratan é responsável pela condição atlética de Vitória, elaborando programas de treinamento específicos para sua modalidade.",
+      "Pessoa(ubiratan) \n Pessoa(vitoria) \n preparador_fisico(ubiratan, vitoria) -> Pessoa(ubiratan) ∧ Pessoa(vitoria)"
+    ],
+    [
+      "Em uma relação de sucessão dinástica em um pequeno reino europeu, o príncipe herdeiro Wilhelm é sucessor direto de Xenia, ascendendo ao trono após seu falecimento.",
+      "Pessoa(wilhelm) \n Pessoa(xenia) \n sucessor_dinastico(wilhelm, xenia) -> Pessoa(wilhelm) ∧ Pessoa(xenia)"
+    ],
+    [
+      "Na cadeia de suprimentos global, o armazém Yeda é depositário de Zeca, guardando sua produção agrícola em câmaras frigoríficas até a exportação.",
+      "Pessoa(yeda) \n Pessoa(zeca) \n depositario(yeda, zeca) -> Pessoa(yeda) ∧ Pessoa(zeca)"
+    ],
+    [
+      "Em uma relação de aprendizagem tradicional, o mestre artesão Antônio é mestre de ofício de Benedito, transmitindo-lhe os segredos da marcenaria fina.",
+      "Pessoa(antonio) \n Pessoa(benedito) \n mestre_oficio(antonio, benedito) -> Pessoa(antonio) ∧ Pessoa(benedito)"
+    ],
+    [
+      "No contexto da indústria fonográfica, o produtor musical César é descobridor de Dora, tendo lançado sua carreira artística após ouvi-la cantar em um pequeno bar.",
+      "Pessoa(cesar) \n Pessoa(dora) \n descobridor(cesar, dora) -> Pessoa(cesar) ∧ Pessoa(dora)"
+    ],
+    [
+      "Em uma relação de patronagem nas artes plásticas, a galerista Elisa é mecenas de Felipe, expondo suas obras e promovendo seu trabalho no mercado internacional.",
+      "Pessoa(elisa) \n Pessoa(felipe) \n mecenas(elisa, felipe) -> Pessoa(elisa) ∧ Pessoa(felipe)"
+    ],
+    [
+      "No âmbito da responsabilidade civil, o segurado Gabriel é beneficiário de Hugo, recebendo indenização securitária após sinistro coberto pela apólice.",
+      "Pessoa(gabriel) \n Pessoa(hugo) \n beneficiario(gabriel, hugo) -> Pessoa(gabriel) ∧ Pessoa(hugo)"
+    ],
+    [
+      "Em uma relação de confiança política, o presidente do partido Ivone é cacique de João, exercendo liderança inconteste sobre os demais membros da legenda.",
+      "Pessoa(ivone) \n Pessoa(joao) \n cacique(ivone, joao) -> Pessoa(ivone) ∧ Pessoa(joao)"
+    ],
+    [
+      "Na estrutura militar, o general Kléber é comandante de Lúcia, subordinada hierarquicamente a ele na cadeia de comando do exército.",
+      "Pessoa(kleber) \n Pessoa(lucia) \n comandante(kleber, lucia) -> Pessoa(kleber) ∧ Pessoa(lucia)"
+    ],
+    [
+      "Em uma relação de prestação de serviços notariais, o tabelião Márcio é oficial de registro de Natália, lavrando escrituras e registrando atos de sua propriedade.",
+      "Pessoa(marcio) \n Pessoa(natalia) \n oficial_registro(marcio, natalia) -> Pessoa(marcio) ∧ Pessoa(natalia)"
+    ],
+    [
+      "No contexto da psicologia clínica, a terapeuta Olívia é analista de Pedro, acompanhando seu processo terapêutico há mais de cinco anos.",
+      "Pessoa(olivia) \n Pessoa(pedro) \n analista(olivia, pedro) -> Pessoa(olivia) ∧ Pessoa(pedro)"
+    ],
+    [
+      "Em uma relação de cooperativismo, a agricultora Querência é associada de Remo, integrando a mesma cooperativa de produção e comercialização de orgânicos.",
+      "Pessoa(querencia) \n Pessoa(remo) \n associada(querencia, remo) -> Pessoa(querencia) ∧ Pessoa(remo)"
+    ],
+    [
+      "Na estrutura de governança corporativa, o conselheiro Sílvio é fiscal de Tânia, auditando as demonstrações financeiras e os atos da diretoria executiva.",
+      "Pessoa(silvio) \n Pessoa(tania) \n fiscal(silvio, tania) -> Pessoa(silvio) ∧ Pessoa(tania)"
+    ],
+    [
+      "É uma verdade analítica que todo triângulo possui necessariamente a soma de seus ângulos internos igual a cento e oitenta graus, independentemente de suas dimensões ou proporções.",
+      "Figura(x) \n □(triangulo(x) → soma_angulos(x,180)) -> □(triangulo(x) → soma_angulos(x,180))"
+    ],
+    [
+      "No campo da ética fundamental, é necessário que toda ação moralmente boa seja aquela que maximiza a felicidade do maior número possível de pessoas afetadas por ela.",
+      "Acao(x) \n □(boa(x) → maximiza_felicidade(x)) -> □(boa(x) → maximiza_felicidade(x))"
+    ],
+    [
+      "Considerando os princípios da termodinâmica, é necessário que em qualquer sistema isolado a entropia nunca diminua com o passar do tempo, tendendo sempre ao aumento.",
+      "Sistema(x) \n □(isolado(x) → entropia_aumenta(x)) -> □(isolado(x) → entropia_aumenta(x))"
+    ],
+    [
+      "Em uma democracia representativa, é obrigatório que os governantes eleitos prestem contas de seus atos à sociedade, sob pena de responsabilização política e jurídica.",
+      "Pessoa(governante) \n □(governa(governante) → presta_contas(governante)) -> □(governa(governante) → presta_contas(governante))"
+    ],
+    [
+      "É possível que, em algum momento nas próximas décadas, a humanidade estabeleça uma colônia permanente em Marte, com infraestrutura autossuficiente.",
+      "Evento(colonia_marte) \n ◇colonia_permanente_marte -> ◇colonia_permanente_marte"
+    ],
+    [
+      "É vedado, por força da Constituição Federal, que qualquer cidadão seja submetido a tratamento degradante ou a qualquer forma de tortura.",
+      "Pessoa(cidadao) \n □¬sofre_tortura(cidadao) -> □¬sofre_tortura(cidadao)"
+    ],
+    [
+      "Talvez a consciência seja um fenômeno emergente da complexidade neural, não redutível a meros processos físico-químicos do cérebro.",
+      "Fenomeno(consciencia) \n ◇emergente_consciencia -> ◇emergente_consciencia"
+    ],
+    [
+      "É necessário que todo ser humano tenha garantido o acesso à educação básica de qualidade como condição para o exercício pleno da cidadania.",
+      "Pessoa(x) \n □(humano(x) → acesso_educacao(x)) -> □(humano(x) → acesso_educacao(x))"
+    ],
+    [
+      "Possivelmente, a teoria das cordas venha a ser confirmada experimentalmente nos próximos anos, revolucionando nossa compreensão da física fundamental.",
+      "Teoria(teoria_cordas) \n ◇confirmada(teoria_cordas) -> ◇confirmada(teoria_cordas)"
+    ],
+    [
+      "É proibido, nos termos da legislação ambiental, desmatar áreas de preservação permanente ou suprimir vegetação nativa sem autorização do órgão competente.",
+      "Acao(desmatar) \n □¬desmata_app -> □¬desmata_app"
+    ],
+    [
+      "Necessariamente, se duas proposições são contraditórias, então uma delas é verdadeira e a outra é falsa, não havendo meio-termo possível.",
+      "Proposicao(p) \n Proposicao(q) \n □(contraditorias(p,q) → (verdade(p) ∧ ¬verdade(q)) ∨ (¬verdade(p) ∧ verdade(q))) -> □(contraditorias(p,q) → (verdade(p) ∧ ¬verdade(q)) ∨ (¬verdade(p) ∧ verdade(q)))"
+    ],
+    [
+      "É possível que a inteligência artificial geral, dotada de consciência e autonomia, venha a existir até o final deste século.",
+      "Entidade(ia) \n ◇ia_consciente -> ◇ia_consciente"
+    ],
+    [
+      "É obrigatório que todas as empresas com mais de cem empregados mantenham programa de prevenção a assédio moral e sexual no ambiente de trabalho.",
+      "Empresa(x) \n □(funcionarios(x,100) → programa_prevencao(x)) -> □(funcionarios(x,100) → programa_prevencao(x))"
+    ],
+    [
+      "É possível que a energia de fusão nuclear se torne comercialmente viável até meados deste século, resolvendo os problemas de escassez energética.",
+      "Tecnologia(fusao) \n ◇viabilidade_comercial(fusao) -> ◇viabilidade_comercial(fusao)"
+    ],
+    [
+      "É necessário que a taxa de juros seja reduzida para estimular o investimento produtivo e a geração de empregos no setor industrial.",
+      "Variavel(juros) \n □(reducao_juros → estimulo_investimento) -> □(reducao_juros → estimulo_investimento)"
+    ],
+    [
+      "Talvez existam universos paralelos, cada um com suas próprias leis físicas, constituindo um multiverso infinito e inatingível.",
+      "Entidade(universo) \n ◇∃x multiverso(x) -> ◇∃x multiverso(x)"
+    ],
+    [
+      "É vedado a qualquer agente público utilizar sua posição para beneficiar-se pessoalmente ou a terceiros em detrimento do interesse coletivo.",
+      "Pessoa(agente) \n □(agente_publico(agente) → ¬beneficio_proprio(agente)) -> □(agente_publico(agente) → ¬beneficio_proprio(agente))"
+    ],
+    [
+      "É possível que, em um futuro próximo, a medicina regenerativa consiga reverter condições hoje consideradas irreversíveis, como lesões medulares.",
+      "Tecnologia(medicina) \n ◇reversao_lesoes -> ◇reversao_lesoes"
+    ],
+    [
+      "Necessariamente, se um número é divisível por seis, então ele é divisível por dois e por três simultaneamente.",
+      "Numero(x) \n □(divisivel(x,6) → (divisivel(x,2) ∧ divisivel(x,3))) -> □(divisivel(x,6) → (divisivel(x,2) ∧ divisivel(x,3)))"
+    ],
+    [
+      "É obrigatório que os estabelecimentos de ensino ofereçam acessibilidade arquitetônica e pedagógica para alunos com deficiência.",
+      "Instituicao(x) \n □(escola(x) → acessibilidade(x)) -> □(escola(x) → acessibilidade(x))"
+    ],
+    [
+      "É possível que os avanços da biotecnologia permitam a extensão significativa da longevidade humana, ultrapassando os limites atuais.",
+      "Evento(longevidade) \n ◇longevidade_aumentada -> ◇longevidade_aumentada"
+    ],
+    [
+      "É necessário que todo cidadão exerça seu direito ao voto de maneira consciente, informando-se sobre as propostas dos candidatos.",
+      "Pessoa(x) \n □(cidadao(x) → voto_consciente(x)) -> □(cidadao(x) → voto_consciente(x))"
+    ],
+    [
+      "É proibido, em qualquer circunstância, o uso de munição de fragmentação em áreas densamente povoadas, conforme o direito humanitário.",
+      "Arma(municao) \n □(fragmentacao(municao) → ¬uso_area_povoada(municao)) -> □(fragmentacao(municao) → ¬uso_area_povoada(municao))"
+    ],
+    [
+      "É possível que a colonização espacial se torne uma realidade ainda neste século, com assentamentos humanos permanentes fora da Terra.",
+      "Evento(colonia) \n ◇colonia_espacial -> ◇colonia_espacial"
+    ],
+    [
+      "Necessariamente, se um ser é dotado de razão, então ele possui a capacidade de distinguir entre o certo e o errado.",
+      "Entidade(x) \n □(racional(x) → discernimento_moral(x)) -> □(racional(x) → discernimento_moral(x))"
+    ],
+    [
+      "É obrigatório que os produtos alimentícios comercializados informem em seus rótulos a composição nutricional completa e a presença de alérgenos.",
+      "Produto(x) \n □(alimento(x) → rotulagem_completa(x)) -> □(alimento(x) → rotulagem_completa(x))"
+    ],
+    [
+      "É possível que a computação quântica torne obsoletos os sistemas atuais de criptografia, exigindo novos paradigmas de segurança digital.",
+      "Tecnologia(computacao_quantica) \n ◇obsolescencia_criptografia -> ◇obsolescencia_criptografia"
+    ],
+    [
+      "É necessário que as relações diplomáticas entre as nações sejam pautadas pelo respeito mútuo e pela solução pacífica de controvérsias.",
+      "Nacao(x) \n Nacao(y) \n □(relacoes_diplomaticas(x,y) → respeito(x,y)) -> □(relacoes_diplomaticas(x,y) → respeito(x,y))"
+    ],
+    [
+      "É proibido, nos termos da lei eleitoral, a realização de propaganda política em bens públicos ou em locais que prejudiquem a fluidez do trânsito.",
+      "Acao(propaganda) \n □¬propaganda_irregular -> □¬propaganda_irregular"
+    ],
+    [
+      "É possível que a humanidade estabeleça contato com civilizações extraterrestres inteligentes nas próximas décadas.",
+      "Evento(contato) \n ◇contato_extraterrestre -> ◇contato_extraterrestre"
+    ],
+    [
+      "Necessariamente, se um animal é um mamífero marinho, então ele possui adaptações fisiológicas para viver submerso por longos períodos.",
+      "Animal(x) \n □(mamifero_marinho(x) → adaptacoes_submersao(x)) -> □(mamifero_marinho(x) → adaptacoes_submersao(x))"
+    ],
+    [
+      "É obrigatório que os planos de saúde ofereçam cobertura integral para todas as doenças listadas na Classificação Estatística Internacional de Doenças.",
+      "Plano(x) \n □(plano_saude(x) → cobertura_completa(x)) -> □(plano_saude(x) → cobertura_completa(x))"
+    ],
+    [
+      "É possível que a economia global passe por uma transformação estrutural com a substituição de moedas físicas por ativos digitais descentralizados.",
+      "Evento(transformacao) \n ◇economia_descarbonizada -> ◇economia_descarbonizada"
+    ],
+    [
+      "É necessário que todo indivíduo tenha acesso à água potável como direito humano fundamental e inalienável.",
+      "Pessoa(x) \n □(humano(x) → acesso_agua(x)) -> □(humano(x) → acesso_agua(x))"
+    ],
+    [
+      "É proibido, por força do Código de Defesa do Consumidor, a prática de publicidade enganosa ou abusiva que induza o consumidor a erro.",
+      "Acao(publicidade) \n □¬publicidade_enganosa -> □¬publicidade_enganosa"
+    ],
+    [
+      "É possível que a exploração de asteroides ricos em metais preciosos revolucione a indústria espacial e a economia terrestre.",
+      "Evento(mineracao) \n ◇mineracao_asteroides -> ◇mineracao_asteroides"
+    ],
+    [
+      "Necessariamente, se uma substância é um ácido forte, então ela se dissocia completamente em água, liberando íons de hidrogênio.",
+      "Substancia(x) \n □(acido_forte(x) → dissociacao_completa(x)) -> □(acido_forte(x) → dissociacao_completa(x))"
+    ],
+    [
+      "É obrigatório que os condomínios residenciais com mais de cinquenta unidades mantenham sistemas de prevenção e combate a incêndios regularmente vistoriados.",
+      "Edificio(x) \n □(condominio_grande(x) → prevencao_incendio(x)) -> □(condominio_grande(x) → prevencao_incendio(x))"
+    ],
+    [
+      "É possível que as neuropróteses permitam a restauração de funções motoras e sensoriais em pacientes com paralisia completa.",
+      "Tecnologia(neuroprotese) \n ◇restauracao_motora -> ◇restauracao_motora"
+    ],
+    [
+      "É necessário que as políticas públicas de enfrentamento à pobreza considerem as especificidades regionais e as vulnerabilidades locais.",
+      "Politica(x) \n □(combate_pobreza(x) → adequacao_regional(x)) -> □(combate_pobreza(x) → adequacao_regional(x))"
+    ],
+    [
+      "É proibido, no âmbito das relações de consumo, a inclusão de cláusulas abusivas em contratos de adesão.",
+      "Contrato(x) \n □(adesao(x) → ¬clausula_abusiva(x)) -> □(adesao(x) → ¬clausula_abusiva(x))"
+    ],
+    [
+      "É possível que a geoengenharia seja utilizada como medida emergencial para mitigar os efeitos mais severos das mudanças climáticas.",
+      "Tecnologia(geoengenharia) \n ◇uso_geoengenharia -> ◇uso_geoengenharia"
+    ],
+    [
+      "Necessariamente, se um argumento é válido, então a conclusão segue logicamente das premissas, independentemente da verdade factual destas.",
+      "Argumento(x) \n □(valido(x) → conclusao_logica(x)) -> □(valido(x) → conclusao_logica(x))"
+    ],
+    [
+      "É obrigatório que as empresas de transporte coletivo ofereçam acessibilidade total em sua frota para pessoas com mobilidade reduzida.",
+      "Empresa(x) \n □(transporte_coletivo(x) → frota_acessivel(x)) -> □(transporte_coletivo(x) → frota_acessivel(x))"
+    ],
+    [
+      "É possível que a fusão de inteligências humanas com interfaces cérebro-computador crie novas formas de cognição ampliada.",
+      "Evento(interface) \n ◇cognicao_ampliada -> ◇cognicao_ampliada"
+    ],
+    [
+      "É necessário que o sistema de justiça criminal garanta a presunção de inocência até o trânsito em julgado da sentença condenatória.",
+      "Sistema(justica) \n □(processo_penal → presuncao_inocencia) -> □(processo_penal → presuncao_inocencia)"
+    ],
+    [
+      "É proibido, pela legislação trabalhista, a discriminação de qualquer natureza no ambiente laboral, seja por gênero, raça, orientação sexual ou deficiência.",
+      "Acao(discriminacao) \n □¬discriminacao_trabalho -> □¬discriminacao_trabalho"
+    ],
+    [
+      "É possível que a edição genética por CRISPR cure doenças genéticas hereditárias antes consideradas incuráveis.",
+      "Tecnologia(crispr) \n ◇cura_doencas_geneticas -> ◇cura_doencas_geneticas"
+    ],
+    [
+      "Necessariamente, se dois eventos são causalmente relacionados, então a ocorrência do primeiro aumenta a probabilidade do segundo.",
+      "Evento(x) \n Evento(y) \n □(causa(x,y) → probabilidade_aumentada(x,y)) -> □(causa(x,y) → probabilidade_aumentada(x,y))"
+    ],
+    [
+      "É obrigatório que os serviços de saneamento básico atendam a totalidade da população urbana e rural com coleta e tratamento de esgoto.",
+      "Servico(x) \n □(saneamento(x) → universalidade(x)) -> □(saneamento(x) → universalidade(x))"
+    ],
+    [
+      "É possível que a energia solar espacial, coletada por satélites e transmitida por micro-ondas, se torne uma fonte primária de eletricidade.",
+      "Tecnologia(energia_solar_espacial) \n ◇fonte_primaria_energia -> ◇fonte_primaria_energia"
+    ],
+    [
+      "É necessário que o desenvolvimento econômico seja sustentável, equilibrando crescimento com preservação ambiental e justiça social.",
+      "Processo(desenvolvimento) \n □(desenvolvimento → sustentabilidade) -> □(desenvolvimento → sustentabilidade)"
+    ],
+    [
+      "É proibido que agentes econômicos formem cartéis ou pratiquem concorrência desleal em detrimento do consumidor.",
+      "Acao(cartel) \n □¬formacao_cartel -> □¬formacao_cartel"
+    ],
+    [
+      "É possível que a comunicação por emaranhamento quântico revolucione as telecomunicações, permitindo transmissão instantânea de informações.",
+      "Tecnologia(comunicacao_quantica) \n ◇teletransporte_informacao -> ◇teletransporte_informacao"
+    ],
+    [
+      "Necessariamente, se uma estrutura não recebe manutenção periódica, então sua integridade física será comprometida com o tempo.",
+      "Estrutura(x) \n □(¬manutencao(x) → deterioracao(x)) -> □(¬manutencao(x) → deterioracao(x))"
+    ],
+    [
+      "É obrigatório que os órgãos de imprensa divulguem informações verídicas e apuradas, combatendo a desinformação e as fake news.",
+      "Veiculo(x) \n □(imprensa(x) → informacao_veridica(x)) -> □(imprensa(x) → informacao_veridica(x))"
+    ],
+    [
+      "É possível que a agricultura vertical em ambiente controlado substitua parte significativa da produção agrícola tradicional nas próximas décadas.",
+      "Tecnologia(agricultura_vertical) \n ◇substituicao_parcial -> ◇substituicao_parcial"
+    ],
+    [
+      "É necessário que todo profissional da saúde mantenha seu conhecimento atualizado por meio de educação continuada e reciclagem periódica.",
+      "Pessoa(x) \n □(profissional_saude(x) → educacao_continuada(x)) -> □(profissional_saude(x) → educacao_continuada(x))"
+    ],
+    [
+      "É proibido, no ordenamento jurídico brasileiro, a censura prévia de obras artísticas e intelectuais.",
+      "Acao(censura) \n □¬censura_previa -> □¬censura_previa"
+    ],
+    [
+      "É possível que a biologia sintética permita a criação de organismos projetados para produzir medicamentos e combustíveis renováveis.",
+      "Tecnologia(biologia_sintetica) \n ◇organismos_projetados -> ◇organismos_projetados"
+    ],
+    [
+      "Necessariamente, se um ecossistema perde sua biodiversidade, então sua resiliência a perturbações externas fica comprometida.",
+      "Ecossistema(x) \n □(perda_biodiversidade(x) → perda_resiliencia(x)) -> □(perda_biodiversidade(x) → perda_resiliencia(x))"
+    ],
+    [
+      "É obrigatório que as instituições financeiras realizem procedimentos de due diligence para prevenir a lavagem de dinheiro.",
+      "Instituicao(x) \n □(financeira(x) → due_diligence(x)) -> □(financeira(x) → due_diligence(x))"
+    ],
+    [
+      "É possível que a produção de carne in vitro elimine a necessidade de abate animal em larga escala.",
+      "Tecnologia(carne_cultivada) \n ◇eliminacao_abate -> ◇eliminacao_abate"
+    ],
+    [
+      "É necessário que os registros históricos sejam preservados em arquivos públicos acessíveis para a manutenção da memória coletiva.",
+      "Documento(x) \n □(registro_historico(x) → preservacao(x)) -> □(registro_historico(x) → preservacao(x))"
+    ],
+    [
+      "É proibido, nos termos da lei de improbidade administrativa, que agentes públicos utilizem recursos públicos para fins privados.",
+      "Acao(desvio) \n □(agente_publico → ¬desvio_recurso) -> □(agente_publico → ¬desvio_recurso)"
+    ],
+    [
+      "É possível que a computação vestível se integre ao corpo humano de forma permanente, funcionando como extensão tecnológica.",
+      "Tecnologia(wearable) \n ◇integracao_corporal -> ◇integracao_corporal"
+    ],
+    [
+      "Necessariamente, se uma sociedade não garante educação de qualidade para todos, então a desigualdade social tende a se perpetuar.",
+      "Sociedade(x) \n □(¬educacao_universal(x) → perpetuacao_desigualdade(x)) -> □(¬educacao_universal(x) → perpetuacao_desigualdade(x))"
+    ],
+    [
+      "É obrigatório que as empresas concessionárias de serviços públicos mantenham canais de atendimento e ouvidoria eficazes.",
+      "Empresa(x) \n □(concessionaria(x) → canais_atendimento(x)) -> □(concessionaria(x) → canais_atendimento(x))"
+    ],
+    [
+      "É possível que a medicina personalizada, baseada no perfil genético individual, torne os tratamentos mais eficazes e com menos efeitos colaterais.",
+      "Tecnologia(medicina_personalizada) \n ◇tratamentos_eficazes -> ◇tratamentos_eficazes"
+    ],
+    [
+      "É necessário que os direitos das crianças e dos adolescentes sejam prioritários sobre quaisquer outros interesses na formulação de políticas públicas.",
+      "Sujeito(x) \n □(crianca(x) → prioridade_absoluta(x)) -> □(crianca(x) → prioridade_absoluta(x))"
+    ],
+    [
+      "É proibido, conforme o Estatuto do Idoso, qualquer forma de negligência, discriminação ou violência contra a pessoa idosa.",
+      "Acao(violencia) \n □(idoso → ¬violencia) -> □(idoso → ¬violencia)"
+    ],
+    [
+      "É possível que a energia limpa e renovável substitua completamente os combustíveis fósseis nas próximas décadas.",
+      "Evento(transicao_energetica) \n ◇fim_combustiveis_fosseis -> ◇fim_combustiveis_fosseis"
+    ],
+    [
+      "Necessariamente, se um vírus sofre mutações frequentes, então o desenvolvimento de vacinas universais se torna mais desafiador.",
+      "Virus(x) \n □(alta_mutabilidade(x) → desafio_vacina(x)) -> □(alta_mutabilidade(x) → desafio_vacina(x))"
+    ],
+    [
+      "É obrigatório que os estabelecimentos de saúde mantenham protocolos rigorosos de controle de infecção hospitalar.",
+      "Estabelecimento(x) \n □(saude(x) → controle_infeccao(x)) -> □(saude(x) → controle_infeccao(x))"
+    ],
+    [
+      "É possível que os veículos autônomos reduzam drasticamente o número de acidentes de trânsito causados por erro humano.",
+      "Tecnologia(veiculos_autonomos) \n ◇reducao_acidentes -> ◇reducao_acidentes"
+    ],
+    [
+      "É necessário que os recursos naturais sejam explorados de forma racional, garantindo sua disponibilidade para as futuras gerações.",
+      "Recurso(x) \n □(exploracao(x) → sustentabilidade(x)) -> □(exploracao(x) → sustentabilidade(x))"
+    ],
+    [
+      "É proibido que servidores públicos utilizem informações privilegiadas obtidas no exercício do cargo para proveito próprio.",
+      "Acao(insider_trading) \n □(servidor_publico → ¬insider_trading) -> □(servidor_publico → ¬insider_trading)"
+    ],
+    [
+      "É possível que a descoberta de vida em outros planetas transforme profundamente a filosofia, a religião e a autocompreensão humana.",
+      "Evento(descoberta_vida) \n ◇transformacao_cosmovisao -> ◇transformacao_cosmovisao"
+    ],
+    [
+      "Necessariamente, se um sistema econômico concentra renda e riqueza, então ele gera desigualdades estruturais de difícil reversão.",
+      "Sistema(x) \n □(concentracao_renda(x) → desigualdade_estrutural(x)) -> □(concentracao_renda(x) → desigualdade_estrutural(x))"
+    ],
+    [
+      "É obrigatório que as universidades públicas ofereçam programas de assistência estudantil para garantir a permanência de alunos em vulnerabilidade socioeconômica.",
+      "Instituicao(x) \n □(universidade_publica(x) → assistencia_estudantil(x)) -> □(universidade_publica(x) → assistencia_estudantil(x))"
+    ],
+    [
+      "É possível que a inteligência artificial alcance a singularidade tecnológica, superando a capacidade cognitiva humana em todas as áreas.",
+      "Evento(singularidade) \n ◇singularidade_tecnologica -> ◇singularidade_tecnologica"
+    ],
+    [
+      "É necessário que as políticas migratórias sejam pautadas pelo respeito aos direitos humanos e pela dignidade dos migrantes.",
+      "Politica(x) \n □(migratoria(x) → respeito_direitos(x)) -> □(migratoria(x) → respeito_direitos(x))"
+    ],
+    [
+      "É proibido, nos termos da legislação penal, a prática de atos de racismo, sendo a injúria racial crime inafiançável e imprescritível.",
+      "Acao(racismo) \n □¬racismo -> □¬racismo"
+    ],
+    [
+      "É possível que a computação em nuvem evolua para ambientes de computação ubíqua, integrada a todos os objetos do cotidiano.",
+      "Tecnologia(computacao_ubiqua) \n ◇internet_das_coisas_avancada -> ◇internet_das_coisas_avancada"
+    ],
+    [
+      "Necessariamente, se uma espécie perde seu habitat natural, então sua população entra em declínio, podendo levar à extinção.",
+      "Especie(x) \n □(perda_habitat(x) → declinio_populacional(x)) -> □(perda_habitat(x) → declinio_populacional(x))"
+    ],
+    [
+      "É obrigatório que as plataformas digitais removam conteúdos que incitem à violência ou ao ódio em até vinte e quatro horas após notificação.",
+      "Plataforma(x) \n □(digital(x) → remocao_conteudo_ilicitos(x)) -> □(digital(x) → remocao_conteudo_ilicitos(x))"
+    ],
+    [
+      "É possível que a exploração de recursos do fundo oceânico se torne economicamente viável, abrindo novas fronteiras para a mineração.",
+      "Evento(mineracao_oceanica) \n ◇exploracao_fundo_oceano -> ◇exploracao_fundo_oceano"
+    ],
+    [
+      "É necessário que os cidadãos participem ativamente da vida política e do controle social para o fortalecimento da democracia.",
+      "Pessoa(x) \n □(cidadao(x) → participacao_politica(x)) -> □(cidadao(x) → participacao_politica(x))"
+    ],
+    [
+      "É proibido, conforme o Código Florestal, a supressão de vegetação nativa em áreas de preservação permanente, como topos de morro e margens de rios.",
+      "Acao(supressao) \n □(app → ¬supressao_vegetacao) -> □(app → ¬supressao_vegetacao)"
+    ],
+    [
+      "É possível que a captura de carbono diretamente da atmosfera se torne uma tecnologia essencial para mitigar as mudanças climáticas.",
+      "Tecnologia(captura_carbono) \n ◇mitigacao_climatica -> ◇mitigacao_climatica"
+    ],
+    [
+      "Necessariamente, se uma nação investe em educação e ciência, então seu desenvolvimento econômico e social é sustentável no longo prazo.",
+      "Nacao(x) \n □(investimento_educacao(x) → desenvolvimento_sustentavel(x)) -> □(investimento_educacao(x) → desenvolvimento_sustentavel(x))"
+    ],
+    [
+      "É obrigatório que os alimentos transgênicos sejam devidamente rotulados para que o consumidor exerça seu direito de escolha.",
+      "Produto(x) \n □(transgenico(x) → rotulagem_especifica(x)) -> □(transgenico(x) → rotulagem_especifica(x))"
+    ],
+    [
+      "É possível que a indústria da moda adote modelos de economia circular, eliminando o descarte massivo de peças e reduzindo o impacto ambiental.",
+      "Industria(moda) \n ◇economia_circular_moda -> ◇economia_circular_moda"
+    ],
+    [
+      "É necessário que os direitos autorais sejam equilibrados, protegendo a criação intelectual sem impedir o acesso ao conhecimento e à cultura.",
+      "Direito(autoral) \n □(protecao_autoral → equilibrio_acesso) -> □(protecao_autoral → equilibrio_acesso)"
+    ],
+    [
+      "É proibido, pela Lei de Segurança Nacional, atentar contra a soberania e a integridade do território nacional.",
+      "Acao(ataque) \n □¬atentado_soberania -> □¬atentado_soberania"
+    ],
+    [
+      "É possível que a realidade virtual e aumentada se fundam em ambientes imersivos que confundam os limites entre o físico e o digital.",
+      "Tecnologia(realidade_mista) \n ◇fundacao_fisico_digital -> ◇fundacao_fisico_digital"
+    ],
+    [
+      "Necessariamente, se um indivíduo pratica exercícios físicos regularmente, então sua saúde cardiovascular tende a ser melhor.",
+      "Pessoa(x) \n □(exercicio_regular(x) → saude_cardiovascular(x)) -> □(exercicio_regular(x) → saude_cardiovascular(x))"
+    ],
+    [
+      "É obrigatório que os medicamentos comercializados no país tenham registro na Agência Nacional de Vigilância Sanitária.",
+      "Produto(x) \n □(medicamento(x) → registro_anvisa(x)) -> □(medicamento(x) → registro_anvisa(x))"
+    ],
+    [
+      "É possível que a neurociência desvende completamente os mecanismos da consciência humana nas próximas décadas.",
+      "Ciencia(neurociencia) \n ◇desvendamento_consciencia -> ◇desvendamento_consciencia"
+    ],
+    [
+      "É necessário que as relações de trabalho respeitem a dignidade do trabalhador, garantindo condições justas e seguras.",
+      "Relacao(trabalho) \n □(relacao_trabalho → dignidade_trabalhador) -> □(relacao_trabalho → dignidade_trabalhador)"
+    ],
+    [
+      "É proibido, pelo Estatuto da Criança e do Adolescente, a venda de bebidas alcoólicas e produtos fumígenos a menores de dezoito anos.",
+      "Acao(venda) \n □(venda_alcool_menor → ¬permitida) -> □(venda_alcool_menor → ¬permitida)"
+    ],
+    [
+      "É possível que a ciência dos materiais produza substâncias com propriedades extraordinárias, como supercondutividade à temperatura ambiente.",
+      "Ciencia(materiais) \n ◇supercondutividade_ambiente -> ◇supercondutividade_ambiente"
+    ],
+    [
+      "Necessariamente, se um ecossistema é restaurado, então os serviços ecossistêmicos, como a polinização e a regulação hídrica, são recuperados.",
+      "Ecossistema(x) \n □(restauracao(x) → recuperacao_servicos(x)) -> □(restauracao(x) → recuperacao_servicos(x))"
+    ],
+    [
+      "É obrigatório que os partidos políticos prestem contas detalhadas de suas finanças à Justiça Eleitoral.",
+      "Partido(x) \n □(partido_politico(x) → prestacao_contas(x)) -> □(partido_politico(x) → prestacao_contas(x))"
+    ],
+    [
+      "É possível que a exploração da Lua forneça recursos essenciais para a expansão humana no sistema solar.",
+      "Evento(exploracao_lunar) \n ◇recurso_lua -> ◇recurso_lua"
+    ],
+    [
+      "É necessário que os espaços urbanos sejam planejados para promover mobilidade ativa, como caminhadas e ciclismo, e reduzir a dependência do automóvel.",
+      "Espaco(urbano) \n □(planejamento_urbano → mobilidade_ativa) -> □(planejamento_urbano → mobilidade_ativa)"
+    ],
+    [
+      "É proibido, conforme a Convenção de Viena sobre Relações Diplomáticas, a violação da inviolabilidade das embaixadas e sedes diplomáticas.",
+      "Acao(violacao) \n □(embaixada → ¬violacao) -> □(embaixada → ¬violacao)"
+    ],
+    [
+      "É possível que a impressão 3D em larga escala revolucione a indústria da construção civil, permitindo edifícios impressos em poucos dias.",
+      "Tecnologia(impressao_3d) \n ◇construcao_impressa -> ◇construcao_impressa"
+    ],
+    [
+      "Necessariamente, se um país investe em pesquisa e desenvolvimento, então sua competitividade internacional aumenta.",
+      "Pais(x) \n □(investimento_pd(x) → competitividade(x)) -> □(investimento_pd(x) → competitividade(x))"
+    ],
+    [
+      "É obrigatório que os estabelecimentos comerciais aceitem pagamentos em espécie, não podendo recusar dinheiro em circulação no país.",
+      "Estabelecimento(x) \n □(comercio(x) → aceita_dinheiro(x)) -> □(comercio(x) → aceita_dinheiro(x))"
+    ],
+    [
+      "É possível que a cosmologia determine com precisão a natureza da matéria e energia escuras que compõem a maior parte do universo.",
+      "Ciencia(cosmologia) \n ◇determinacao_materia_escura -> ◇determinacao_materia_escura"
+    ],
+    [
+      "É necessário que o direito à moradia digna seja garantido como parte do mínimo existencial para todos os cidadãos.",
+      "Direito(moradia) \n □(moradia_digna → minimo_existencial) -> □(moradia_digna → minimo_existencial)"
+    ],
+    [
+      "É proibido, nos termos da Lei de Acesso à Informação, negar informações de interesse público sob alegação de sigilo injustificado.",
+      "Acao(negacao_info) \n □(interesse_publico → ¬negacao_info) -> □(interesse_publico → ¬negacao_info)"
+    ],
+    [
+      "É possível que a psicodélica terapia assistida se torne um tratamento aprovado para condições como depressão resistente e transtorno de estresse pós-traumático.",
+      "Tratamento(psicodelico) \n ◇aprovacao_terapia -> ◇aprovacao_terapia"
+    ],
+    [
+      "Necessariamente, se um ser humano é privado de interação social adequada durante a infância, então seu desenvolvimento emocional e cognitivo é prejudicado.",
+      "Pessoa(x) \n □(isolamento_infantil(x) → prejuizo_desenvolvimento(x)) -> □(isolamento_infantil(x) → prejuizo_desenvolvimento(x))"
+    ],
+    [
+      "É obrigatório que os empregadores forneçam equipamentos de proteção individual adequados aos riscos ocupacionais de cada atividade.",
+      "Empregador(x) \n □(atividade_risco(x) → epi_adequado(x)) -> □(atividade_risco(x) → epi_adequado(x))"
+    ],
+    [
+      "É possível que a engenharia climática seja utilizada para resfriar artificialmente o planeta, mas com riscos e efeitos colaterais ainda desconhecidos.",
+      "Tecnologia(engenharia_climatica) \n ◇resfriamento_artificial -> ◇resfriamento_artificial"
+    ],
+    [
+      "É necessário que os crimes contra a humanidade sejam imprescritíveis e sujeitos à jurisdição universal.",
+      "Crime(crime_contra_humanidade) \n □(crime_contra_humanidade → imprescritibilidade) -> □(crime_contra_humanidade → imprescritibilidade)"
+    ],
+    [
+      "É proibido, pela Lei de Diretrizes e Bases da Educação, que instituições de ensino pratiquem discriminação em seus processos seletivos.",
+      "Instituicao(x) \n □(ensino(x) → ¬discriminacao_seletiva(x)) -> □(ensino(x) → ¬discriminacao_seletiva(x))"
+    ],
+    [
+      "É possível que a análise preditiva baseada em big data permita antecipar pandemias antes mesmo de sua disseminação global.",
+      "Tecnologia(analise_preditiva) \n ◇antecipacao_pandemias -> ◇antecipacao_pandemias"
+    ],
+    [
+      "Necessariamente, se um contrato é firmado entre partes capazes e com objeto lícito, então ele produz efeitos jurídicos vinculantes.",
+      "Contrato(x) \n □(valido(x) → efeitos_juridicos(x)) -> □(valido(x) → efeitos_juridicos(x))"
+    ],
+    [
+      "É obrigatório que os serviços de telecomunicações ofereçam planos de acessibilidade para pessoas com deficiência auditiva ou visual.",
+      "Servico(x) \n □(telecom(x) → acessibilidade_sensorial(x)) -> □(telecom(x) → acessibilidade_sensorial(x))"
+    ],
+    [
+      "É possível que a computação neuromórfica, inspirada no cérebro humano, alcance eficiência energética incomparável para tarefas de inteligência artificial.",
+      "Tecnologia(computacao_neuromorfica) \n ◇eficiencia_energetica -> ◇eficiencia_energetica"
+    ],
+    [
+      "É necessário que a liberdade de expressão seja protegida como pilar fundamental da democracia, sem que isso implique permissão para discurso de ódio.",
+      "Direito(liberdade_expressao) \n □(democracia → protecao_expressao) -> □(democracia → protecao_expressao)"
+    ],
+    [
+      "É proibido, pela Lei de Crimes Ambientais, causar poluição que resulte em danos à saúde humana ou à biodiversidade.",
+      "Acao(poluição) \n □(dano_ambiental → ¬permitido) -> □(dano_ambiental → ¬permitido)"
+    ],
+    [
+      "É possível que a tecnologia blockchain revolucione os sistemas de votação, garantindo transparência e segurança contra fraudes eleitorais.",
+      "Tecnologia(blockchain) \n ◇votacao_segura -> ◇votacao_segura"
+    ],
+    [
+      "Necessariamente, se uma população envelhece rapidamente, então os sistemas de previdência e saúde enfrentam pressões orçamentárias crescentes.",
+      "Populacao(x) \n □(envelhecimento(x) → pressao_sistemas(x)) -> □(envelhecimento(x) → pressao_sistemas(x))"
+    ],
+    [
+      "É obrigatório que as empresas de planos de saúde ofereçam cobertura para todos os procedimentos listados no rol da ANS.",
+      "Empresa(x) \n □(plano_saude(x) → cobertura_rol_ans(x)) -> □(plano_saude(x) → cobertura_rol_ans(x))"
+    ],
+    [
+      "É possível que a exploração comercial do espaço leve ao surgimento de novas indústrias, como turismo espacial e manufatura em microgravidade.",
+      "Industria(espacial) \n ◇economia_orbital -> ◇economia_orbital"
+    ],
+    [
+      "É necessário que os sistemas de inteligência artificial sejam desenvolvidos com princípios éticos e de transparência, evitando vieses discriminatórios.",
+      "Sistema(ia) \n □(desenvolvimento_ia → etica_transparencia) -> □(desenvolvimento_ia → etica_transparencia)"
+    ],
+    [
+      "É proibido, pela Lei Geral de Proteção de Dados, o tratamento inadequado de dados pessoais sem consentimento do titular ou sem base legal.",
+      "Acao(tratamento_dados) \n □(dados_pessoais → consentimento_ou_base_legal) -> □(dados_pessoais → consentimento_ou_base_legal)"
+    ],
+    [
+      "É possível que a nanotecnologia permita a criação de nanorrobôs capazes de reparar tecidos danificados no interior do corpo humano.",
+      "Tecnologia(nanotecnologia) \n ◇nanorrobos_medicina -> ◇nanorrobos_medicina"
+    ],
+    [
+      "Necessariamente, se uma sociedade não garante acesso igualitário à justiça, então a desigualdade jurídica se perpetua e aprofunda.",
+      "Sociedade(x) \n □(¬acesso_justica(x) → desigualdade_juridica(x)) -> □(¬acesso_justica(x) → desigualdade_juridica(x))"
+    ],
+    [
+      "É obrigatório que os hospitais públicos e privados mantenham estoque de medicamentos essenciais e insumos estratégicos.",
+      "Hospital(x) \n □(hospital(x) → estoque_medicamentos(x)) -> □(hospital(x) → estoque_medicamentos(x))"
+    ],
+    [
+      "É possível que a criogenia evolua a ponto de permitir a preservação do corpo humano com possibilidade de reanimação futura.",
+      "Tecnologia(criogenia) \n ◇reanimacao_futura -> ◇reanimacao_futura"
+    ],
+    [
+      "É necessário que o direito penal intervenha apenas como ultima ratio, reservado para condutas mais graves que lesam bens jurídicos fundamentais.",
+      "Direito(penal) \n □(intervencao_penal → ultima_ratio) -> □(intervencao_penal → ultima_ratio)"
+    ],
+    [
+      "É proibido, no âmbito do direito do consumidor, a publicidade dirigida a crianças de forma abusiva ou que estimule comportamentos nocivos.",
+      "Acao(publicidade_infantil) \n □(publicidade_abusiva → ¬permitida) -> □(publicidade_abusiva → ¬permitida)"
+    ],
+    [
+      "É possível que a inteligência artificial generativa se torne indistinguível da criatividade humana em áreas como arte, música e literatura.",
+      "Tecnologia(ia_generativa) \n ◇indistincao_criatividade -> ◇indistincao_criatividade"
     ]
   ]
 }

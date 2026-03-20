@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Logic AI</title>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body class="dark-theme">
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <button class="new-chat-btn" onclick="newChat()">
+                <i class="ph ph-plus-circle"></i>
+                <span>Nova Conversa</span>
+            </button>
+            <div class="history-list" id="history-list">
+                <!-- Histórico será inserido aqui -->
+            </div>
+            <div class="sidebar-footer">
+                <button class="footer-item" onclick="togglePerformance()">
+                    <i class="ph ph-chart-bar"></i>
+                    <span>Desempenho</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <button class="menu-toggle" onclick="toggleSidebar()">
+                    <i class="ph ph-list"></i>
+                </button>
+                <div class="model-info">Modal Logic Translator v1.0</div>
+            </header>
+
+            <div class="chat-container" id="chat-container">
+                <!-- Welcome View -->
+                <div id="welcome-view" class="welcome-view">
+                    <div class="logo">
+                        <i class="ph ph-crystal-ball"></i>
+                    </div>
+                    <h1>Como posso ajudar hoje?</h1>
+                    <div class="example-grid">
+                        <button class="example-card" onclick="useExample('a é pai de b')">
+                            <span class="example-text">"a é pai de b"</span>
+                            <span class="example-sub">Lógica de Predicados/Modal</span>
+                        </button>
+                        <button class="example-card" onclick="useExample('Talvez chova amanhã')">
+                            <span class="example-text">"Talvez chova amanhã"</span>
+                            <span class="example-sub">Lógica Alética</span>
+                        </button>
+                        <button class="example-card" onclick="useExample('João sabe que Maria está em casa')">
+                            <span class="example-text">"João sabe que Maria em casa"</span>
+                            <span class="example-sub">Lógica Epistêmica</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Chat History -->
+                <div id="chat-history" class="chat-history hidden"></div>
+            </div>
+
+            <!-- Input Area -->
+            <footer class="input-container">
+                <div class="input-wrapper">
+                    <textarea id="input-text" placeholder="Traduza para lógica modal..." rows="1"
+                        oninput="autoResize(this)" onkeydown="handleKeyDown(event)"></textarea>
+                    <button id="btn-translate" onclick="performTranslation()">
+                        <i class="ph ph-paper-plane-right"></i>
+                    </button>
+                </div>
+                <div class="input-footer">
+                    A IA pode cometer erros. Verifique informações importantes.
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Modal de Desempenho -->
+    <div id="perf-overlay" class="overlay hidden">
+        <div class="modal">
+            <button class="close-btn" onclick="togglePerformance()">&times;</button>
+            <h3>Métricas de Treinamento</h3>
+            <div class="charts">
+                <canvas id="lossChart"></canvas>
+                <canvas id="rougeChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast" class="toast hidden"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
