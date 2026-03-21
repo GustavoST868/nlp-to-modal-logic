@@ -1431,6 +1431,5606 @@
     [
       "É possível que a inteligência artificial generativa se torne indistinguível da criatividade humana em áreas como arte, música e literatura.",
       "Tecnologia(ia_generativa) \n ◇indistincao_criatividade -> ◇indistincao_criatividade"
+    ],
+    [
+      "É obrigatório que viajar",
+      "□viajar"
+    ],
+    [
+      "Pode ser que chova",
+      "◇chover"
+    ],
+    [
+      "É necessário que correr",
+      "□correr"
+    ],
+    [
+      "Tânia acredita que vai sorrir",
+      "B(tânia, sorrir(tânia))"
+    ],
+    [
+      "Nando acredita que vai chova",
+      "B(nando, chover(nando))"
+    ],
+    [
+      "É possível que correr",
+      "◇correr"
+    ],
+    [
+      "Julia sabe que chova",
+      "K(julia, chover(julia))"
+    ],
+    [
+      "Nenhum homem é rápido",
+      "∀x (homem(x) → ¬rapido(x))"
+    ],
+    [
+      "Tânia é irmã de Bruno",
+      "irma(tânia, bruno) ∧ pessoa(tânia) ∧ pessoa(bruno)"
+    ],
+    [
+      "Talvez comer",
+      "◇comer"
+    ],
+    [
+      "É possível que ganhar",
+      "◇ganhar"
+    ],
+    [
+      "Provalvemente viajar",
+      "◇viajar"
+    ],
+    [
+      "Nenhum médico é feliz",
+      "∀x (medico(x) → ¬feliz(x))"
+    ],
+    [
+      "Hugo acredita que vai comer",
+      "B(hugo, comer(hugo))"
+    ],
+    [
+      "Algum gato é forte",
+      "∃x (gato(x) ∧ forte(x))"
+    ],
+    [
+      "Sérgio sabe que faça sol",
+      "K(sérgio, fazer_sol(sérgio))"
+    ],
+    [
+      "Nenhum pássaro é bravo",
+      "∀x (passaro(x) → ¬bravo(x))"
+    ],
+    [
+      "Rosa é irmã de Livia",
+      "irma(rosa, livia) ∧ pessoa(rosa) ∧ pessoa(livia)"
+    ],
+    [
+      "Vânia é pai de Mara",
+      "pai(vânia, mara) ∧ pessoa(vânia) ∧ pessoa(mara)"
+    ],
+    [
+      "Pode ser que chorar",
+      "◇chorar"
+    ],
+    [
+      "Algum mulher é rápido",
+      "∃x (mulher(x) ∧ rapido(x))"
+    ],
+    [
+      "Todo animal é inteligente",
+      "∀x (animal(x) → inteligente(x))"
+    ],
+    [
+      "É obrigatório que comer",
+      "□comer"
+    ],
+    [
+      "Nenhum pássaro é forte",
+      "∀x (passaro(x) → ¬forte(x))"
+    ],
+    [
+      "Livia acredita que vai sorrir",
+      "B(livia, sorrir(livia))"
+    ],
+    [
+      "Mateus é mãe de Luan",
+      "mae(mateus, luan) ∧ pessoa(mateus) ∧ pessoa(luan)"
+    ],
+    [
+      "Gina é irmã de Jorge",
+      "irma(gina, jorge) ∧ pessoa(gina) ∧ pessoa(jorge)"
+    ],
+    [
+      "Algum homem é bravo",
+      "∃x (homem(x) ∧ bravo(x))"
+    ],
+    [
+      "Nenhum médico é feliz",
+      "∀x (medico(x) → ¬feliz(x))"
+    ],
+    [
+      "É obrigatório que pular",
+      "□pular"
+    ],
+    [
+      "Helena sabe que perder",
+      "K(helena, perder(helena))"
+    ],
+    [
+      "Helena é filho de Enzo",
+      "filho(helena, enzo) ∧ pessoa(helena) ∧ pessoa(enzo)"
+    ],
+    [
+      "É obrigatório que pular",
+      "□pular"
+    ],
+    [
+      "Algum mulher é forte",
+      "∃x (mulher(x) ∧ forte(x))"
+    ],
+    [
+      "Nenhum homem é mortal",
+      "∀x (homem(x) → ¬mortal(x))"
+    ],
+    [
+      "Necessariamente ganhar",
+      "□ganhar"
+    ],
+    [
+      "É necessário que ventar",
+      "□ventar"
+    ],
+    [
+      "Talvez ganhar",
+      "◇ganhar"
+    ],
+    [
+      "Kelly é cunhada de Marcos",
+      "cunhada(kelly, marcos) ∧ pessoa(kelly) ∧ pessoa(marcos)"
+    ],
+    [
+      "Todo mulher é feliz",
+      "∀x (mulher(x) → feliz(x))"
+    ],
+    [
+      "Nando é pai de Rita",
+      "pai(nando, rita) ∧ pessoa(nando) ∧ pessoa(rita)"
+    ],
+    [
+      "Vitor é sobrinha de Olívia",
+      "sobrinha(vitor, olívia) ∧ pessoa(vitor) ∧ pessoa(olívia)"
+    ],
+    [
+      "Pode ser que viajar",
+      "◇viajar"
+    ],
+    [
+      "Fábio sabe que chova",
+      "K(fábio, chover(fábio))"
+    ],
+    [
+      "Precisa sorrir",
+      "□sorrir"
+    ],
+    [
+      "Carlos é tia de Olívia",
+      "tia(carlos, olívia) ∧ pessoa(carlos) ∧ pessoa(olívia)"
+    ],
+    [
+      "Zeca é cunhado de Sérgio",
+      "cunhado(zeca, sérgio) ∧ pessoa(zeca) ∧ pessoa(sérgio)"
+    ],
+    [
+      "Gina é sobrinho de Caio",
+      "sobrinho(gina, caio) ∧ pessoa(gina) ∧ pessoa(caio)"
+    ],
+    [
+      "Todo mulher é rápido",
+      "∀x (mulher(x) → rapido(x))"
+    ],
+    [
+      "É necessário que viajar",
+      "□viajar"
+    ],
+    [
+      "Provalvemente dormir",
+      "◇dormir"
+    ],
+    [
+      "Algum mulher é bravo",
+      "∃x (mulher(x) ∧ bravo(x))"
+    ],
+    [
+      "Erica é tia de Rosa",
+      "tia(erica, rosa) ∧ pessoa(erica) ∧ pessoa(rosa)"
+    ],
+    [
+      "Nenhum mulher é mortal",
+      "∀x (mulher(x) → ¬mortal(x))"
+    ],
+    [
+      "Luan é tio de Marcos",
+      "tio(luan, marcos) ∧ pessoa(luan) ∧ pessoa(marcos)"
+    ],
+    [
+      "Precisa dançar",
+      "□dancar"
+    ],
+    [
+      "Talvez pular",
+      "◇pular"
+    ],
+    [
+      "Talvez pular",
+      "◇pular"
+    ],
+    [
+      "Xavier acredita que vai cantar",
+      "B(xavier, cantar(xavier))"
+    ],
+    [
+      "Kelly é irmã de Otavio",
+      "irma(kelly, otavio) ∧ pessoa(kelly) ∧ pessoa(otavio)"
+    ],
+    [
+      "Algum médico é feliz",
+      "∃x (medico(x) ∧ feliz(x))"
+    ],
+    [
+      "Pode ser que correr",
+      "◇correr"
+    ],
+    [
+      "É necessário que ventar",
+      "□ventar"
+    ],
+    [
+      "É possível que cantar",
+      "◇cantar"
+    ],
+    [
+      "É obrigatório que viajar",
+      "□viajar"
+    ],
+    [
+      "Precisa chorar",
+      "□chorar"
+    ],
+    [
+      "Livia é primo de Igor",
+      "primo(livia, igor) ∧ pessoa(livia) ∧ pessoa(igor)"
+    ],
+    [
+      "Talvez perder",
+      "◇perder"
+    ],
+    [
+      "Precisa sorrir",
+      "□sorrir"
+    ],
+    [
+      "Todo gato é inteligente",
+      "∀x (gato(x) → inteligente(x))"
+    ],
+    [
+      "Nenhum homem é mortal",
+      "∀x (homem(x) → ¬mortal(x))"
+    ],
+    [
+      "Talvez viajar",
+      "◇viajar"
+    ],
+    [
+      "Kelly é pai de Erica",
+      "pai(kelly, erica) ∧ pessoa(kelly) ∧ pessoa(erica)"
+    ],
+    [
+      "Todo homem é forte",
+      "∀x (homem(x) → forte(x))"
+    ],
+    [
+      "Pode ser que estudar",
+      "◇estudar"
+    ],
+    [
+      "Vitor acredita que vai chova",
+      "B(vitor, chover(vitor))"
+    ],
+    [
+      "Nenhum animal é feliz",
+      "∀x (animal(x) → ¬feliz(x))"
+    ],
+    [
+      "Nando é prima de Raul",
+      "prima(nando, raul) ∧ pessoa(nando) ∧ pessoa(raul)"
+    ],
+    [
+      "Pode ser que perder",
+      "◇perder"
+    ],
+    [
+      "É necessário que perder",
+      "□perder"
+    ],
+    [
+      "É obrigatório que chorar",
+      "□chorar"
+    ],
+    [
+      "Nívea é cunhado de Kelly",
+      "cunhado(nívea, kelly) ∧ pessoa(nívea) ∧ pessoa(kelly)"
+    ],
+    [
+      "Todo gato é bravo",
+      "∀x (gato(x) → bravo(x))"
+    ],
+    [
+      "Talvez correr",
+      "◇correr"
+    ],
+    [
+      "Ubaldo é primo de Zuleica",
+      "primo(ubaldo, zuleica) ∧ pessoa(ubaldo) ∧ pessoa(zuleica)"
+    ],
+    [
+      "Íris sabe que chorar",
+      "K(íris, chorar(íris))"
+    ],
+    [
+      "Luan acredita que vai perder",
+      "B(luan, perder(luan))"
+    ],
+    [
+      "É possível que dormir",
+      "◇dormir"
+    ],
+    [
+      "É possível que estudar",
+      "◇estudar"
+    ],
+    [
+      "Nenhum gato é forte",
+      "∀x (gato(x) → ¬forte(x))"
+    ],
+    [
+      "Otavio é pai de Rosa",
+      "pai(otavio, rosa) ∧ pessoa(otavio) ∧ pessoa(rosa)"
+    ],
+    [
+      "Provalvemente perder",
+      "◇perder"
+    ],
+    [
+      "Pedro acredita que vai ventar",
+      "B(pedro, ventar(pedro))"
+    ],
+    [
+      "Rita é cunhada de Yago",
+      "cunhada(rita, yago) ∧ pessoa(rita) ∧ pessoa(yago)"
+    ],
+    [
+      "Nenhum animal é mortal",
+      "∀x (animal(x) → ¬mortal(x))"
+    ],
+    [
+      "Vânia é mãe de Luan",
+      "mae(vânia, luan) ∧ pessoa(vânia) ∧ pessoa(luan)"
+    ],
+    [
+      "Algum aluno é rápido",
+      "∃x (aluno(x) ∧ rapido(x))"
+    ],
+    [
+      "Algum aluno é mortal",
+      "∃x (aluno(x) ∧ mortal(x))"
+    ],
+    [
+      "Talvez sorrir",
+      "◇sorrir"
+    ],
+    [
+      "Precisa dançar",
+      "□dancar"
+    ],
+    [
+      "Todo gato é rápido",
+      "∀x (gato(x) → rapido(x))"
+    ],
+    [
+      "Todo pássaro é rápido",
+      "∀x (passaro(x) → rapido(x))"
+    ],
+    [
+      "Pode ser que correr",
+      "◇correr"
+    ],
+    [
+      "É obrigatório que sorrir",
+      "□sorrir"
+    ],
+    [
+      "É necessário que faça sol",
+      "□fazer_sol"
+    ],
+    [
+      "Algum aluno é forte",
+      "∃x (aluno(x) ∧ forte(x))"
+    ],
+    [
+      "É possível que ventar",
+      "◇ventar"
+    ],
+    [
+      "É obrigatório que faça sol",
+      "□fazer_sol"
+    ],
+    [
+      "Algum pássaro é inteligente",
+      "∃x (passaro(x) ∧ inteligente(x))"
+    ],
+    [
+      "Livia acredita que vai neve",
+      "B(livia, nevar(livia))"
+    ],
+    [
+      "Nenhum pássaro é feliz",
+      "∀x (passaro(x) → ¬feliz(x))"
+    ],
+    [
+      "Algum pássaro é inteligente",
+      "∃x (passaro(x) ∧ inteligente(x))"
+    ],
+    [
+      "Provalvemente sorrir",
+      "◇sorrir"
+    ],
+    [
+      "É obrigatório que sorrir",
+      "□sorrir"
+    ],
+    [
+      "Jorge é avô de Zeca",
+      "avo(jorge, zeca) ∧ pessoa(jorge) ∧ pessoa(zeca)"
+    ],
+    [
+      "Todo pássaro é mortal",
+      "∀x (passaro(x) → mortal(x))"
+    ],
+    [
+      "Todo animal é forte",
+      "∀x (animal(x) → forte(x))"
+    ],
+    [
+      "Todo gato é mortal",
+      "∀x (gato(x) → mortal(x))"
+    ],
+    [
+      "Necessariamente viajar",
+      "□viajar"
+    ],
+    [
+      "Todo mulher é forte",
+      "∀x (mulher(x) → forte(x))"
+    ],
+    [
+      "Igor sabe que faça sol",
+      "K(igor, fazer_sol(igor))"
+    ],
+    [
+      "Xavier é primo de Carlos",
+      "primo(xavier, carlos) ∧ pessoa(xavier) ∧ pessoa(carlos)"
+    ],
+    [
+      "Todo animal é bravo",
+      "∀x (animal(x) → bravo(x))"
+    ],
+    [
+      "Todo médico é bravo",
+      "∀x (medico(x) → bravo(x))"
+    ],
+    [
+      "Nenhum médico é rápido",
+      "∀x (medico(x) → ¬rapido(x))"
+    ],
+    [
+      "Algum pássaro é rápido",
+      "∃x (passaro(x) ∧ rapido(x))"
+    ],
+    [
+      "Todo mulher é forte",
+      "∀x (mulher(x) → forte(x))"
+    ],
+    [
+      "Algum mulher é bravo",
+      "∃x (mulher(x) ∧ bravo(x))"
+    ],
+    [
+      "Algum gato é rápido",
+      "∃x (gato(x) ∧ rapido(x))"
+    ],
+    [
+      "Necessariamente ventar",
+      "□ventar"
+    ],
+    [
+      "Pode ser que faça sol",
+      "◇fazer_sol"
+    ],
+    [
+      "Talvez cantar",
+      "◇cantar"
+    ],
+    [
+      "Todo médico é feliz",
+      "∀x (medico(x) → feliz(x))"
+    ],
+    [
+      "Marcos acredita que vai chova",
+      "B(marcos, chover(marcos))"
+    ],
+    [
+      "É obrigatório que sorrir",
+      "□sorrir"
+    ],
+    [
+      "Todo gato é feliz",
+      "∀x (gato(x) → feliz(x))"
+    ],
+    [
+      "Todo animal é feliz",
+      "∀x (animal(x) → feliz(x))"
+    ],
+    [
+      "É necessário que chova",
+      "□chover"
+    ],
+    [
+      "Pode ser que ganhar",
+      "◇ganhar"
+    ],
+    [
+      "Talvez estudar",
+      "◇estudar"
+    ],
+    [
+      "Algum mulher é mortal",
+      "∃x (mulher(x) ∧ mortal(x))"
+    ],
+    [
+      "É possível que pular",
+      "◇pular"
+    ],
+    [
+      "Mateus é avô de Marcos",
+      "avo(mateus, marcos) ∧ pessoa(mateus) ∧ pessoa(marcos)"
+    ],
+    [
+      "Nenhum gato é rápido",
+      "∀x (gato(x) → ¬rapido(x))"
+    ],
+    [
+      "Nenhum aluno é feliz",
+      "∀x (aluno(x) → ¬feliz(x))"
+    ],
+    [
+      "Todo animal é forte",
+      "∀x (animal(x) → forte(x))"
+    ],
+    [
+      "Nenhum homem é forte",
+      "∀x (homem(x) → ¬forte(x))"
+    ],
+    [
+      "Sonia sabe que pular",
+      "K(sonia, pular(sonia))"
+    ],
+    [
+      "Nenhum mulher é forte",
+      "∀x (mulher(x) → ¬forte(x))"
+    ],
+    [
+      "Gina sabe que sorrir",
+      "K(gina, sorrir(gina))"
+    ],
+    [
+      "Algum gato é forte",
+      "∃x (gato(x) ∧ forte(x))"
+    ],
+    [
+      "Algum homem é bravo",
+      "∃x (homem(x) ∧ bravo(x))"
+    ],
+    [
+      "Algum homem é bravo",
+      "∃x (homem(x) ∧ bravo(x))"
+    ],
+    [
+      "Talvez sorrir",
+      "◇sorrir"
+    ],
+    [
+      "Jorge é tio de Tânia",
+      "tio(jorge, tânia) ∧ pessoa(jorge) ∧ pessoa(tânia)"
+    ],
+    [
+      "Sérgio acredita que vai cantar",
+      "B(sérgio, cantar(sérgio))"
+    ],
+    [
+      "Necessariamente ventar",
+      "□ventar"
+    ],
+    [
+      "Necessariamente cantar",
+      "□cantar"
+    ],
+    [
+      "É necessário que chova",
+      "□chover"
+    ],
+    [
+      "Todo mulher é mortal",
+      "∀x (mulher(x) → mortal(x))"
+    ],
+    [
+      "Provalvemente perder",
+      "◇perder"
+    ],
+    [
+      "Julia é tia de Gina",
+      "tia(julia, gina) ∧ pessoa(julia) ∧ pessoa(gina)"
+    ],
+    [
+      "É obrigatório que comer",
+      "□comer"
+    ],
+    [
+      "Nenhum gato é mortal",
+      "∀x (gato(x) → ¬mortal(x))"
+    ],
+    [
+      "Enzo acredita que vai pular",
+      "B(enzo, pular(enzo))"
+    ],
+    [
+      "Provalvemente dormir",
+      "◇dormir"
+    ],
+    [
+      "Marcos é cunhado de Carlos",
+      "cunhado(marcos, carlos) ∧ pessoa(marcos) ∧ pessoa(carlos)"
+    ],
+    [
+      "Rosa é avó de Pilar",
+      "avo(rosa, pilar) ∧ pessoa(rosa) ∧ pessoa(pilar)"
+    ],
+    [
+      "Nenhum gato é inteligente",
+      "∀x (gato(x) → ¬inteligente(x))"
+    ],
+    [
+      "Algum homem é feliz",
+      "∃x (homem(x) ∧ feliz(x))"
+    ],
+    [
+      "Nenhum gato é mortal",
+      "∀x (gato(x) → ¬mortal(x))"
+    ],
+    [
+      "Todo médico é forte",
+      "∀x (medico(x) → forte(x))"
+    ],
+    [
+      "Sara sabe que sorrir",
+      "K(sara, sorrir(sara))"
+    ],
+    [
+      "Marcos é primo de Luan",
+      "primo(marcos, luan) ∧ pessoa(marcos) ∧ pessoa(luan)"
+    ],
+    [
+      "Sérgio é irmão de Fábio",
+      "irmao(sérgio, fábio) ∧ pessoa(sérgio) ∧ pessoa(fábio)"
+    ],
+    [
+      "Xavier é avô de Fábio",
+      "avo(xavier, fábio) ∧ pessoa(xavier) ∧ pessoa(fábio)"
+    ],
+    [
+      "Bianca sabe que chorar",
+      "K(bianca, chorar(bianca))"
+    ],
+    [
+      "Yago é sobrinho de Sérgio",
+      "sobrinho(yago, sérgio) ∧ pessoa(yago) ∧ pessoa(sérgio)"
+    ],
+    [
+      "Necessariamente perder",
+      "□perder"
+    ],
+    [
+      "Raul é cunhada de Lara",
+      "cunhada(raul, lara) ∧ pessoa(raul) ∧ pessoa(lara)"
+    ],
+    [
+      "Caio é cunhado de Xavier",
+      "cunhado(caio, xavier) ∧ pessoa(caio) ∧ pessoa(xavier)"
+    ],
+    [
+      "Necessariamente estudar",
+      "□estudar"
+    ],
+    [
+      "Pode ser que ganhar",
+      "◇ganhar"
+    ],
+    [
+      "É obrigatório que sorrir",
+      "□sorrir"
+    ],
+    [
+      "Helena é sobrinha de Jorge",
+      "sobrinha(helena, jorge) ∧ pessoa(helena) ∧ pessoa(jorge)"
+    ],
+    [
+      "Provalvemente cantar",
+      "◇cantar"
+    ],
+    [
+      "Nenhum animal é rápido",
+      "∀x (animal(x) → ¬rapido(x))"
+    ],
+    [
+      "Todo mulher é mortal",
+      "∀x (mulher(x) → mortal(x))"
+    ],
+    [
+      "Nenhum aluno é mortal",
+      "∀x (aluno(x) → ¬mortal(x))"
+    ],
+    [
+      "Provalvemente comer",
+      "◇comer"
+    ],
+    [
+      "Nenhum homem é rápido",
+      "∀x (homem(x) → ¬rapido(x))"
+    ],
+    [
+      "Algum médico é forte",
+      "∃x (medico(x) ∧ forte(x))"
+    ],
+    [
+      "Necessariamente correr",
+      "□correr"
+    ],
+    [
+      "Mateus é filho de Luan",
+      "filho(mateus, luan) ∧ pessoa(mateus) ∧ pessoa(luan)"
+    ],
+    [
+      "Gabi é prima de Enzo",
+      "prima(gabi, enzo) ∧ pessoa(gabi) ∧ pessoa(enzo)"
+    ],
+    [
+      "Todo mulher é forte",
+      "∀x (mulher(x) → forte(x))"
+    ],
+    [
+      "Nando acredita que vai ventar",
+      "B(nando, ventar(nando))"
+    ],
+    [
+      "Bruno é cunhado de Yago",
+      "cunhado(bruno, yago) ∧ pessoa(bruno) ∧ pessoa(yago)"
+    ],
+    [
+      "Nando é irmã de Mara",
+      "irma(nando, mara) ∧ pessoa(nando) ∧ pessoa(mara)"
+    ],
+    [
+      "É necessário que neve",
+      "□nevar"
+    ],
+    [
+      "Algum aluno é feliz",
+      "∃x (aluno(x) ∧ feliz(x))"
+    ],
+    [
+      "Todo animal é feliz",
+      "∀x (animal(x) → feliz(x))"
+    ],
+    [
+      "Necessariamente estudar",
+      "□estudar"
+    ],
+    [
+      "Algum médico é inteligente",
+      "∃x (medico(x) ∧ inteligente(x))"
+    ],
+    [
+      "É obrigatório que sorrir",
+      "□sorrir"
+    ],
+    [
+      "Talvez pular",
+      "◇pular"
+    ],
+    [
+      "Bruno acredita que vai ganhar",
+      "B(bruno, ganhar(bruno))"
+    ],
+    [
+      "Erica é filha de Enzo",
+      "filha(erica, enzo) ∧ pessoa(erica) ∧ pessoa(enzo)"
+    ],
+    [
+      "Provalvemente ventar",
+      "◇ventar"
+    ],
+    [
+      "Talvez comer",
+      "◇comer"
+    ],
+    [
+      "Algum aluno é rápido",
+      "∃x (aluno(x) ∧ rapido(x))"
+    ],
+    [
+      "Algum pássaro é mortal",
+      "∃x (passaro(x) ∧ mortal(x))"
+    ],
+    [
+      "Nenhum médico é feliz",
+      "∀x (medico(x) → ¬feliz(x))"
+    ],
+    [
+      "Xavier é prima de Caio",
+      "prima(xavier, caio) ∧ pessoa(xavier) ∧ pessoa(caio)"
+    ],
+    [
+      "Nenhum médico é rápido",
+      "∀x (medico(x) → ¬rapido(x))"
+    ],
+    [
+      "Mateus é sobrinha de Igor",
+      "sobrinha(mateus, igor) ∧ pessoa(mateus) ∧ pessoa(igor)"
+    ],
+    [
+      "Algum pássaro é bravo",
+      "∃x (passaro(x) ∧ bravo(x))"
+    ],
+    [
+      "Pode ser que correr",
+      "◇correr"
+    ],
+    [
+      "Carlos sabe que dormir",
+      "K(carlos, dormir(carlos))"
+    ],
+    [
+      "Todo mulher é rápido",
+      "∀x (mulher(x) → rapido(x))"
+    ],
+    [
+      "Algum aluno é rápido",
+      "∃x (aluno(x) ∧ rapido(x))"
+    ],
+    [
+      "Nenhum mulher é bravo",
+      "∀x (mulher(x) → ¬bravo(x))"
+    ],
+    [
+      "Carlos sabe que ventar",
+      "K(carlos, ventar(carlos))"
+    ],
+    [
+      "É possível que correr",
+      "◇correr"
+    ],
+    [
+      "Precisa comer",
+      "□comer"
+    ],
+    [
+      "Algum médico é inteligente",
+      "∃x (medico(x) ∧ inteligente(x))"
+    ],
+    [
+      "Marcos é pai de Mateus",
+      "pai(marcos, mateus) ∧ pessoa(marcos) ∧ pessoa(mateus)"
+    ],
+    [
+      "Helena sabe que perder",
+      "K(helena, perder(helena))"
+    ],
+    [
+      "Yago é mãe de Julia",
+      "mae(yago, julia) ∧ pessoa(yago) ∧ pessoa(julia)"
+    ],
+    [
+      "Provalvemente pular",
+      "◇pular"
+    ],
+    [
+      "Algum médico é forte",
+      "∃x (medico(x) ∧ forte(x))"
+    ],
+    [
+      "É necessário que chorar",
+      "□chorar"
+    ],
+    [
+      "Vânia acredita que vai cantar",
+      "B(vânia, cantar(vânia))"
+    ],
+    [
+      "Nenhum mulher é rápido",
+      "∀x (mulher(x) → ¬rapido(x))"
+    ],
+    [
+      "Nenhum pássaro é mortal",
+      "∀x (passaro(x) → ¬mortal(x))"
+    ],
+    [
+      "Algum mulher é rápido",
+      "∃x (mulher(x) ∧ rapido(x))"
+    ],
+    [
+      "Jorge acredita que vai neve",
+      "B(jorge, nevar(jorge))"
+    ],
+    [
+      "Enzo acredita que vai ganhar",
+      "B(enzo, ganhar(enzo))"
+    ],
+    [
+      "É obrigatório que ventar",
+      "□ventar"
+    ],
+    [
+      "Kelly acredita que vai sorrir",
+      "B(kelly, sorrir(kelly))"
+    ],
+    [
+      "Mara é primo de Helena",
+      "primo(mara, helena) ∧ pessoa(mara) ∧ pessoa(helena)"
+    ],
+    [
+      "Necessariamente perder",
+      "□perder"
+    ],
+    [
+      "Algum médico é rápido",
+      "∃x (medico(x) ∧ rapido(x))"
+    ],
+    [
+      "Precisa estudar",
+      "□estudar"
+    ],
+    [
+      "Todo homem é feliz",
+      "∀x (homem(x) → feliz(x))"
+    ],
+    [
+      "Precisa estudar",
+      "□estudar"
+    ],
+    [
+      "Talvez dormir",
+      "◇dormir"
+    ],
+    [
+      "Vitor acredita que vai estudar",
+      "B(vitor, estudar(vitor))"
+    ],
+    [
+      "Todo mulher é inteligente",
+      "∀x (mulher(x) → inteligente(x))"
+    ],
+    [
+      "Quirino é prima de Gina",
+      "prima(quirino, gina) ∧ pessoa(quirino) ∧ pessoa(gina)"
+    ],
+    [
+      "Necessariamente sorrir",
+      "□sorrir"
+    ],
+    [
+      "Talvez ventar",
+      "◇ventar"
+    ],
+    [
+      "Pode ser que chova",
+      "◇chover"
+    ],
+    [
+      "Algum aluno é rápido",
+      "∃x (aluno(x) ∧ rapido(x))"
+    ],
+    [
+      "Algum homem é forte",
+      "∃x (homem(x) ∧ forte(x))"
+    ],
+    [
+      "Necessariamente correr",
+      "□correr"
+    ],
+    [
+      "Olívia é avó de Erica",
+      "avo(olívia, erica) ∧ pessoa(olívia) ∧ pessoa(erica)"
+    ],
+    [
+      "Pode ser que pular",
+      "◇pular"
+    ],
+    [
+      "Zeca é irmã de Raul",
+      "irma(zeca, raul) ∧ pessoa(zeca) ∧ pessoa(raul)"
+    ],
+    [
+      "Nenhum pássaro é rápido",
+      "∀x (passaro(x) → ¬rapido(x))"
+    ],
+    [
+      "Enzo é cunhada de Hugo",
+      "cunhada(enzo, hugo) ∧ pessoa(enzo) ∧ pessoa(hugo)"
+    ],
+    [
+      "Rita sabe que viajar",
+      "K(rita, viajar(rita))"
+    ],
+    [
+      "Raul é cunhado de Jorge",
+      "cunhado(raul, jorge) ∧ pessoa(raul) ∧ pessoa(jorge)"
+    ],
+    [
+      "Nenhum aluno é feliz",
+      "∀x (aluno(x) → ¬feliz(x))"
+    ],
+    [
+      "Rosa é filho de Nívea",
+      "filho(rosa, nívea) ∧ pessoa(rosa) ∧ pessoa(nívea)"
+    ],
+    [
+      "Todo animal é rápido",
+      "∀x (animal(x) → rapido(x))"
+    ],
+    [
+      "É necessário que perder",
+      "□perder"
+    ],
+    [
+      "Tiago é sobrinho de Zuleica",
+      "sobrinho(tiago, zuleica) ∧ pessoa(tiago) ∧ pessoa(zuleica)"
+    ],
+    [
+      "Talvez ventar",
+      "◇ventar"
+    ],
+    [
+      "Tânia é sobrinho de Xavier",
+      "sobrinho(tânia, xavier) ∧ pessoa(tânia) ∧ pessoa(xavier)"
+    ],
+    [
+      "Algum aluno é mortal",
+      "∃x (aluno(x) ∧ mortal(x))"
+    ],
+    [
+      "É necessário que chova",
+      "□chover"
+    ],
+    [
+      "Todo gato é mortal",
+      "∀x (gato(x) → mortal(x))"
+    ],
+    [
+      "Algum gato é feliz",
+      "∃x (gato(x) ∧ feliz(x))"
+    ],
+    [
+      "Algum médico é inteligente",
+      "∃x (medico(x) ∧ inteligente(x))"
+    ],
+    [
+      "Todo gato é inteligente",
+      "∀x (gato(x) → inteligente(x))"
+    ],
+    [
+      "Provalvemente viajar",
+      "◇viajar"
+    ],
+    [
+      "Zuleica é mãe de Gabi",
+      "mae(zuleica, gabi) ∧ pessoa(zuleica) ∧ pessoa(gabi)"
+    ],
+    [
+      "Helena é filha de Nívea",
+      "filha(helena, nívea) ∧ pessoa(helena) ∧ pessoa(nívea)"
+    ],
+    [
+      "É possível que viajar",
+      "◇viajar"
+    ],
+    [
+      "Pode ser que estudar",
+      "◇estudar"
+    ],
+    [
+      "Nenhum animal é rápido",
+      "∀x (animal(x) → ¬rapido(x))"
+    ],
+    [
+      "Nenhum homem é feliz",
+      "∀x (homem(x) → ¬feliz(x))"
+    ],
+    [
+      "Pode ser que dançar",
+      "◇dancar"
+    ],
+    [
+      "Necessariamente chorar",
+      "□chorar"
+    ],
+    [
+      "Nenhum animal é forte",
+      "∀x (animal(x) → ¬forte(x))"
+    ],
+    [
+      "Provalvemente comer",
+      "◇comer"
+    ],
+    [
+      "Helena é primo de Tânia",
+      "primo(helena, tânia) ∧ pessoa(helena) ∧ pessoa(tânia)"
+    ],
+    [
+      "Todo aluno é rápido",
+      "∀x (aluno(x) → rapido(x))"
+    ],
+    [
+      "Carlos é prima de Bianca",
+      "prima(carlos, bianca) ∧ pessoa(carlos) ∧ pessoa(bianca)"
+    ],
+    [
+      "Algum homem é rápido",
+      "∃x (homem(x) ∧ rapido(x))"
+    ],
+    [
+      "Todo médico é rápido",
+      "∀x (medico(x) → rapido(x))"
+    ],
+    [
+      "Otavio sabe que chorar",
+      "K(otavio, chorar(otavio))"
+    ],
+    [
+      "Nando é filho de Vitor",
+      "filho(nando, vitor) ∧ pessoa(nando) ∧ pessoa(vitor)"
+    ],
+    [
+      "Precisa dançar",
+      "□dancar"
+    ],
+    [
+      "Talvez chova",
+      "◇chover"
+    ],
+    [
+      "É necessário que correr",
+      "□correr"
+    ],
+    [
+      "Todo pássaro é rápido",
+      "∀x (passaro(x) → rapido(x))"
+    ],
+    [
+      "Nenhum mulher é feliz",
+      "∀x (mulher(x) → ¬feliz(x))"
+    ],
+    [
+      "Nenhum animal é rápido",
+      "∀x (animal(x) → ¬rapido(x))"
+    ],
+    [
+      "Provalvemente cantar",
+      "◇cantar"
+    ],
+    [
+      "Talvez chova",
+      "◇chover"
+    ],
+    [
+      "Todo aluno é forte",
+      "∀x (aluno(x) → forte(x))"
+    ],
+    [
+      "Nenhum gato é forte",
+      "∀x (gato(x) → ¬forte(x))"
+    ],
+    [
+      "Pode ser que comer",
+      "◇comer"
+    ],
+    [
+      "Provalvemente dormir",
+      "◇dormir"
+    ],
+    [
+      "Nenhum gato é inteligente",
+      "∀x (gato(x) → ¬inteligente(x))"
+    ],
+    [
+      "Todo aluno é mortal",
+      "∀x (aluno(x) → mortal(x))"
+    ],
+    [
+      "Todo homem é feliz",
+      "∀x (homem(x) → feliz(x))"
+    ],
+    [
+      "Algum animal é forte",
+      "∃x (animal(x) ∧ forte(x))"
+    ],
+    [
+      "Necessariamente dançar",
+      "□dancar"
+    ],
+    [
+      "Talvez perder",
+      "◇perder"
+    ],
+    [
+      "Marcos é prima de Mateus",
+      "prima(marcos, mateus) ∧ pessoa(marcos) ∧ pessoa(mateus)"
+    ],
+    [
+      "Algum aluno é mortal",
+      "∃x (aluno(x) ∧ mortal(x))"
+    ],
+    [
+      "Igor é irmão de Zuleica",
+      "irmao(igor, zuleica) ∧ pessoa(igor) ∧ pessoa(zuleica)"
+    ],
+    [
+      "Zeca é cunhado de Zuleica",
+      "cunhado(zeca, zuleica) ∧ pessoa(zeca) ∧ pessoa(zuleica)"
+    ],
+    [
+      "Igor é irmã de Mateus",
+      "irma(igor, mateus) ∧ pessoa(igor) ∧ pessoa(mateus)"
+    ],
+    [
+      "Otavio sabe que estudar",
+      "K(otavio, estudar(otavio))"
+    ],
+    [
+      "Algum médico é bravo",
+      "∃x (medico(x) ∧ bravo(x))"
+    ],
+    [
+      "Provalvemente sorrir",
+      "◇sorrir"
+    ],
+    [
+      "Todo homem é rápido",
+      "∀x (homem(x) → rapido(x))"
+    ],
+    [
+      "Provalvemente ganhar",
+      "◇ganhar"
+    ],
+    [
+      "Caio é tio de Enzo",
+      "tio(caio, enzo) ∧ pessoa(caio) ∧ pessoa(enzo)"
+    ],
+    [
+      "Todo médico é feliz",
+      "∀x (medico(x) → feliz(x))"
+    ],
+    [
+      "Sérgio é filha de Nando",
+      "filha(sérgio, nando) ∧ pessoa(sérgio) ∧ pessoa(nando)"
+    ],
+    [
+      "Sérgio é prima de Helena",
+      "prima(sérgio, helena) ∧ pessoa(sérgio) ∧ pessoa(helena)"
+    ],
+    [
+      "Enzo é sobrinho de Hugo",
+      "sobrinho(enzo, hugo) ∧ pessoa(enzo) ∧ pessoa(hugo)"
+    ],
+    [
+      "Nenhum gato é feliz",
+      "∀x (gato(x) → ¬feliz(x))"
+    ],
+    [
+      "Todo gato é forte",
+      "∀x (gato(x) → forte(x))"
+    ],
+    [
+      "Erica sabe que neve",
+      "K(erica, nevar(erica))"
+    ],
+    [
+      "É necessário que chorar",
+      "□chorar"
+    ],
+    [
+      "Julia sabe que correr",
+      "K(julia, correr(julia))"
+    ],
+    [
+      "Kelly é filha de Rita",
+      "filha(kelly, rita) ∧ pessoa(kelly) ∧ pessoa(rita)"
+    ],
+    [
+      "Hugo é prima de Lara",
+      "prima(hugo, lara) ∧ pessoa(hugo) ∧ pessoa(lara)"
+    ],
+    [
+      "Gina acredita que vai estudar",
+      "B(gina, estudar(gina))"
+    ],
+    [
+      "É obrigatório que faça sol",
+      "□fazer_sol"
+    ],
+    [
+      "É possível que sorrir",
+      "◇sorrir"
+    ],
+    [
+      "É possível que chova",
+      "◇chover"
+    ],
+    [
+      "Nenhum homem é rápido",
+      "∀x (homem(x) → ¬rapido(x))"
+    ],
+    [
+      "Mateus é filho de Hugo",
+      "filho(mateus, hugo) ∧ pessoa(mateus) ∧ pessoa(hugo)"
+    ],
+    [
+      "Bianca acredita que vai chova",
+      "B(bianca, chover(bianca))"
+    ],
+    [
+      "Nenhum animal é inteligente",
+      "∀x (animal(x) → ¬inteligente(x))"
+    ],
+    [
+      "Nívea acredita que vai comer",
+      "B(nívea, comer(nívea))"
+    ],
+    [
+      "Talvez dançar",
+      "◇dancar"
+    ],
+    [
+      "Todo aluno é bravo",
+      "∀x (aluno(x) → bravo(x))"
+    ],
+    [
+      "É necessário que ganhar",
+      "□ganhar"
+    ],
+    [
+      "Nenhum mulher é forte",
+      "∀x (mulher(x) → ¬forte(x))"
+    ],
+    [
+      "Algum animal é mortal",
+      "∃x (animal(x) ∧ mortal(x))"
+    ],
+    [
+      "Nenhum médico é bravo",
+      "∀x (medico(x) → ¬bravo(x))"
+    ],
+    [
+      "Mara é prima de Livia",
+      "prima(mara, livia) ∧ pessoa(mara) ∧ pessoa(livia)"
+    ],
+    [
+      "Provalvemente comer",
+      "◇comer"
+    ],
+    [
+      "Sérgio é tia de Vânia",
+      "tia(sérgio, vânia) ∧ pessoa(sérgio) ∧ pessoa(vânia)"
+    ],
+    [
+      "Fábio acredita que vai neve",
+      "B(fábio, nevar(fábio))"
+    ],
+    [
+      "Livia é filha de Hugo",
+      "filha(livia, hugo) ∧ pessoa(livia) ∧ pessoa(hugo)"
+    ],
+    [
+      "Todo animal é mortal",
+      "∀x (animal(x) → mortal(x))"
+    ],
+    [
+      "Bianca acredita que vai pular",
+      "B(bianca, pular(bianca))"
+    ],
+    [
+      "Precisa comer",
+      "□comer"
+    ],
+    [
+      "Sara sabe que cantar",
+      "K(sara, cantar(sara))"
+    ],
+    [
+      "Nenhum pássaro é mortal",
+      "∀x (passaro(x) → ¬mortal(x))"
+    ],
+    [
+      "Rita é tio de Gina",
+      "tio(rita, gina) ∧ pessoa(rita) ∧ pessoa(gina)"
+    ],
+    [
+      "Precisa ganhar",
+      "□ganhar"
+    ],
+    [
+      "Nenhum mulher é rápido",
+      "∀x (mulher(x) → ¬rapido(x))"
+    ],
+    [
+      "Pode ser que pular",
+      "◇pular"
+    ],
+    [
+      "Talvez pular",
+      "◇pular"
+    ],
+    [
+      "Algum médico é feliz",
+      "∃x (medico(x) ∧ feliz(x))"
+    ],
+    [
+      "Algum mulher é rápido",
+      "∃x (mulher(x) ∧ rapido(x))"
+    ],
+    [
+      "Igor acredita que vai chova",
+      "B(igor, chover(igor))"
+    ],
+    [
+      "É necessário que sorrir",
+      "□sorrir"
+    ],
+    [
+      "Todo pássaro é mortal",
+      "∀x (passaro(x) → mortal(x))"
+    ],
+    [
+      "É obrigatório que cantar",
+      "□cantar"
+    ],
+    [
+      "Nenhum aluno é bravo",
+      "∀x (aluno(x) → ¬bravo(x))"
+    ],
+    [
+      "É obrigatório que comer",
+      "□comer"
+    ],
+    [
+      "Algum médico é bravo",
+      "∃x (medico(x) ∧ bravo(x))"
+    ],
+    [
+      "Nenhum animal é rápido",
+      "∀x (animal(x) → ¬rapido(x))"
+    ],
+    [
+      "Algum animal é mortal",
+      "∃x (animal(x) ∧ mortal(x))"
+    ],
+    [
+      "Lara é mãe de Hugo",
+      "mae(lara, hugo) ∧ pessoa(lara) ∧ pessoa(hugo)"
+    ],
+    [
+      "Caio acredita que vai dormir",
+      "B(caio, dormir(caio))"
+    ],
+    [
+      "Provalvemente neve",
+      "◇nevar"
+    ],
+    [
+      "Algum médico é feliz",
+      "∃x (medico(x) ∧ feliz(x))"
+    ],
+    [
+      "Precisa ventar",
+      "□ventar"
+    ],
+    [
+      "Nenhum gato é mortal",
+      "∀x (gato(x) → ¬mortal(x))"
+    ],
+    [
+      "Hugo é tio de Raul",
+      "tio(hugo, raul) ∧ pessoa(hugo) ∧ pessoa(raul)"
+    ],
+    [
+      "Nenhum aluno é rápido",
+      "∀x (aluno(x) → ¬rapido(x))"
+    ],
+    [
+      "Pode ser que pular",
+      "◇pular"
+    ],
+    [
+      "Precisa ganhar",
+      "□ganhar"
+    ],
+    [
+      "Necessariamente dançar",
+      "□dancar"
+    ],
+    [
+      "Algum gato é inteligente",
+      "∃x (gato(x) ∧ inteligente(x))"
+    ],
+    [
+      "Vitor sabe que pular",
+      "K(vitor, pular(vitor))"
+    ],
+    [
+      "Sérgio acredita que vai dançar",
+      "B(sérgio, dancar(sérgio))"
+    ],
+    [
+      "Helena acredita que vai pular",
+      "B(helena, pular(helena))"
+    ],
+    [
+      "Todo médico é feliz",
+      "∀x (medico(x) → feliz(x))"
+    ],
+    [
+      "Rosa é sobrinha de Caio",
+      "sobrinha(rosa, caio) ∧ pessoa(rosa) ∧ pessoa(caio)"
+    ],
+    [
+      "Raul é filha de Dora",
+      "filha(raul, dora) ∧ pessoa(raul) ∧ pessoa(dora)"
+    ],
+    [
+      "Todo homem é inteligente",
+      "∀x (homem(x) → inteligente(x))"
+    ],
+    [
+      "Luan é prima de Yago",
+      "prima(luan, yago) ∧ pessoa(luan) ∧ pessoa(yago)"
+    ],
+    [
+      "Todo animal é feliz",
+      "∀x (animal(x) → feliz(x))"
+    ],
+    [
+      "Sara é pai de Tiago",
+      "pai(sara, tiago) ∧ pessoa(sara) ∧ pessoa(tiago)"
+    ],
+    [
+      "Kelly é tio de Zeca",
+      "tio(kelly, zeca) ∧ pessoa(kelly) ∧ pessoa(zeca)"
+    ],
+    [
+      "Algum gato é forte",
+      "∃x (gato(x) ∧ forte(x))"
+    ],
+    [
+      "Todo homem é mortal",
+      "∀x (homem(x) → mortal(x))"
+    ],
+    [
+      "Existe a chance de que ganhe",
+      "◇ganhar"
+    ],
+    [
+      "Aline é avó de Queirós",
+      "avo(aline, queirós) ∧ pessoa(aline) ∧ pessoa(queirós)"
+    ],
+    [
+      "Valeria acredita que vai ganhe",
+      "B(valeria, ganhar(valeria))"
+    ],
+    [
+      "Caio acredita que vai viaje",
+      "B(caio, viajar(caio))"
+    ],
+    [
+      "Todo artista é habilidoso",
+      "∀x (artista(x) → habilidoso(x))"
+    ],
+    [
+      "Nenhum artista é feliz",
+      "∀x (artista(x) → ¬feliz(x))"
+    ],
+    [
+      "Olga sabe que sorria",
+      "K(olga, sorrir(olga))"
+    ],
+    [
+      "Todo atleta é rápido",
+      "∀x (atleta(x) → rapido(x))"
+    ],
+    [
+      "Precisa leia",
+      "□ler"
+    ],
+    [
+      "Nenhum gato é inteligente",
+      "∀x (gato(x) → ¬inteligente(x))"
+    ],
+    [
+      "Precisa perca",
+      "□perder"
+    ],
+    [
+      "Nenhum médico é preciso",
+      "∀x (medico(x) → ¬preciso(x))"
+    ],
+    [
+      "Todo atleta é rápido",
+      "∀x (atleta(x) → rapido(x))"
+    ],
+    [
+      "Daniel acredita que vai encontre",
+      "B(daniel, encontrar(daniel))"
+    ],
+    [
+      "Condição para que viaje",
+      "□viajar"
+    ],
+    [
+      "Quiteria é enteado de Queirós",
+      "enteado(quiteria, queirós) ∧ pessoa(quiteria) ∧ pessoa(queirós)"
+    ],
+    [
+      "Nenhum animal é mortal",
+      "∀x (animal(x) → ¬mortal(x))"
+    ],
+    [
+      "Zenaide é filho de Xuxa",
+      "filho(zenaide, xuxa) ∧ pessoa(zenaide) ∧ pessoa(xuxa)"
+    ],
+    [
+      "É obrigatório que escreva",
+      "□escrever"
+    ],
+    [
+      "Moacir é sobrinha de Regina",
+      "sobrinha(moacir, regina) ∧ pessoa(moacir) ∧ pessoa(regina)"
+    ],
+    [
+      "Nenhum gato é habilidoso",
+      "∀x (gato(x) → ¬habilidoso(x))"
+    ],
+    [
+      "Kevin sabe que prejudique",
+      "K(kevin, prejudicar(kevin))"
+    ],
+    [
+      "Hugo acredita que vai amigo",
+      "B(hugo, amigo(hugo))"
+    ],
+    [
+      "Todo cachorro é habilidoso",
+      "∀x (cao(x) → habilidoso(x))"
+    ],
+    [
+      "Talvez escreva",
+      "◇escrever"
+    ],
+    [
+      "Ursula é pai de Vagner",
+      "pai(ursula, vagner) ∧ pessoa(ursula) ∧ pessoa(vagner)"
+    ],
+    [
+      "É obrigatório que sorria",
+      "□sorrir"
+    ],
+    [
+      "Silvia é cunhado de Paulo",
+      "cunhado(silvia, paulo) ∧ pessoa(silvia) ∧ pessoa(paulo)"
+    ],
+    [
+      "Algum gato é feliz",
+      "∃x (gato(x) ∧ feliz(x))"
+    ],
+    [
+      "Bob é padrasto de Flavia",
+      "padrasto(bob, flavia) ∧ pessoa(bob) ∧ pessoa(flavia)"
+    ],
+    [
+      "Quenia é filho de Tatiana",
+      "filho(quenia, tatiana) ∧ pessoa(quenia) ∧ pessoa(tatiana)"
+    ],
+    [
+      "Quenia é sobrinho de Dante",
+      "sobrinho(quenia, dante) ∧ pessoa(quenia) ∧ pessoa(dante)"
+    ],
+    [
+      "Provalvemente sorria",
+      "◇sorrir"
+    ],
+    [
+      "Todo homem é forte",
+      "∀x (homem(x) → forte(x))"
+    ],
+    [
+      "Alice acredita que vai chore",
+      "B(alice, chorar(alice))"
+    ],
+    [
+      "É necessário que viaje",
+      "□viajar"
+    ],
+    [
+      "Nenhum professor é inteligente",
+      "∀x (professor(x) → ¬inteligente(x))"
+    ],
+    [
+      "Bob é prima de Elsa",
+      "prima(bob, elsa) ∧ pessoa(bob) ∧ pessoa(elsa)"
+    ],
+    [
+      "Deve-se garantir que pule",
+      "□pular"
+    ],
+    [
+      "Caio é filho de Ziraldo",
+      "filho(caio, ziraldo) ∧ pessoa(caio) ∧ pessoa(ziraldo)"
+    ],
+    [
+      "Precisa inimigo",
+      "□inimigo"
+    ],
+    [
+      "Algum médico é mortal",
+      "∃x (medico(x) ∧ mortal(x))"
+    ],
+    [
+      "Joaquim é avó de Moacir",
+      "avo(joaquim, moacir) ∧ pessoa(joaquim) ∧ pessoa(moacir)"
+    ],
+    [
+      "Necessariamente chova",
+      "□chover"
+    ],
+    [
+      "Algum homem é inteligente",
+      "∃x (homem(x) ∧ inteligente(x))"
+    ],
+    [
+      "Necessariamente perca",
+      "□perder"
+    ],
+    [
+      "Necessariamente amigo",
+      "□amigo"
+    ],
+    [
+      "Gisele é irmão de Dora",
+      "irmao(gisele, dora) ∧ pessoa(gisele) ∧ pessoa(dora)"
+    ],
+    [
+      "Pode ser que dance",
+      "◇dancar"
+    ],
+    [
+      "É possível que durma",
+      "◇dormir"
+    ],
+    [
+      "Deve-se garantir que busque",
+      "□buscar"
+    ],
+    [
+      "Nenhum artista é dedicado",
+      "∀x (artista(x) → ¬dedicado(x))"
+    ],
+    [
+      "Algum homem é bravo",
+      "∃x (homem(x) ∧ bravo(x))"
+    ],
+    [
+      "Algum médico é habilidoso",
+      "∃x (medico(x) ∧ habilidoso(x))"
+    ],
+    [
+      "Nenhum aluno é preciso",
+      "∀x (aluno(x) → ¬preciso(x))"
+    ],
+    [
+      "Zenaide é enteada de Dora",
+      "enteada(zenaide, dora) ∧ pessoa(zenaide) ∧ pessoa(dora)"
+    ],
+    [
+      "É obrigatório que chore",
+      "□chorar"
+    ],
+    [
+      "Todo pássaro é dedicado",
+      "∀x (passaro(x) → dedicado(x))"
+    ],
+    [
+      "Laura é tia de Joaquim",
+      "tia(laura, joaquim) ∧ pessoa(laura) ∧ pessoa(joaquim)"
+    ],
+    [
+      "Nenhum mulher é forte",
+      "∀x (mulher(x) → ¬forte(x))"
+    ],
+    [
+      "Existe a chance de que cante",
+      "◇cantar"
+    ],
+    [
+      "Bob é filha de Xande",
+      "filha(bob, xande) ∧ pessoa(bob) ∧ pessoa(xande)"
+    ],
+    [
+      "Pode ser que coma",
+      "◇comer"
+    ],
+    [
+      "Todo mulher é habilidoso",
+      "∀x (mulher(x) → habilidoso(x))"
+    ],
+    [
+      "Talvez ajude",
+      "◇ajudar"
+    ],
+    [
+      "Nenhum mulher é bravo",
+      "∀x (mulher(x) → ¬bravo(x))"
+    ],
+    [
+      "Algum gato é mortal",
+      "∃x (gato(x) ∧ mortal(x))"
+    ],
+    [
+      "Nenhum mulher é dedicado",
+      "∀x (mulher(x) → ¬dedicado(x))"
+    ],
+    [
+      "Dante acredita que vai ganhe",
+      "B(dante, ganhar(dante))"
+    ],
+    [
+      "Nenhum animal é inteligente",
+      "∀x (animal(x) → ¬inteligente(x))"
+    ],
+    [
+      "Todo pássaro é bravo",
+      "∀x (passaro(x) → bravo(x))"
+    ],
+    [
+      "Yuri acredita que vai escreva",
+      "B(yuri, escrever(yuri))"
+    ],
+    [
+      "Zenaide é avô de Flavia",
+      "avo(zenaide, flavia) ∧ pessoa(zenaide) ∧ pessoa(flavia)"
+    ],
+    [
+      "Talvez viaje",
+      "◇viajar"
+    ],
+    [
+      "Necessariamente chore",
+      "□chorar"
+    ],
+    [
+      "Zuleica é filha de Fred",
+      "filha(zuleica, fred) ∧ pessoa(zuleica) ∧ pessoa(fred)"
+    ],
+    [
+      "Nenhum homem é mortal",
+      "∀x (homem(x) → ¬mortal(x))"
+    ],
+    [
+      "Daniel é sobrinho de Ronaldo",
+      "sobrinho(daniel, ronaldo) ∧ pessoa(daniel) ∧ pessoa(ronaldo)"
+    ],
+    [
+      "Deve-se garantir que inimigo",
+      "□inimigo"
+    ],
+    [
+      "Nenhum professor é mortal",
+      "∀x (professor(x) → ¬mortal(x))"
+    ],
+    [
+      "Joaquim sabe que prejudique",
+      "K(joaquim, prejudicar(joaquim))"
+    ],
+    [
+      "Paulo é tio de Alice",
+      "tio(paulo, alice) ∧ pessoa(paulo) ∧ pessoa(alice)"
+    ],
+    [
+      "Provalvemente faça sol",
+      "◇fazer_sol"
+    ],
+    [
+      "Suposição de que vente",
+      "◇ventar"
+    ],
+    [
+      "Edgar é irmão de Valeria",
+      "irmao(edgar, valeria) ∧ pessoa(edgar) ∧ pessoa(valeria)"
+    ],
+    [
+      "Aline acredita que vai prejudique",
+      "B(aline, prejudicar(aline))"
+    ],
+    [
+      "Necessariamente durma",
+      "□dormir"
+    ],
+    [
+      "Katia é filho de Eduarda",
+      "filho(katia, eduarda) ∧ pessoa(katia) ∧ pessoa(eduarda)"
+    ],
+    [
+      "Condição para que inimigo",
+      "□inimigo"
+    ],
+    [
+      "Heitor é filho de Fabiano",
+      "filho(heitor, fabiano) ∧ pessoa(heitor) ∧ pessoa(fabiano)"
+    ],
+    [
+      "Joana é filha de Valeria",
+      "filha(joana, valeria) ∧ pessoa(joana) ∧ pessoa(valeria)"
+    ],
+    [
+      "Todo aluno é mortal",
+      "∀x (aluno(x) → mortal(x))"
+    ],
+    [
+      "Condição para que sorria",
+      "□sorrir"
+    ],
+    [
+      "Yasmim é padrasto de Olga",
+      "padrasto(yasmim, olga) ∧ pessoa(yasmim) ∧ pessoa(olga)"
+    ],
+    [
+      "Leticia é cunhada de Kevin",
+      "cunhada(leticia, kevin) ∧ pessoa(leticia) ∧ pessoa(kevin)"
+    ],
+    [
+      "Condição para que cante",
+      "□cantar"
+    ],
+    [
+      "Odete é sobrinha de Tulio",
+      "sobrinha(odete, tulio) ∧ pessoa(odete) ∧ pessoa(tulio)"
+    ],
+    [
+      "Talvez vente",
+      "◇ventar"
+    ],
+    [
+      "Todo cachorro é rápido",
+      "∀x (cao(x) → rapido(x))"
+    ],
+    [
+      "Todo aluno é rápido",
+      "∀x (aluno(x) → rapido(x))"
+    ],
+    [
+      "Katia acredita que vai sorria",
+      "B(katia, sorrir(katia))"
+    ],
+    [
+      "Existe a chance de que vente",
+      "◇ventar"
+    ],
+    [
+      "Luan acredita que vai pule",
+      "B(luan, pular(luan))"
+    ],
+    [
+      "Gil acredita que vai inimigo",
+      "B(gil, inimigo(gil))"
+    ],
+    [
+      "Algum cientista é forte",
+      "∃x (cientista(x) ∧ forte(x))"
+    ],
+    [
+      "É necessário que ganhe",
+      "□ganhar"
+    ],
+    [
+      "Carolina sabe que neve",
+      "K(carolina, nevar(carolina))"
+    ],
+    [
+      "Precisa chova",
+      "□chover"
+    ],
+    [
+      "Xuxa sabe que durma",
+      "K(xuxa, dormir(xuxa))"
+    ],
+    [
+      "Provalvemente chova",
+      "◇chover"
+    ],
+    [
+      "Provalvemente estude",
+      "◇estudar"
+    ],
+    [
+      "Regina sabe que neve",
+      "K(regina, nevar(regina))"
+    ],
+    [
+      "Talvez coma",
+      "◇comer"
+    ],
+    [
+      "Ursula é padrasto de Olga",
+      "padrasto(ursula, olga) ∧ pessoa(ursula) ∧ pessoa(olga)"
+    ],
+    [
+      "Quiteria é sobrinho de Dora",
+      "sobrinho(quiteria, dora) ∧ pessoa(quiteria) ∧ pessoa(dora)"
+    ],
+    [
+      "Suposição de que encontre",
+      "◇encontrar"
+    ],
+    [
+      "Precisa encontre",
+      "□encontrar"
+    ],
+    [
+      "Nenhum atleta é preciso",
+      "∀x (atleta(x) → ¬preciso(x))"
+    ],
+    [
+      "Joana é filho de Andre",
+      "filho(joana, andre) ∧ pessoa(joana) ∧ pessoa(andre)"
+    ],
+    [
+      "Todo cientista é feliz",
+      "∀x (cientista(x) → feliz(x))"
+    ],
+    [
+      "É possível que durma",
+      "◇dormir"
+    ],
+    [
+      "Condição para que sorria",
+      "□sorrir"
+    ],
+    [
+      "Nildo é prima de Silvia",
+      "prima(nildo, silvia) ∧ pessoa(nildo) ∧ pessoa(silvia)"
+    ],
+    [
+      "Aline acredita que vai ganhe",
+      "B(aline, ganhar(aline))"
+    ],
+    [
+      "Suposição de que amigo",
+      "◇amigo"
+    ],
+    [
+      "É obrigatório que dance",
+      "□dancar"
+    ],
+    [
+      "Todo médico é dedicado",
+      "∀x (medico(x) → dedicado(x))"
+    ],
+    [
+      "Nenhum gato é atento",
+      "∀x (gato(x) → ¬atento(x))"
+    ],
+    [
+      "Algum gato é bravo",
+      "∃x (gato(x) ∧ bravo(x))"
+    ],
+    [
+      "Ziraldo é padrasto de Nildo",
+      "padrasto(ziraldo, nildo) ∧ pessoa(ziraldo) ∧ pessoa(nildo)"
+    ],
+    [
+      "Condição para que amigo",
+      "□amigo"
+    ],
+    [
+      "Nenhum cientista é rápido",
+      "∀x (cientista(x) → ¬rapido(x))"
+    ],
+    [
+      "Dante é tia de Kevin",
+      "tia(dante, kevin) ∧ pessoa(dante) ∧ pessoa(kevin)"
+    ],
+    [
+      "Precisa estude",
+      "□estudar"
+    ],
+    [
+      "Algum animal é inteligente",
+      "∃x (animal(x) ∧ inteligente(x))"
+    ],
+    [
+      "Precisa ganhe",
+      "□ganhar"
+    ],
+    [
+      "Vagner sabe que ajude",
+      "K(vagner, ajudar(vagner))"
+    ],
+    [
+      "Elsa sabe que ajude",
+      "K(elsa, ajudar(elsa))"
+    ],
+    [
+      "Yara sabe que corra",
+      "K(yara, correr(yara))"
+    ],
+    [
+      "Fabiano é tia de Alice",
+      "tia(fabiano, alice) ∧ pessoa(fabiano) ∧ pessoa(alice)"
+    ],
+    [
+      "Todo mulher é inteligente",
+      "∀x (mulher(x) → inteligente(x))"
+    ],
+    [
+      "Todo homem é dedicado",
+      "∀x (homem(x) → dedicado(x))"
+    ],
+    [
+      "Andre acredita que vai busque",
+      "B(andre, buscar(andre))"
+    ],
+    [
+      "Nenhum cientista é mortal",
+      "∀x (cientista(x) → ¬mortal(x))"
+    ],
+    [
+      "Celia é prima de Elsa",
+      "prima(celia, elsa) ∧ pessoa(celia) ∧ pessoa(elsa)"
+    ],
+    [
+      "Silvia é avó de Yuri",
+      "avo(silvia, yuri) ∧ pessoa(silvia) ∧ pessoa(yuri)"
+    ],
+    [
+      "Talvez leia",
+      "◇ler"
+    ],
+    [
+      "É obrigatório que encontre",
+      "□encontrar"
+    ],
+    [
+      "Precisa leia",
+      "□ler"
+    ],
+    [
+      "Todo mulher é mortal",
+      "∀x (mulher(x) → mortal(x))"
+    ],
+    [
+      "Elsa acredita que vai cante",
+      "B(elsa, cantar(elsa))"
+    ],
+    [
+      "Todo cachorro é rápido",
+      "∀x (cao(x) → rapido(x))"
+    ],
+    [
+      "Algum artista é habilidoso",
+      "∃x (artista(x) ∧ habilidoso(x))"
+    ],
+    [
+      "Provalvemente leia",
+      "◇ler"
+    ],
+    [
+      "Alice é cunhada de Valeria",
+      "cunhada(alice, valeria) ∧ pessoa(alice) ∧ pessoa(valeria)"
+    ],
+    [
+      "Todo professor é mortal",
+      "∀x (professor(x) → mortal(x))"
+    ],
+    [
+      "Todo gato é mortal",
+      "∀x (gato(x) → mortal(x))"
+    ],
+    [
+      "Precisa faça sol",
+      "□fazer_sol"
+    ],
+    [
+      "Provalvemente faça sol",
+      "◇fazer_sol"
+    ],
+    [
+      "Quenia acredita que vai viaje",
+      "B(quenia, viajar(quenia))"
+    ],
+    [
+      "Joaquim sabe que sorria",
+      "K(joaquim, sorrir(joaquim))"
+    ],
+    [
+      "Yasmim acredita que vai estude",
+      "B(yasmim, estudar(yasmim))"
+    ],
+    [
+      "Nenhum homem é inteligente",
+      "∀x (homem(x) → ¬inteligente(x))"
+    ],
+    [
+      "Heitor é cunhada de Xande",
+      "cunhada(heitor, xande) ∧ pessoa(heitor) ∧ pessoa(xande)"
+    ],
+    [
+      "Laura acredita que vai ganhe",
+      "B(laura, ganhar(laura))"
+    ],
+    [
+      "Todo médico é atento",
+      "∀x (medico(x) → atento(x))"
+    ],
+    [
+      "Todo gato é atento",
+      "∀x (gato(x) → atento(x))"
+    ],
+    [
+      "Algum mulher é dedicado",
+      "∃x (mulher(x) ∧ dedicado(x))"
+    ],
+    [
+      "Algum artista é habilidoso",
+      "∃x (artista(x) ∧ habilidoso(x))"
+    ],
+    [
+      "Yuri é tia de Bob",
+      "tia(yuri, bob) ∧ pessoa(yuri) ∧ pessoa(bob)"
+    ],
+    [
+      "Todo cachorro é forte",
+      "∀x (cao(x) → forte(x))"
+    ],
+    [
+      "Ziraldo é cunhada de Aline",
+      "cunhada(ziraldo, aline) ∧ pessoa(ziraldo) ∧ pessoa(aline)"
+    ],
+    [
+      "Ines é sobrinho de Xuxa",
+      "sobrinho(ines, xuxa) ∧ pessoa(ines) ∧ pessoa(xuxa)"
+    ],
+    [
+      "Suposição de que chore",
+      "◇chorar"
+    ],
+    [
+      "Zenaide sabe que prejudique",
+      "K(zenaide, prejudicar(zenaide))"
+    ],
+    [
+      "Suposição de que prejudique",
+      "◇prejudicar"
+    ],
+    [
+      "Ivan é tia de Queirós",
+      "tia(ivan, queirós) ∧ pessoa(ivan) ∧ pessoa(queirós)"
+    ],
+    [
+      "Todo cientista é feliz",
+      "∀x (cientista(x) → feliz(x))"
+    ],
+    [
+      "Precisa leia",
+      "□ler"
+    ],
+    [
+      "Silvia é prima de Xande",
+      "prima(silvia, xande) ∧ pessoa(silvia) ∧ pessoa(xande)"
+    ],
+    [
+      "Joaquim acredita que vai viaje",
+      "B(joaquim, viajar(joaquim))"
+    ],
+    [
+      "Provalvemente coma",
+      "◇comer"
+    ],
+    [
+      "Condição para que leia",
+      "□ler"
+    ],
+    [
+      "Nenhum homem é dedicado",
+      "∀x (homem(x) → ¬dedicado(x))"
+    ],
+    [
+      "Kevin sabe que corra",
+      "K(kevin, correr(kevin))"
+    ],
+    [
+      "Todo médico é feliz",
+      "∀x (medico(x) → feliz(x))"
+    ],
+    [
+      "Nenhum artista é dedicado",
+      "∀x (artista(x) → ¬dedicado(x))"
+    ],
+    [
+      "Deve-se garantir que neve",
+      "□nevar"
+    ],
+    [
+      "Todo mulher é mortal",
+      "∀x (mulher(x) → mortal(x))"
+    ],
+    [
+      "É obrigatório que escreva",
+      "□escrever"
+    ],
+    [
+      "Moacir acredita que vai leia",
+      "B(moacir, ler(moacir))"
+    ],
+    [
+      "É obrigatório que ganhe",
+      "□ganhar"
+    ],
+    [
+      "Zenaide é cunhada de Marta",
+      "cunhada(zenaide, marta) ∧ pessoa(zenaide) ∧ pessoa(marta)"
+    ],
+    [
+      "Algum mulher é preciso",
+      "∃x (mulher(x) ∧ preciso(x))"
+    ],
+    [
+      "Brena sabe que corra",
+      "K(brena, correr(brena))"
+    ],
+    [
+      "Suposição de que corra",
+      "◇correr"
+    ],
+    [
+      "Todo cachorro é rápido",
+      "∀x (cao(x) → rapido(x))"
+    ],
+    [
+      "Dora acredita que vai leia",
+      "B(dora, ler(dora))"
+    ],
+    [
+      "Algum artista é rápido",
+      "∃x (artista(x) ∧ rapido(x))"
+    ],
+    [
+      "Todo atleta é rápido",
+      "∀x (atleta(x) → rapido(x))"
+    ],
+    [
+      "Algum homem é mortal",
+      "∃x (homem(x) ∧ mortal(x))"
+    ],
+    [
+      "Marta é primo de Queirós",
+      "primo(marta, queirós) ∧ pessoa(marta) ∧ pessoa(queirós)"
+    ],
+    [
+      "Paulo acredita que vai leia",
+      "B(paulo, ler(paulo))"
+    ],
+    [
+      "Gil é cunhada de Queirós",
+      "cunhada(gil, queirós) ∧ pessoa(gil) ∧ pessoa(queirós)"
+    ],
+    [
+      "Vera é irmã de Tulio",
+      "irma(vera, tulio) ∧ pessoa(vera) ∧ pessoa(tulio)"
+    ],
+    [
+      "Algum cachorro é rápido",
+      "∃x (cao(x) ∧ rapido(x))"
+    ],
+    [
+      "Nenhum animal é rápido",
+      "∀x (animal(x) → ¬rapido(x))"
+    ],
+    [
+      "Moacir é prima de Nuno",
+      "prima(moacir, nuno) ∧ pessoa(moacir) ∧ pessoa(nuno)"
+    ],
+    [
+      "Pode ser que leia",
+      "◇ler"
+    ],
+    [
+      "Algum artista é habilidoso",
+      "∃x (artista(x) ∧ habilidoso(x))"
+    ],
+    [
+      "Deve-se garantir que durma",
+      "□dormir"
+    ],
+    [
+      "Algum aluno é bravo",
+      "∃x (aluno(x) ∧ bravo(x))"
+    ],
+    [
+      "Nenhum mulher é bravo",
+      "∀x (mulher(x) → ¬bravo(x))"
+    ],
+    [
+      "Nenhum médico é bravo",
+      "∀x (medico(x) → ¬bravo(x))"
+    ],
+    [
+      "Algum cientista é preciso",
+      "∃x (cientista(x) ∧ preciso(x))"
+    ],
+    [
+      "Eduarda é mãe de Ivan",
+      "mae(eduarda, ivan) ∧ pessoa(eduarda) ∧ pessoa(ivan)"
+    ],
+    [
+      "É obrigatório que vente",
+      "□ventar"
+    ],
+    [
+      "Todo cientista é rápido",
+      "∀x (cientista(x) → rapido(x))"
+    ],
+    [
+      "Algum cachorro é mortal",
+      "∃x (cao(x) ∧ mortal(x))"
+    ],
+    [
+      "William é enteada de Silvia",
+      "enteada(william, silvia) ∧ pessoa(william) ∧ pessoa(silvia)"
+    ],
+    [
+      "Tatiana acredita que vai amigo",
+      "B(tatiana, amigo(tatiana))"
+    ],
+    [
+      "Nenhum cientista é inteligente",
+      "∀x (cientista(x) → ¬inteligente(x))"
+    ],
+    [
+      "Eduarda é irmão de Joana",
+      "irmao(eduarda, joana) ∧ pessoa(eduarda) ∧ pessoa(joana)"
+    ],
+    [
+      "É possível que encontre",
+      "◇encontrar"
+    ],
+    [
+      "Nenhum pássaro é habilidoso",
+      "∀x (passaro(x) → ¬habilidoso(x))"
+    ],
+    [
+      "Nenhum mulher é forte",
+      "∀x (mulher(x) → ¬forte(x))"
+    ],
+    [
+      "É possível que neve",
+      "◇nevar"
+    ],
+    [
+      "É necessário que durma",
+      "□dormir"
+    ],
+    [
+      "Todo cientista é bravo",
+      "∀x (cientista(x) → bravo(x))"
+    ],
+    [
+      "É necessário que viaje",
+      "□viajar"
+    ],
+    [
+      "Simone acredita que vai perca",
+      "B(simone, perder(simone))"
+    ],
+    [
+      "Nenhum homem é rápido",
+      "∀x (homem(x) → ¬rapido(x))"
+    ],
+    [
+      "Algum animal é habilidoso",
+      "∃x (animal(x) ∧ habilidoso(x))"
+    ],
+    [
+      "Yara é avó de William",
+      "avo(yara, william) ∧ pessoa(yara) ∧ pessoa(william)"
+    ],
+    [
+      "Nildo sabe que escreva",
+      "K(nildo, escrever(nildo))"
+    ],
+    [
+      "Talvez durma",
+      "◇dormir"
+    ],
+    [
+      "Patricia sabe que escreva",
+      "K(patricia, escrever(patricia))"
+    ],
+    [
+      "Patricia acredita que vai chore",
+      "B(patricia, chorar(patricia))"
+    ],
+    [
+      "Algum professor é preciso",
+      "∃x (professor(x) ∧ preciso(x))"
+    ],
+    [
+      "Ronaldo acredita que vai neve",
+      "B(ronaldo, nevar(ronaldo))"
+    ],
+    [
+      "É possível que escreva",
+      "◇escrever"
+    ],
+    [
+      "É possível que perca",
+      "◇perder"
+    ],
+    [
+      "Xavier acredita que vai chova",
+      "B(xavier, chover(xavier))"
+    ],
+    [
+      "Algum professor é atento",
+      "∃x (professor(x) ∧ atento(x))"
+    ],
+    [
+      "Piero sabe que vente",
+      "K(piero, ventar(piero))"
+    ],
+    [
+      "Nenhum mulher é forte",
+      "∀x (mulher(x) → ¬forte(x))"
+    ],
+    [
+      "Algum cientista é feliz",
+      "∃x (cientista(x) ∧ feliz(x))"
+    ],
+    [
+      "Nenhum cachorro é dedicado",
+      "∀x (cao(x) → ¬dedicado(x))"
+    ],
+    [
+      "É necessário que cante",
+      "□cantar"
+    ],
+    [
+      "É obrigatório que estude",
+      "□estudar"
+    ],
+    [
+      "Suposição de que corra",
+      "◇correr"
+    ],
+    [
+      "Nenhum homem é mortal",
+      "∀x (homem(x) → ¬mortal(x))"
+    ],
+    [
+      "É obrigatório que amigo",
+      "□amigo"
+    ],
+    [
+      "Joana sabe que prejudique",
+      "K(joana, prejudicar(joana))"
+    ],
+    [
+      "Provalvemente durma",
+      "◇dormir"
+    ],
+    [
+      "Todo homem é preciso",
+      "∀x (homem(x) → preciso(x))"
+    ],
+    [
+      "Todo aluno é habilidoso",
+      "∀x (aluno(x) → habilidoso(x))"
+    ],
+    [
+      "Nenhum médico é atento",
+      "∀x (medico(x) → ¬atento(x))"
+    ],
+    [
+      "Deve-se garantir que inimigo",
+      "□inimigo"
+    ],
+    [
+      "Marcela é filho de Kelvin",
+      "filho(marcela, kelvin) ∧ pessoa(marcela) ∧ pessoa(kelvin)"
+    ],
+    [
+      "Provalvemente cante",
+      "◇cantar"
+    ],
+    [
+      "Nenhum gato é bravo",
+      "∀x (gato(x) → ¬bravo(x))"
+    ],
+    [
+      "Nenhum homem é inteligente",
+      "∀x (homem(x) → ¬inteligente(x))"
+    ],
+    [
+      "Quenia acredita que vai ganhe",
+      "B(quenia, ganhar(quenia))"
+    ],
+    [
+      "Joana acredita que vai pule",
+      "B(joana, pular(joana))"
+    ],
+    [
+      "Nenhum pássaro é bravo",
+      "∀x (passaro(x) → ¬bravo(x))"
+    ],
+    [
+      "Algum gato é preciso",
+      "∃x (gato(x) ∧ preciso(x))"
+    ],
+    [
+      "Samuel é enteada de Olga",
+      "enteada(samuel, olga) ∧ pessoa(samuel) ∧ pessoa(olga)"
+    ],
+    [
+      "Suposição de que corra",
+      "◇correr"
+    ],
+    [
+      "Ursula é tia de Robson",
+      "tia(ursula, robson) ∧ pessoa(ursula) ∧ pessoa(robson)"
+    ],
+    [
+      "Todo homem é dedicado",
+      "∀x (homem(x) → dedicado(x))"
+    ],
+    [
+      "É possível que chore",
+      "◇chorar"
+    ],
+    [
+      "Todo professor é feliz",
+      "∀x (professor(x) → feliz(x))"
+    ],
+    [
+      "É necessário que ganhe",
+      "□ganhar"
+    ],
+    [
+      "Necessariamente corra",
+      "□correr"
+    ],
+    [
+      "É possível que prejudique",
+      "◇prejudicar"
+    ],
+    [
+      "Existe a chance de que inimigo",
+      "◇inimigo"
+    ],
+    [
+      "Provalvemente pule",
+      "◇pular"
+    ],
+    [
+      "Condição para que chore",
+      "□chorar"
+    ],
+    [
+      "Andre sabe que chore",
+      "K(andre, chorar(andre))"
+    ],
+    [
+      "Todo aluno é forte",
+      "∀x (aluno(x) → forte(x))"
+    ],
+    [
+      "É possível que perca",
+      "◇perder"
+    ],
+    [
+      "Precisa faça sol",
+      "□fazer_sol"
+    ],
+    [
+      "Robson acredita que vai dance",
+      "B(robson, dancar(robson))"
+    ],
+    [
+      "Vera sabe que durma",
+      "K(vera, dormir(vera))"
+    ],
+    [
+      "Tatiana é irmão de Ursula",
+      "irmao(tatiana, ursula) ∧ pessoa(tatiana) ∧ pessoa(ursula)"
+    ],
+    [
+      "Nenhum cachorro é preciso",
+      "∀x (cao(x) → ¬preciso(x))"
+    ],
+    [
+      "Nenhum médico é dedicado",
+      "∀x (medico(x) → ¬dedicado(x))"
+    ],
+    [
+      "Eduarda acredita que vai dance",
+      "B(eduarda, dancar(eduarda))"
+    ],
+    [
+      "É obrigatório que perca",
+      "□perder"
+    ],
+    [
+      "Todo mulher é feliz",
+      "∀x (mulher(x) → feliz(x))"
+    ],
+    [
+      "Noemi é padrasto de Robson",
+      "padrasto(noemi, robson) ∧ pessoa(noemi) ∧ pessoa(robson)"
+    ],
+    [
+      "Algum animal é dedicado",
+      "∃x (animal(x) ∧ dedicado(x))"
+    ],
+    [
+      "Uriel sabe que amigo",
+      "K(uriel, amigo(uriel))"
+    ],
+    [
+      "Todo médico é mortal",
+      "∀x (medico(x) → mortal(x))"
+    ],
+    [
+      "Nenhum gato é bravo",
+      "∀x (gato(x) → ¬bravo(x))"
+    ],
+    [
+      "Beto sabe que amigo",
+      "K(beto, amigo(beto))"
+    ],
+    [
+      "Provalvemente durma",
+      "◇dormir"
+    ],
+    [
+      "Hilda acredita que vai encontre",
+      "B(hilda, encontrar(hilda))"
+    ],
+    [
+      "Todo gato é inteligente",
+      "∀x (gato(x) → inteligente(x))"
+    ],
+    [
+      "Deve-se garantir que estude",
+      "□estudar"
+    ],
+    [
+      "Luan sabe que perca",
+      "K(luan, perder(luan))"
+    ],
+    [
+      "Todo aluno é feliz",
+      "∀x (aluno(x) → feliz(x))"
+    ],
+    [
+      "Existe a chance de que corra",
+      "◇correr"
+    ],
+    [
+      "Gisele é madrasta de Dante",
+      "madrasta(gisele, dante) ∧ pessoa(gisele) ∧ pessoa(dante)"
+    ],
+    [
+      "Todo médico é bravo",
+      "∀x (medico(x) → bravo(x))"
+    ],
+    [
+      "Deve-se garantir que durma",
+      "□dormir"
+    ],
+    [
+      "Precisa vente",
+      "□ventar"
+    ],
+    [
+      "Otavio sabe que viaje",
+      "K(otavio, viajar(otavio))"
+    ],
+    [
+      "Provalvemente perca",
+      "◇perder"
+    ],
+    [
+      "Nenhum professor é inteligente",
+      "∀x (professor(x) → ¬inteligente(x))"
+    ],
+    [
+      "Algum pássaro é forte",
+      "∃x (passaro(x) ∧ forte(x))"
+    ],
+    [
+      "É obrigatório que leia",
+      "□ler"
+    ],
+    [
+      "Existe a chance de que leia",
+      "◇ler"
+    ],
+    [
+      "Andre sabe que sorria",
+      "K(andre, sorrir(andre))"
+    ],
+    [
+      "É possível que neve",
+      "◇nevar"
+    ],
+    [
+      "Fabiano acredita que vai ganhe",
+      "B(fabiano, ganhar(fabiano))"
+    ],
+    [
+      "Silvia acredita que vai encontre",
+      "B(silvia, encontrar(silvia))"
+    ],
+    [
+      "Todo médico é feliz",
+      "∀x (medico(x) → feliz(x))"
+    ],
+    [
+      "Provalvemente durma",
+      "◇dormir"
+    ],
+    [
+      "Laura é irmã de Xuxa",
+      "irma(laura, xuxa) ∧ pessoa(laura) ∧ pessoa(xuxa)"
+    ],
+    [
+      "Talvez encontre",
+      "◇encontrar"
+    ],
+    [
+      "Yara acredita que vai chova",
+      "B(yara, chover(yara))"
+    ],
+    [
+      "Necessariamente encontre",
+      "□encontrar"
+    ],
+    [
+      "Pode ser que estude",
+      "◇estudar"
+    ],
+    [
+      "Existe a chance de que leia",
+      "◇ler"
+    ],
+    [
+      "Ines é primo de Bob",
+      "primo(ines, bob) ∧ pessoa(ines) ∧ pessoa(bob)"
+    ],
+    [
+      "Deve-se garantir que faça sol",
+      "□fazer_sol"
+    ],
+    [
+      "Fabiano sabe que coma",
+      "K(fabiano, comer(fabiano))"
+    ],
+    [
+      "Condição para que pule",
+      "□pular"
+    ],
+    [
+      "Todo cientista é habilidoso",
+      "∀x (cientista(x) → habilidoso(x))"
+    ],
+    [
+      "Xande é avô de Kevin",
+      "avo(xande, kevin) ∧ pessoa(xande) ∧ pessoa(kevin)"
+    ],
+    [
+      "Flavia sabe que dance",
+      "K(flavia, dancar(flavia))"
+    ],
+    [
+      "Otavio é cunhado de Noemi",
+      "cunhado(otavio, noemi) ∧ pessoa(otavio) ∧ pessoa(noemi)"
+    ],
+    [
+      "Algum artista é atento",
+      "∃x (artista(x) ∧ atento(x))"
+    ],
+    [
+      "Nenhum aluno é habilidoso",
+      "∀x (aluno(x) → ¬habilidoso(x))"
+    ],
+    [
+      "Marcela sabe que escreva",
+      "K(marcela, escrever(marcela))"
+    ],
+    [
+      "É necessário que ganhe",
+      "□ganhar"
+    ],
+    [
+      "Gisele é pai de Zuleica",
+      "pai(gisele, zuleica) ∧ pessoa(gisele) ∧ pessoa(zuleica)"
+    ],
+    [
+      "Vagner é padrasto de Caio",
+      "padrasto(vagner, caio) ∧ pessoa(vagner) ∧ pessoa(caio)"
+    ],
+    [
+      "Suposição de que prejudique",
+      "◇prejudicar"
+    ],
+    [
+      "Valeria é prima de Xuxa",
+      "prima(valeria, xuxa) ∧ pessoa(valeria) ∧ pessoa(xuxa)"
+    ],
+    [
+      "Fabiano acredita que vai ganhe",
+      "B(fabiano, ganhar(fabiano))"
+    ],
+    [
+      "Todo cachorro é rápido",
+      "∀x (cao(x) → rapido(x))"
+    ],
+    [
+      "Todo homem é atento",
+      "∀x (homem(x) → atento(x))"
+    ],
+    [
+      "Algum cientista é habilidoso",
+      "∃x (cientista(x) ∧ habilidoso(x))"
+    ],
+    [
+      "Ines é primo de Valeria",
+      "primo(ines, valeria) ∧ pessoa(ines) ∧ pessoa(valeria)"
+    ],
+    [
+      "Nenhum homem é habilidoso",
+      "∀x (homem(x) → ¬habilidoso(x))"
+    ],
+    [
+      "Nenhum homem é forte",
+      "∀x (homem(x) → ¬forte(x))"
+    ],
+    [
+      "Todo professor é mortal",
+      "∀x (professor(x) → mortal(x))"
+    ],
+    [
+      "Fred sabe que leia",
+      "K(fred, ler(fred))"
+    ],
+    [
+      "Algum médico é bravo",
+      "∃x (medico(x) ∧ bravo(x))"
+    ],
+    [
+      "Joana é filha de Noemi",
+      "filha(joana, noemi) ∧ pessoa(joana) ∧ pessoa(noemi)"
+    ],
+    [
+      "Yuri é prima de Flavia",
+      "prima(yuri, flavia) ∧ pessoa(yuri) ∧ pessoa(flavia)"
+    ],
+    [
+      "Pode ser que busque",
+      "◇buscar"
+    ],
+    [
+      "Nenhum pássaro é feliz",
+      "∀x (passaro(x) → ¬feliz(x))"
+    ],
+    [
+      "Nenhum mulher é mortal",
+      "∀x (mulher(x) → ¬mortal(x))"
+    ],
+    [
+      "Todo mulher é atento",
+      "∀x (mulher(x) → atento(x))"
+    ],
+    [
+      "É possível que dance",
+      "◇dancar"
+    ],
+    [
+      "Pode ser que chova",
+      "◇chover"
+    ],
+    [
+      "Brena é enteada de Caio",
+      "enteada(brena, caio) ∧ pessoa(brena) ∧ pessoa(caio)"
+    ],
+    [
+      "Ubaldo é cunhado de Katia",
+      "cunhado(ubaldo, katia) ∧ pessoa(ubaldo) ∧ pessoa(katia)"
+    ],
+    [
+      "Nenhum professor é inteligente",
+      "∀x (professor(x) → ¬inteligente(x))"
+    ],
+    [
+      "Algum atleta é mortal",
+      "∃x (atleta(x) ∧ mortal(x))"
+    ],
+    [
+      "Algum artista é dedicado",
+      "∃x (artista(x) ∧ dedicado(x))"
+    ],
+    [
+      "Algum mulher é feliz",
+      "∃x (mulher(x) ∧ feliz(x))"
+    ],
+    [
+      "Deve-se garantir que leia",
+      "□ler"
+    ],
+    [
+      "Algum médico é bravo",
+      "∃x (medico(x) ∧ bravo(x))"
+    ],
+    [
+      "É obrigatório que corra",
+      "□correr"
+    ],
+    [
+      "Condição para que amigo",
+      "□amigo"
+    ],
+    [
+      "Xavier é sobrinho de Paulo",
+      "sobrinho(xavier, paulo) ∧ pessoa(xavier) ∧ pessoa(paulo)"
+    ],
+    [
+      "Joana sabe que prejudique",
+      "K(joana, prejudicar(joana))"
+    ],
+    [
+      "Talvez pule",
+      "◇pular"
+    ],
+    [
+      "Talvez corra",
+      "◇correr"
+    ],
+    [
+      "Flavia é pai de Xuxa",
+      "pai(flavia, xuxa) ∧ pessoa(flavia) ∧ pessoa(xuxa)"
+    ],
+    [
+      "Suposição de que escreva",
+      "◇escrever"
+    ],
+    [
+      "Pode ser que cante",
+      "◇cantar"
+    ],
+    [
+      "Algum professor é inteligente",
+      "∃x (professor(x) ∧ inteligente(x))"
+    ],
+    [
+      "Precisa leia",
+      "□ler"
+    ],
+    [
+      "Quenia é irmã de Elsa",
+      "irma(quenia, elsa) ∧ pessoa(quenia) ∧ pessoa(elsa)"
+    ],
+    [
+      "Todo médico é atento",
+      "∀x (medico(x) → atento(x))"
+    ],
+    [
+      "Todo pássaro é rápido",
+      "∀x (passaro(x) → rapido(x))"
+    ],
+    [
+      "Algum gato é feliz",
+      "∃x (gato(x) ∧ feliz(x))"
+    ],
+    [
+      "Nenhum professor é inteligente",
+      "∀x (professor(x) → ¬inteligente(x))"
+    ],
+    [
+      "Dante acredita que vai chova",
+      "B(dante, chover(dante))"
+    ],
+    [
+      "Xavier é avô de Eduarda",
+      "avo(xavier, eduarda) ∧ pessoa(xavier) ∧ pessoa(eduarda)"
+    ],
+    [
+      "Suposição de que cante",
+      "◇cantar"
+    ],
+    [
+      "É obrigatório que corra",
+      "□correr"
+    ],
+    [
+      "Ursula é sobrinho de Nildo",
+      "sobrinho(ursula, nildo) ∧ pessoa(ursula) ∧ pessoa(nildo)"
+    ],
+    [
+      "Suposição de que cante",
+      "◇cantar"
+    ],
+    [
+      "Algum atleta é dedicado",
+      "∃x (atleta(x) ∧ dedicado(x))"
+    ],
+    [
+      "Nenhum mulher é forte",
+      "∀x (mulher(x) → ¬forte(x))"
+    ],
+    [
+      "É possível que viaje",
+      "◇viajar"
+    ],
+    [
+      "Nenhum aluno é feliz",
+      "∀x (aluno(x) → ¬feliz(x))"
+    ],
+    [
+      "Quenia é cunhado de Caio",
+      "cunhado(quenia, caio) ∧ pessoa(quenia) ∧ pessoa(caio)"
+    ],
+    [
+      "Condição para que ganhe",
+      "□ganhar"
+    ],
+    [
+      "Precisa escreva",
+      "□escrever"
+    ],
+    [
+      "Flavia acredita que vai corra",
+      "B(flavia, correr(flavia))"
+    ],
+    [
+      "Talvez prejudique",
+      "◇prejudicar"
+    ],
+    [
+      "Tatiana acredita que vai leia",
+      "B(tatiana, ler(tatiana))"
+    ],
+    [
+      "Kevin é avô de Yasmim",
+      "avo(kevin, yasmim) ∧ pessoa(kevin) ∧ pessoa(yasmim)"
+    ],
+    [
+      "Necessariamente cante",
+      "□cantar"
+    ],
+    [
+      "Nenhum gato é habilidoso",
+      "∀x (gato(x) → ¬habilidoso(x))"
+    ],
+    [
+      "Provalvemente perca",
+      "◇perder"
+    ],
+    [
+      "Kelvin acredita que vai pule",
+      "B(kelvin, pular(kelvin))"
+    ],
+    [
+      "Precisa ajude",
+      "□ajudar"
+    ],
+    [
+      "Celia é sobrinha de Yara",
+      "sobrinha(celia, yara) ∧ pessoa(celia) ∧ pessoa(yara)"
+    ],
+    [
+      "Xande é cunhada de Yasmim",
+      "cunhada(xande, yasmim) ∧ pessoa(xande) ∧ pessoa(yasmim)"
+    ],
+    [
+      "Todo animal é inteligente",
+      "∀x (animal(x) → inteligente(x))"
+    ],
+    [
+      "Algum gato é forte",
+      "∃x (gato(x) ∧ forte(x))"
+    ],
+    [
+      "Nenhum aluno é atento",
+      "∀x (aluno(x) → ¬atento(x))"
+    ],
+    [
+      "Condição para que coma",
+      "□comer"
+    ],
+    [
+      "Gabi acredita que vai estude",
+      "B(gabi, estudar(gabi))"
+    ],
+    [
+      "Laura é sobrinha de Uriel",
+      "sobrinha(laura, uriel) ∧ pessoa(laura) ∧ pessoa(uriel)"
+    ],
+    [
+      "Pode ser que busque",
+      "◇buscar"
+    ],
+    [
+      "Algum artista é preciso",
+      "∃x (artista(x) ∧ preciso(x))"
+    ],
+    [
+      "Nenhum cientista é habilidoso",
+      "∀x (cientista(x) → ¬habilidoso(x))"
+    ],
+    [
+      "Paulo acredita que vai pule",
+      "B(paulo, pular(paulo))"
+    ],
+    [
+      "Algum aluno é atento",
+      "∃x (aluno(x) ∧ atento(x))"
+    ],
+    [
+      "Nenhum médico é mortal",
+      "∀x (medico(x) → ¬mortal(x))"
+    ],
+    [
+      "Simone acredita que vai perca",
+      "B(simone, perder(simone))"
+    ],
+    [
+      "Provalvemente encontre",
+      "◇encontrar"
+    ],
+    [
+      "Todo aluno é rápido",
+      "∀x (aluno(x) → rapido(x))"
+    ],
+    [
+      "Provalvemente escreva",
+      "◇escrever"
+    ],
+    [
+      "Nenhum aluno é feliz",
+      "∀x (aluno(x) → ¬feliz(x))"
+    ],
+    [
+      "Teresa é avó de Otavio",
+      "avo(teresa, otavio) ∧ pessoa(teresa) ∧ pessoa(otavio)"
+    ],
+    [
+      "Talvez vente",
+      "◇ventar"
+    ],
+    [
+      "Gisele é sobrinho de Xuxa",
+      "sobrinho(gisele, xuxa) ∧ pessoa(gisele) ∧ pessoa(xuxa)"
+    ],
+    [
+      "Edgar acredita que vai faça sol",
+      "B(edgar, fazer_sol(edgar))"
+    ],
+    [
+      "Eduarda acredita que vai amigo",
+      "B(eduarda, amigo(eduarda))"
+    ],
+    [
+      "Algum médico é bravo",
+      "∃x (medico(x) ∧ bravo(x))"
+    ],
+    [
+      "Existe a chance de que leia",
+      "◇ler"
+    ],
+    [
+      "Teresa é mãe de Flavia",
+      "mae(teresa, flavia) ∧ pessoa(teresa) ∧ pessoa(flavia)"
+    ],
+    [
+      "Todo médico é rápido",
+      "∀x (medico(x) → rapido(x))"
+    ],
+    [
+      "Algum atleta é atento",
+      "∃x (atleta(x) ∧ atento(x))"
+    ],
+    [
+      "Dante é padrasto de Daniel",
+      "padrasto(dante, daniel) ∧ pessoa(dante) ∧ pessoa(daniel)"
+    ],
+    [
+      "Nenhum artista é feliz",
+      "∀x (artista(x) → ¬feliz(x))"
+    ],
+    [
+      "Talvez leia",
+      "◇ler"
+    ],
+    [
+      "É possível que inimigo",
+      "◇inimigo"
+    ],
+    [
+      "Gabi é enteada de Olga",
+      "enteada(gabi, olga) ∧ pessoa(gabi) ∧ pessoa(olga)"
+    ],
+    [
+      "Marta é sobrinho de William",
+      "sobrinho(marta, william) ∧ pessoa(marta) ∧ pessoa(william)"
+    ],
+    [
+      "Kevin sabe que prejudique",
+      "K(kevin, prejudicar(kevin))"
+    ],
+    [
+      "Ronaldo sabe que inimigo",
+      "K(ronaldo, inimigo(ronaldo))"
+    ],
+    [
+      "Algum animal é forte",
+      "∃x (animal(x) ∧ forte(x))"
+    ],
+    [
+      "Daniel é prima de Carolina",
+      "prima(daniel, carolina) ∧ pessoa(daniel) ∧ pessoa(carolina)"
+    ],
+    [
+      "Heitor é enteada de Regina",
+      "enteada(heitor, regina) ∧ pessoa(heitor) ∧ pessoa(regina)"
+    ],
+    [
+      "Daniel é irmão de Vagner",
+      "irmao(daniel, vagner) ∧ pessoa(daniel) ∧ pessoa(vagner)"
+    ],
+    [
+      "Robson sabe que coma",
+      "K(robson, comer(robson))"
+    ],
+    [
+      "Todo professor é preciso",
+      "∀x (professor(x) → preciso(x))"
+    ],
+    [
+      "Pode ser que viaje",
+      "◇viajar"
+    ],
+    [
+      "Nenhum médico é inteligente",
+      "∀x (medico(x) → ¬inteligente(x))"
+    ],
+    [
+      "Heitor sabe que sorria",
+      "K(heitor, sorrir(heitor))"
+    ],
+    [
+      "Heitor é cunhado de Leticia",
+      "cunhado(heitor, leticia) ∧ pessoa(heitor) ∧ pessoa(leticia)"
+    ],
+    [
+      "Talvez perca",
+      "◇perder"
+    ],
+    [
+      "Algum gato é bravo",
+      "∃x (gato(x) ∧ bravo(x))"
+    ],
+    [
+      "Algum professor é feliz",
+      "∃x (professor(x) ∧ feliz(x))"
+    ],
+    [
+      "Algum atleta é feliz",
+      "∃x (atleta(x) ∧ feliz(x))"
+    ],
+    [
+      "Algum atleta é bravo",
+      "∃x (atleta(x) ∧ bravo(x))"
+    ],
+    [
+      "Andre é sobrinho de Carolina",
+      "sobrinho(andre, carolina) ∧ pessoa(andre) ∧ pessoa(carolina)"
+    ],
+    [
+      "Existe a chance de que ajude",
+      "◇ajudar"
+    ],
+    [
+      "Algum atleta é forte",
+      "∃x (atleta(x) ∧ forte(x))"
+    ],
+    [
+      "Existe a chance de que prejudique",
+      "◇prejudicar"
+    ],
+    [
+      "Ubaldo é avó de Aline",
+      "avo(ubaldo, aline) ∧ pessoa(ubaldo) ∧ pessoa(aline)"
+    ],
+    [
+      "Ubaldo acredita que vai chova",
+      "B(ubaldo, chover(ubaldo))"
+    ],
+    [
+      "Nenhum atleta é preciso",
+      "∀x (atleta(x) → ¬preciso(x))"
+    ],
+    [
+      "Ivan é padrasto de Hilda",
+      "padrasto(ivan, hilda) ∧ pessoa(ivan) ∧ pessoa(hilda)"
+    ],
+    [
+      "Gisele sabe que durma",
+      "K(gisele, dormir(gisele))"
+    ],
+    [
+      "Condição para que chova",
+      "□chover"
+    ],
+    [
+      "Ronaldo sabe que escreva",
+      "K(ronaldo, escrever(ronaldo))"
+    ],
+    [
+      "Nenhum atleta é dedicado",
+      "∀x (atleta(x) → ¬dedicado(x))"
+    ],
+    [
+      "Algum professor é preciso",
+      "∃x (professor(x) ∧ preciso(x))"
+    ],
+    [
+      "Xande acredita que vai leia",
+      "B(xande, ler(xande))"
+    ],
+    [
+      "Provalvemente ganhe",
+      "◇ganhar"
+    ],
+    [
+      "Hugo é madrasta de Vera",
+      "madrasta(hugo, vera) ∧ pessoa(hugo) ∧ pessoa(vera)"
+    ],
+    [
+      "É necessário que leia",
+      "□ler"
+    ],
+    [
+      "Existe a chance de que busque",
+      "◇buscar"
+    ],
+    [
+      "Algum aluno é rápido",
+      "∃x (aluno(x) ∧ rapido(x))"
+    ],
+    [
+      "Zenaide acredita que vai ajude",
+      "B(zenaide, ajudar(zenaide))"
+    ],
+    [
+      "É possível que viaje",
+      "◇viajar"
+    ],
+    [
+      "Nenhum aluno é atento",
+      "∀x (aluno(x) → ¬atento(x))"
+    ],
+    [
+      "Dora sabe que encontre",
+      "K(dora, encontrar(dora))"
+    ],
+    [
+      "Deve-se garantir que dance",
+      "□dancar"
+    ],
+    [
+      "Condição para que dance",
+      "□dancar"
+    ],
+    [
+      "Xuxa sabe que perca",
+      "K(xuxa, perder(xuxa))"
+    ],
+    [
+      "Kevin é enteada de Fabiano",
+      "enteada(kevin, fabiano) ∧ pessoa(kevin) ∧ pessoa(fabiano)"
+    ],
+    [
+      "Ines é filha de Otavio",
+      "filha(ines, otavio) ∧ pessoa(ines) ∧ pessoa(otavio)"
+    ],
+    [
+      "Leticia é sobrinha de Dora",
+      "sobrinha(leticia, dora) ∧ pessoa(leticia) ∧ pessoa(dora)"
+    ],
+    [
+      "Suposição de que sorria",
+      "◇sorrir"
+    ],
+    [
+      "Edgar acredita que vai encontre",
+      "B(edgar, encontrar(edgar))"
+    ],
+    [
+      "É possível que corra",
+      "◇correr"
+    ],
+    [
+      "Nenhum atleta é bravo",
+      "∀x (atleta(x) → ¬bravo(x))"
+    ],
+    [
+      "Nenhum atleta é mortal",
+      "∀x (atleta(x) → ¬mortal(x))"
+    ],
+    [
+      "Nenhum homem é rápido",
+      "∀x (homem(x) → ¬rapido(x))"
+    ],
+    [
+      "Celia é irmã de Odete",
+      "irma(celia, odete) ∧ pessoa(celia) ∧ pessoa(odete)"
+    ],
+    [
+      "Nenhum homem é inteligente",
+      "∀x (homem(x) → ¬inteligente(x))"
+    ],
+    [
+      "Talvez estude",
+      "◇estudar"
+    ],
+    [
+      "Algum mulher é feliz",
+      "∃x (mulher(x) ∧ feliz(x))"
+    ],
+    [
+      "Provalvemente busque",
+      "◇buscar"
+    ],
+    [
+      "Julio acredita que vai encontre",
+      "B(julio, encontrar(julio))"
+    ],
+    [
+      "Marcela é avô de Gil",
+      "avo(marcela, gil) ∧ pessoa(marcela) ∧ pessoa(gil)"
+    ],
+    [
+      "Vera acredita que vai dance",
+      "B(vera, dancar(vera))"
+    ],
+    [
+      "Samuel sabe que inimigo",
+      "K(samuel, inimigo(samuel))"
+    ],
+    [
+      "Caio sabe que escreva",
+      "K(caio, escrever(caio))"
+    ],
+    [
+      "Katia é sobrinha de Hugo",
+      "sobrinha(katia, hugo) ∧ pessoa(katia) ∧ pessoa(hugo)"
+    ],
+    [
+      "Algum professor é mortal",
+      "∃x (professor(x) ∧ mortal(x))"
+    ],
+    [
+      "É necessário que encontre",
+      "□encontrar"
+    ],
+    [
+      "Algum cientista é mortal",
+      "∃x (cientista(x) ∧ mortal(x))"
+    ],
+    [
+      "Queirós sabe que escreva",
+      "K(queirós, escrever(queirós))"
+    ],
+    [
+      "É obrigatório que dance",
+      "□dancar"
+    ],
+    [
+      "Algum mulher é inteligente",
+      "∃x (mulher(x) ∧ inteligente(x))"
+    ],
+    [
+      "Beto é cunhada de Noemi",
+      "cunhada(beto, noemi) ∧ pessoa(beto) ∧ pessoa(noemi)"
+    ],
+    [
+      "Existe a chance de que inimigo",
+      "◇inimigo"
+    ],
+    [
+      "Condição para que vente",
+      "□ventar"
+    ],
+    [
+      "Todo aluno é feliz",
+      "∀x (aluno(x) → feliz(x))"
+    ],
+    [
+      "Yasmim acredita que vai coma",
+      "B(yasmim, comer(yasmim))"
+    ],
+    [
+      "Suposição de que escreva",
+      "◇escrever"
+    ],
+    [
+      "Precisa dance",
+      "□dancar"
+    ],
+    [
+      "É possível que busque",
+      "◇buscar"
+    ],
+    [
+      "Aline sabe que neve",
+      "K(aline, nevar(aline))"
+    ],
+    [
+      "É necessário que amigo",
+      "□amigo"
+    ],
+    [
+      "Necessariamente perca",
+      "□perder"
+    ],
+    [
+      "Algum professor é mortal",
+      "∃x (professor(x) ∧ mortal(x))"
+    ],
+    [
+      "Provalvemente corra",
+      "◇correr"
+    ],
+    [
+      "Suposição de que inimigo",
+      "◇inimigo"
+    ],
+    [
+      "Condição para que corra",
+      "□correr"
+    ],
+    [
+      "Condição para que viaje",
+      "□viajar"
+    ],
+    [
+      "Gisele é avó de Ivana",
+      "avo(gisele, ivana) ∧ pessoa(gisele) ∧ pessoa(ivana)"
+    ],
+    [
+      "Ronaldo é avó de Piero",
+      "avo(ronaldo, piero) ∧ pessoa(ronaldo) ∧ pessoa(piero)"
+    ],
+    [
+      "Odete sabe que escreva",
+      "K(odete, escrever(odete))"
+    ],
+    [
+      "Yuri é pai de Silvia",
+      "pai(yuri, silvia) ∧ pessoa(yuri) ∧ pessoa(silvia)"
+    ],
+    [
+      "Todo animal é mortal",
+      "∀x (animal(x) → mortal(x))"
+    ],
+    [
+      "Deve-se garantir que busque",
+      "□buscar"
+    ],
+    [
+      "Existe a chance de que estude",
+      "◇estudar"
+    ],
+    [
+      "Talvez neve",
+      "◇nevar"
+    ],
+    [
+      "Condição para que amigo",
+      "□amigo"
+    ],
+    [
+      "Existe a chance de que sorria",
+      "◇sorrir"
+    ],
+    [
+      "Todo cachorro é forte",
+      "∀x (cao(x) → forte(x))"
+    ],
+    [
+      "É possível que faça sol",
+      "◇fazer_sol"
+    ],
+    [
+      "Algum atleta é rápido",
+      "∃x (atleta(x) ∧ rapido(x))"
+    ],
+    [
+      "Regina sabe que chore",
+      "K(regina, chorar(regina))"
+    ],
+    [
+      "Necessariamente estude",
+      "□estudar"
+    ],
+    [
+      "Bob acredita que vai leia",
+      "B(bob, ler(bob))"
+    ],
+    [
+      "Ivan é primo de Julio",
+      "primo(ivan, julio) ∧ pessoa(ivan) ∧ pessoa(julio)"
+    ],
+    [
+      "Algum animal é preciso",
+      "∃x (animal(x) ∧ preciso(x))"
+    ],
+    [
+      "Todo atleta é feliz",
+      "∀x (atleta(x) → feliz(x))"
+    ],
+    [
+      "É possível que durma",
+      "◇dormir"
+    ],
+    [
+      "Nenhum médico é rápido",
+      "∀x (medico(x) → ¬rapido(x))"
+    ],
+    [
+      "Todo gato é forte",
+      "∀x (gato(x) → forte(x))"
+    ],
+    [
+      "Laura sabe que faça sol",
+      "K(laura, fazer_sol(laura))"
+    ],
+    [
+      "Algum gato é mortal",
+      "∃x (gato(x) ∧ mortal(x))"
+    ],
+    [
+      "Talvez chore",
+      "◇chorar"
+    ],
+    [
+      "Deve-se garantir que ganhe",
+      "□ganhar"
+    ],
+    [
+      "Todo médico é preciso",
+      "∀x (medico(x) → preciso(x))"
+    ],
+    [
+      "Nenhum gato é dedicado",
+      "∀x (gato(x) → ¬dedicado(x))"
+    ],
+    [
+      "Joana acredita que vai escreva",
+      "B(joana, escrever(joana))"
+    ],
+    [
+      "Kevin é sobrinho de Gisele",
+      "sobrinho(kevin, gisele) ∧ pessoa(kevin) ∧ pessoa(gisele)"
+    ],
+    [
+      "Condição para que busque",
+      "□buscar"
+    ],
+    [
+      "Luan é enteada de Valeria",
+      "enteada(luan, valeria) ∧ pessoa(luan) ∧ pessoa(valeria)"
+    ],
+    [
+      "Todo cientista é rápido",
+      "∀x (cientista(x) → rapido(x))"
+    ],
+    [
+      "Pode ser que leia",
+      "◇ler"
+    ],
+    [
+      "Algum gato é bravo",
+      "∃x (gato(x) ∧ bravo(x))"
+    ],
+    [
+      "Deve-se garantir que faça sol",
+      "□fazer_sol"
+    ],
+    [
+      "Algum aluno é bravo",
+      "∃x (aluno(x) ∧ bravo(x))"
+    ],
+    [
+      "Todo professor é dedicado",
+      "∀x (professor(x) → dedicado(x))"
+    ],
+    [
+      "É possível que amigo",
+      "◇amigo"
+    ],
+    [
+      "Suposição de que encontre",
+      "◇encontrar"
+    ],
+    [
+      "Hilda é padrasto de Julio",
+      "padrasto(hilda, julio) ∧ pessoa(hilda) ∧ pessoa(julio)"
+    ],
+    [
+      "É possível que amigo",
+      "◇amigo"
+    ],
+    [
+      "Nenhum mulher é bravo",
+      "∀x (mulher(x) → ¬bravo(x))"
+    ],
+    [
+      "Suposição de que durma",
+      "◇dormir"
+    ],
+    [
+      "Algum animal é habilidoso",
+      "∃x (animal(x) ∧ habilidoso(x))"
+    ],
+    [
+      "Noemi sabe que cante",
+      "K(noemi, cantar(noemi))"
+    ],
+    [
+      "Algum animal é mortal",
+      "∃x (animal(x) ∧ mortal(x))"
+    ],
+    [
+      "Fred é tia de Tatiana",
+      "tia(fred, tatiana) ∧ pessoa(fred) ∧ pessoa(tatiana)"
+    ],
+    [
+      "Hilda sabe que perca",
+      "K(hilda, perder(hilda))"
+    ],
+    [
+      "Suposição de que vente",
+      "◇ventar"
+    ],
+    [
+      "Beto acredita que vai busque",
+      "B(beto, buscar(beto))"
+    ],
+    [
+      "É obrigatório que ajude",
+      "□ajudar"
+    ],
+    [
+      "Queirós é filha de Julio",
+      "filha(queirós, julio) ∧ pessoa(queirós) ∧ pessoa(julio)"
+    ],
+    [
+      "Nenhum mulher é bravo",
+      "∀x (mulher(x) → ¬bravo(x))"
+    ],
+    [
+      "Zenaide sabe que sorria",
+      "K(zenaide, sorrir(zenaide))"
+    ],
+    [
+      "Joaquim é padrasto de Xuxa",
+      "padrasto(joaquim, xuxa) ∧ pessoa(joaquim) ∧ pessoa(xuxa)"
+    ],
+    [
+      "Alice é sobrinho de Hugo",
+      "sobrinho(alice, hugo) ∧ pessoa(alice) ∧ pessoa(hugo)"
+    ],
+    [
+      "Deve-se garantir que chore",
+      "□chorar"
+    ],
+    [
+      "É obrigatório que durma",
+      "□dormir"
+    ],
+    [
+      "Deve-se garantir que prejudique",
+      "□prejudicar"
+    ],
+    [
+      "Nenhum cientista é habilidoso",
+      "∀x (cientista(x) → ¬habilidoso(x))"
+    ],
+    [
+      "Algum artista é dedicado",
+      "∃x (artista(x) ∧ dedicado(x))"
+    ],
+    [
+      "Algum artista é atento",
+      "∃x (artista(x) ∧ atento(x))"
+    ],
+    [
+      "Algum artista é rápido",
+      "∃x (artista(x) ∧ rapido(x))"
+    ],
+    [
+      "Deve-se garantir que viaje",
+      "□viajar"
+    ],
+    [
+      "Todo artista é dedicado",
+      "∀x (artista(x) → dedicado(x))"
+    ],
+    [
+      "Luan sabe que cante",
+      "K(luan, cantar(luan))"
+    ],
+    [
+      "Odete é madrasta de Gil",
+      "madrasta(odete, gil) ∧ pessoa(odete) ∧ pessoa(gil)"
+    ],
+    [
+      "Ursula é filho de Yuri",
+      "filho(ursula, yuri) ∧ pessoa(ursula) ∧ pessoa(yuri)"
+    ],
+    [
+      "Xavier sabe que viaje",
+      "K(xavier, viajar(xavier))"
+    ],
+    [
+      "Piero sabe que chova",
+      "K(piero, chover(piero))"
+    ],
+    [
+      "É possível que sorria",
+      "◇sorrir"
+    ],
+    [
+      "Todo professor é forte",
+      "∀x (professor(x) → forte(x))"
+    ],
+    [
+      "Precisa faça sol",
+      "□fazer_sol"
+    ],
+    [
+      "Nenhum mulher é forte",
+      "∀x (mulher(x) → ¬forte(x))"
+    ],
+    [
+      "Necessariamente encontre",
+      "□encontrar"
+    ],
+    [
+      "Andre é irmã de Ines",
+      "irma(andre, ines) ∧ pessoa(andre) ∧ pessoa(ines)"
+    ],
+    [
+      "Odete acredita que vai estude",
+      "B(odete, estudar(odete))"
+    ],
+    [
+      "Ubaldo acredita que vai durma",
+      "B(ubaldo, dormir(ubaldo))"
+    ],
+    [
+      "Algum cientista é inteligente",
+      "∃x (cientista(x) ∧ inteligente(x))"
+    ],
+    [
+      "Ivana acredita que vai vente",
+      "B(ivana, ventar(ivana))"
+    ],
+    [
+      "Todo gato é dedicado",
+      "∀x (gato(x) → dedicado(x))"
+    ],
+    [
+      "Provalvemente ganhe",
+      "◇ganhar"
+    ],
+    [
+      "Leticia é prima de Paulo",
+      "prima(leticia, paulo) ∧ pessoa(leticia) ∧ pessoa(paulo)"
+    ],
+    [
+      "Joana sabe que sorria",
+      "K(joana, sorrir(joana))"
+    ],
+    [
+      "Nenhum pássaro é inteligente",
+      "∀x (passaro(x) → ¬inteligente(x))"
+    ],
+    [
+      "Todo animal é dedicado",
+      "∀x (animal(x) → dedicado(x))"
+    ],
+    [
+      "Necessariamente ajude",
+      "□ajudar"
+    ],
+    [
+      "Todo médico é mortal",
+      "∀x (medico(x) → mortal(x))"
+    ],
+    [
+      "Ubaldo é pai de Gisele",
+      "pai(ubaldo, gisele) ∧ pessoa(ubaldo) ∧ pessoa(gisele)"
+    ],
+    [
+      "Pode ser que leia",
+      "◇ler"
+    ],
+    [
+      "Edgar sabe que cante",
+      "K(edgar, cantar(edgar))"
+    ],
+    [
+      "Talvez viaje",
+      "◇viajar"
+    ],
+    [
+      "Kelvin é mãe de Fred",
+      "mae(kelvin, fred) ∧ pessoa(kelvin) ∧ pessoa(fred)"
+    ],
+    [
+      "Nenhum aluno é bravo",
+      "∀x (aluno(x) → ¬bravo(x))"
+    ],
+    [
+      "Quenia é irmã de Caio",
+      "irma(quenia, caio) ∧ pessoa(quenia) ∧ pessoa(caio)"
+    ],
+    [
+      "Todo médico é feliz",
+      "∀x (medico(x) → feliz(x))"
+    ],
+    [
+      "Provalvemente prejudique",
+      "◇prejudicar"
+    ],
+    [
+      "Ursula sabe que inimigo",
+      "K(ursula, inimigo(ursula))"
+    ],
+    [
+      "William é filha de Andre",
+      "filha(william, andre) ∧ pessoa(william) ∧ pessoa(andre)"
+    ],
+    [
+      "Nenhum homem é habilidoso",
+      "∀x (homem(x) → ¬habilidoso(x))"
+    ],
+    [
+      "Heitor acredita que vai dance",
+      "B(heitor, dancar(heitor))"
+    ],
+    [
+      "Talvez estude",
+      "◇estudar"
+    ],
+    [
+      "Joana é prima de Luan",
+      "prima(joana, luan) ∧ pessoa(joana) ∧ pessoa(luan)"
+    ],
+    [
+      "Pode ser que chova",
+      "◇chover"
+    ],
+    [
+      "Algum cachorro é atento",
+      "∃x (cao(x) ∧ atento(x))"
+    ],
+    [
+      "Deve-se garantir que corra",
+      "□correr"
+    ],
+    [
+      "Xande é enteado de Brena",
+      "enteado(xande, brena) ∧ pessoa(xande) ∧ pessoa(brena)"
+    ],
+    [
+      "Joana é irmã de Tulio",
+      "irma(joana, tulio) ∧ pessoa(joana) ∧ pessoa(tulio)"
+    ],
+    [
+      "Katia é irmão de Hugo",
+      "irmao(katia, hugo) ∧ pessoa(katia) ∧ pessoa(hugo)"
+    ],
+    [
+      "Algum artista é inteligente",
+      "∃x (artista(x) ∧ inteligente(x))"
+    ],
+    [
+      "Todo pássaro é rápido",
+      "∀x (passaro(x) → rapido(x))"
+    ],
+    [
+      "Moacir sabe que vente",
+      "K(moacir, ventar(moacir))"
+    ],
+    [
+      "Vagner acredita que vai leia",
+      "B(vagner, ler(vagner))"
+    ],
+    [
+      "Todo atleta é dedicado",
+      "∀x (atleta(x) → dedicado(x))"
+    ],
+    [
+      "Precisa amigo",
+      "□amigo"
+    ],
+    [
+      "Condição para que inimigo",
+      "□inimigo"
+    ],
+    [
+      "Ubaldo é cunhado de Nuno",
+      "cunhado(ubaldo, nuno) ∧ pessoa(ubaldo) ∧ pessoa(nuno)"
+    ],
+    [
+      "Ronaldo sabe que encontre",
+      "K(ronaldo, encontrar(ronaldo))"
+    ],
+    [
+      "Nenhum cientista é atento",
+      "∀x (cientista(x) → ¬atento(x))"
+    ],
+    [
+      "Precisa durma",
+      "□dormir"
+    ],
+    [
+      "Hugo sabe que faça sol",
+      "K(hugo, fazer_sol(hugo))"
+    ],
+    [
+      "Silvia é padrasto de Eduarda",
+      "padrasto(silvia, eduarda) ∧ pessoa(silvia) ∧ pessoa(eduarda)"
+    ],
+    [
+      "Ines sabe que dance",
+      "K(ines, dancar(ines))"
+    ],
+    [
+      "Provalvemente corra",
+      "◇correr"
+    ],
+    [
+      "Todo artista é bravo",
+      "∀x (artista(x) → bravo(x))"
+    ],
+    [
+      "Nenhum homem é preciso",
+      "∀x (homem(x) → ¬preciso(x))"
+    ],
+    [
+      "É necessário que perca",
+      "□perder"
+    ],
+    [
+      "Existe a chance de que faça sol",
+      "◇fazer_sol"
+    ],
+    [
+      "William acredita que vai neve",
+      "B(william, nevar(william))"
+    ],
+    [
+      "É obrigatório que dance",
+      "□dancar"
+    ],
+    [
+      "Provalvemente ajude",
+      "◇ajudar"
+    ],
+    [
+      "Algum animal é bravo",
+      "∃x (animal(x) ∧ bravo(x))"
+    ],
+    [
+      "Algum animal é mortal",
+      "∃x (animal(x) ∧ mortal(x))"
+    ],
+    [
+      "Nenhum homem é bravo",
+      "∀x (homem(x) → ¬bravo(x))"
+    ],
+    [
+      "Condição para que corra",
+      "□correr"
+    ],
+    [
+      "Todo artista é atento",
+      "∀x (artista(x) → atento(x))"
+    ],
+    [
+      "Nenhum professor é inteligente",
+      "∀x (professor(x) → ¬inteligente(x))"
+    ],
+    [
+      "Xande é cunhada de Elsa",
+      "cunhada(xande, elsa) ∧ pessoa(xande) ∧ pessoa(elsa)"
+    ],
+    [
+      "Ursula é enteada de Noemi",
+      "enteada(ursula, noemi) ∧ pessoa(ursula) ∧ pessoa(noemi)"
+    ],
+    [
+      "É obrigatório que cante",
+      "□cantar"
+    ],
+    [
+      "Todo cientista é dedicado",
+      "∀x (cientista(x) → dedicado(x))"
+    ],
+    [
+      "Condição para que viaje",
+      "□viajar"
+    ],
+    [
+      "Existe a chance de que durma",
+      "◇dormir"
+    ],
+    [
+      "Simone é pai de Vera",
+      "pai(simone, vera) ∧ pessoa(simone) ∧ pessoa(vera)"
+    ],
+    [
+      "Nildo acredita que vai chore",
+      "B(nildo, chorar(nildo))"
+    ],
+    [
+      "Gabi acredita que vai busque",
+      "B(gabi, buscar(gabi))"
+    ],
+    [
+      "Algum mulher é mortal",
+      "∃x (mulher(x) ∧ mortal(x))"
+    ],
+    [
+      "É obrigatório que encontre",
+      "□encontrar"
+    ],
+    [
+      "Nenhum cientista é dedicado",
+      "∀x (cientista(x) → ¬dedicado(x))"
+    ],
+    [
+      "Kevin é avó de Vagner",
+      "avo(kevin, vagner) ∧ pessoa(kevin) ∧ pessoa(vagner)"
+    ],
+    [
+      "Aline sabe que pule",
+      "K(aline, pular(aline))"
+    ],
+    [
+      "Alice é madrasta de Fabiano",
+      "madrasta(alice, fabiano) ∧ pessoa(alice) ∧ pessoa(fabiano)"
+    ],
+    [
+      "É necessário que faça sol",
+      "□fazer_sol"
+    ],
+    [
+      "Yasmim acredita que vai sorria",
+      "B(yasmim, sorrir(yasmim))"
+    ],
+    [
+      "Nenhum artista é mortal",
+      "∀x (artista(x) → ¬mortal(x))"
+    ],
+    [
+      "Pode ser que vente",
+      "◇ventar"
+    ],
+    [
+      "Samuel sabe que leia",
+      "K(samuel, ler(samuel))"
+    ],
+    [
+      "Paulo é mãe de Tulio",
+      "mae(paulo, tulio) ∧ pessoa(paulo) ∧ pessoa(tulio)"
+    ],
+    [
+      "Todo cientista é rápido",
+      "∀x (cientista(x) → rapido(x))"
+    ],
+    [
+      "Todo pássaro é atento",
+      "∀x (passaro(x) → atento(x))"
+    ],
+    [
+      "Nenhum atleta é feliz",
+      "∀x (atleta(x) → ¬feliz(x))"
+    ],
+    [
+      "Daniel sabe que ganhe",
+      "K(daniel, ganhar(daniel))"
+    ],
+    [
+      "Talvez chova",
+      "◇chover"
+    ],
+    [
+      "Pode ser que faça sol",
+      "◇fazer_sol"
+    ],
+    [
+      "Ubaldo é tia de Yara",
+      "tia(ubaldo, yara) ∧ pessoa(ubaldo) ∧ pessoa(yara)"
+    ],
+    [
+      "Nuno sabe que busque",
+      "K(nuno, buscar(nuno))"
+    ],
+    [
+      "Nenhum artista é forte",
+      "∀x (artista(x) → ¬forte(x))"
+    ],
+    [
+      "Celia é irmã de Ines",
+      "irma(celia, ines) ∧ pessoa(celia) ∧ pessoa(ines)"
+    ],
+    [
+      "Todo homem é rápido",
+      "∀x (homem(x) → rapido(x))"
+    ],
+    [
+      "É obrigatório que durma",
+      "□dormir"
+    ],
+    [
+      "Todo pássaro é atento",
+      "∀x (passaro(x) → atento(x))"
+    ],
+    [
+      "Algum animal é forte",
+      "∃x (animal(x) ∧ forte(x))"
+    ],
+    [
+      "É possível que sorria",
+      "◇sorrir"
+    ],
+    [
+      "Algum aluno é feliz",
+      "∃x (aluno(x) ∧ feliz(x))"
+    ],
+    [
+      "Nenhum aluno é feliz",
+      "∀x (aluno(x) → ¬feliz(x))"
+    ],
+    [
+      "Todo gato é inteligente",
+      "∀x (gato(x) → inteligente(x))"
+    ],
+    [
+      "Quiteria acredita que vai dance",
+      "B(quiteria, dancar(quiteria))"
+    ],
+    [
+      "É possível que inimigo",
+      "◇inimigo"
+    ],
+    [
+      "Odete acredita que vai estude",
+      "B(odete, estudar(odete))"
+    ],
+    [
+      "Flavia é filho de Heitor",
+      "filho(flavia, heitor) ∧ pessoa(flavia) ∧ pessoa(heitor)"
+    ],
+    [
+      "Provalvemente neve",
+      "◇nevar"
+    ],
+    [
+      "Condição para que viaje",
+      "□viajar"
+    ],
+    [
+      "Vera é sobrinho de Yuri",
+      "sobrinho(vera, yuri) ∧ pessoa(vera) ∧ pessoa(yuri)"
+    ],
+    [
+      "Nenhum atleta é feliz",
+      "∀x (atleta(x) → ¬feliz(x))"
+    ],
+    [
+      "Todo gato é preciso",
+      "∀x (gato(x) → preciso(x))"
+    ],
+    [
+      "Condição para que estude",
+      "□estudar"
+    ],
+    [
+      "Silvia é tia de Aline",
+      "tia(silvia, aline) ∧ pessoa(silvia) ∧ pessoa(aline)"
+    ],
+    [
+      "Nenhum aluno é habilidoso",
+      "∀x (aluno(x) → ¬habilidoso(x))"
+    ],
+    [
+      "Tulio é tia de Heitor",
+      "tia(tulio, heitor) ∧ pessoa(tulio) ∧ pessoa(heitor)"
+    ],
+    [
+      "É necessário que viaje",
+      "□viajar"
+    ],
+    [
+      "Ines é mãe de Ronaldo",
+      "mae(ines, ronaldo) ∧ pessoa(ines) ∧ pessoa(ronaldo)"
+    ],
+    [
+      "É possível que chore",
+      "◇chorar"
+    ],
+    [
+      "Provalvemente ganhe",
+      "◇ganhar"
+    ],
+    [
+      "Todo pássaro é forte",
+      "∀x (passaro(x) → forte(x))"
+    ],
+    [
+      "É necessário que escreva",
+      "□escrever"
+    ],
+    [
+      "Todo mulher é mortal",
+      "∀x (mulher(x) → mortal(x))"
+    ],
+    [
+      "Nenhum atleta é feliz",
+      "∀x (atleta(x) → ¬feliz(x))"
+    ],
+    [
+      "Necessariamente faça sol",
+      "□fazer_sol"
+    ],
+    [
+      "Alice sabe que vente",
+      "K(alice, ventar(alice))"
+    ],
+    [
+      "Teresa é primo de Tatiana",
+      "primo(teresa, tatiana) ∧ pessoa(teresa) ∧ pessoa(tatiana)"
+    ],
+    [
+      "É obrigatório que dance",
+      "□dancar"
+    ],
+    [
+      "Yuri é enteado de Laura",
+      "enteado(yuri, laura) ∧ pessoa(yuri) ∧ pessoa(laura)"
+    ],
+    [
+      "Nenhum artista é forte",
+      "∀x (artista(x) → ¬forte(x))"
+    ],
+    [
+      "É obrigatório que neve",
+      "□nevar"
+    ],
+    [
+      "Fred sabe que sorria",
+      "K(fred, sorrir(fred))"
+    ],
+    [
+      "É obrigatório que sorria",
+      "□sorrir"
+    ],
+    [
+      "Eduarda sabe que chova",
+      "K(eduarda, chover(eduarda))"
+    ],
+    [
+      "É obrigatório que ajude",
+      "□ajudar"
+    ],
+    [
+      "Andre é filho de Joana",
+      "filho(andre, joana) ∧ pessoa(andre) ∧ pessoa(joana)"
+    ],
+    [
+      "Odete é mãe de Quiteria",
+      "mae(odete, quiteria) ∧ pessoa(odete) ∧ pessoa(quiteria)"
+    ],
+    [
+      "Ronaldo acredita que vai chova",
+      "B(ronaldo, chover(ronaldo))"
+    ],
+    [
+      "Ivana acredita que vai escreva",
+      "B(ivana, escrever(ivana))"
+    ],
+    [
+      "É necessário que cante",
+      "□cantar"
+    ],
+    [
+      "Nenhum gato é habilidoso",
+      "∀x (gato(x) → ¬habilidoso(x))"
+    ],
+    [
+      "Xande é prima de Olga",
+      "prima(xande, olga) ∧ pessoa(xande) ∧ pessoa(olga)"
+    ],
+    [
+      "Nenhum cientista é mortal",
+      "∀x (cientista(x) → ¬mortal(x))"
+    ],
+    [
+      "Nenhum aluno é preciso",
+      "∀x (aluno(x) → ¬preciso(x))"
+    ],
+    [
+      "Marta é cunhada de Carolina",
+      "cunhada(marta, carolina) ∧ pessoa(marta) ∧ pessoa(carolina)"
+    ],
+    [
+      "Todo gato é inteligente",
+      "∀x (gato(x) → inteligente(x))"
+    ],
+    [
+      "Olga sabe que vente",
+      "K(olga, ventar(olga))"
+    ],
+    [
+      "Existe a chance de que estude",
+      "◇estudar"
+    ],
+    [
+      "Algum mulher é habilidoso",
+      "∃x (mulher(x) ∧ habilidoso(x))"
+    ],
+    [
+      "Algum médico é atento",
+      "∃x (medico(x) ∧ atento(x))"
+    ],
+    [
+      "Algum cachorro é dedicado",
+      "∃x (cao(x) ∧ dedicado(x))"
+    ],
+    [
+      "Provalvemente pule",
+      "◇pular"
+    ],
+    [
+      "Todo cientista é atento",
+      "∀x (cientista(x) → atento(x))"
+    ],
+    [
+      "Gisele acredita que vai vente",
+      "B(gisele, ventar(gisele))"
+    ],
+    [
+      "Todo professor é atento",
+      "∀x (professor(x) → atento(x))"
+    ],
+    [
+      "Ronaldo é mãe de Zenaide",
+      "mae(ronaldo, zenaide) ∧ pessoa(ronaldo) ∧ pessoa(zenaide)"
+    ],
+    [
+      "Nenhum mulher é habilidoso",
+      "∀x (mulher(x) → ¬habilidoso(x))"
+    ],
+    [
+      "Existe a chance de que encontre",
+      "◇encontrar"
+    ],
+    [
+      "Nenhum professor é habilidoso",
+      "∀x (professor(x) → ¬habilidoso(x))"
+    ],
+    [
+      "Marta sabe que inimigo",
+      "K(marta, inimigo(marta))"
+    ],
+    [
+      "Fred sabe que perca",
+      "K(fred, perder(fred))"
+    ],
+    [
+      "É necessário que ajude",
+      "□ajudar"
+    ],
+    [
+      "Marcela acredita que vai viaje",
+      "B(marcela, viajar(marcela))"
+    ],
+    [
+      "Regina é avô de Tulio",
+      "avo(regina, tulio) ∧ pessoa(regina) ∧ pessoa(tulio)"
+    ],
+    [
+      "Eduarda é avô de Yuri",
+      "avo(eduarda, yuri) ∧ pessoa(eduarda) ∧ pessoa(yuri)"
+    ],
+    [
+      "Algum gato é feliz",
+      "∃x (gato(x) ∧ feliz(x))"
+    ],
+    [
+      "Piero sabe que sorria",
+      "K(piero, sorrir(piero))"
+    ],
+    [
+      "Zenaide é tio de Carolina",
+      "tio(zenaide, carolina) ∧ pessoa(zenaide) ∧ pessoa(carolina)"
+    ],
+    [
+      "Nenhum mulher é dedicado",
+      "∀x (mulher(x) → ¬dedicado(x))"
+    ],
+    [
+      "Todo artista é rápido",
+      "∀x (artista(x) → rapido(x))"
+    ],
+    [
+      "Yuri é madrasta de Dora",
+      "madrasta(yuri, dora) ∧ pessoa(yuri) ∧ pessoa(dora)"
+    ],
+    [
+      "É necessário que ajude",
+      "□ajudar"
+    ],
+    [
+      "Gabi sabe que amigo",
+      "K(gabi, amigo(gabi))"
+    ],
+    [
+      "Precisa vente",
+      "□ventar"
+    ],
+    [
+      "Quiteria sabe que inimigo",
+      "K(quiteria, inimigo(quiteria))"
+    ],
+    [
+      "Celia é irmão de Marta",
+      "irmao(celia, marta) ∧ pessoa(celia) ∧ pessoa(marta)"
+    ],
+    [
+      "Hugo é filho de Bob",
+      "filho(hugo, bob) ∧ pessoa(hugo) ∧ pessoa(bob)"
+    ],
+    [
+      "Yasmim sabe que leia",
+      "K(yasmim, ler(yasmim))"
+    ],
+    [
+      "Algum cachorro é inteligente",
+      "∃x (cao(x) ∧ inteligente(x))"
+    ],
+    [
+      "Bob é mãe de Zuleica",
+      "mae(bob, zuleica) ∧ pessoa(bob) ∧ pessoa(zuleica)"
+    ],
+    [
+      "Todo cientista é bravo",
+      "∀x (cientista(x) → bravo(x))"
+    ],
+    [
+      "Talvez viaje",
+      "◇viajar"
+    ],
+    [
+      "Xavier é cunhado de Leticia",
+      "cunhado(xavier, leticia) ∧ pessoa(xavier) ∧ pessoa(leticia)"
+    ],
+    [
+      "Zenaide acredita que vai durma",
+      "B(zenaide, dormir(zenaide))"
+    ],
+    [
+      "Todo animal é dedicado",
+      "∀x (animal(x) → dedicado(x))"
+    ],
+    [
+      "Nenhum cachorro é forte",
+      "∀x (cao(x) → ¬forte(x))"
+    ],
+    [
+      "Dora é cunhada de Laura",
+      "cunhada(dora, laura) ∧ pessoa(dora) ∧ pessoa(laura)"
+    ],
+    [
+      "Provalvemente faça sol",
+      "◇fazer_sol"
+    ],
+    [
+      "Hilda é irmão de Quiteria",
+      "irmao(hilda, quiteria) ∧ pessoa(hilda) ∧ pessoa(quiteria)"
+    ],
+    [
+      "Ziraldo sabe que ganhe",
+      "K(ziraldo, ganhar(ziraldo))"
+    ],
+    [
+      "Talvez pule",
+      "◇pular"
+    ],
+    [
+      "Flavia acredita que vai sorria",
+      "B(flavia, sorrir(flavia))"
+    ],
+    [
+      "Todo artista é bravo",
+      "∀x (artista(x) → bravo(x))"
+    ],
+    [
+      "Necessariamente busque",
+      "□buscar"
+    ],
+    [
+      "É possível que dance",
+      "◇dancar"
+    ],
+    [
+      "Joaquim é irmã de Carolina",
+      "irma(joaquim, carolina) ∧ pessoa(joaquim) ∧ pessoa(carolina)"
+    ],
+    [
+      "Talvez pule",
+      "◇pular"
+    ],
+    [
+      "Algum atleta é forte",
+      "∃x (atleta(x) ∧ forte(x))"
+    ],
+    [
+      "Nenhum professor é feliz",
+      "∀x (professor(x) → ¬feliz(x))"
+    ],
+    [
+      "É possível que amigo",
+      "◇amigo"
+    ],
+    [
+      "Brena sabe que pule",
+      "K(brena, pular(brena))"
+    ],
+    [
+      "Talvez neve",
+      "◇nevar"
+    ],
+    [
+      "Provalvemente faça sol",
+      "◇fazer_sol"
+    ],
+    [
+      "Edgar é padrasto de Olga",
+      "padrasto(edgar, olga) ∧ pessoa(edgar) ∧ pessoa(olga)"
+    ],
+    [
+      "Ivana é filho de Moacir",
+      "filho(ivana, moacir) ∧ pessoa(ivana) ∧ pessoa(moacir)"
+    ],
+    [
+      "Algum pássaro é habilidoso",
+      "∃x (passaro(x) ∧ habilidoso(x))"
+    ],
+    [
+      "Deve-se garantir que faça sol",
+      "□fazer_sol"
+    ],
+    [
+      "Pode ser que estude",
+      "◇estudar"
+    ],
+    [
+      "Xande sabe que chore",
+      "K(xande, chorar(xande))"
+    ],
+    [
+      "Hugo sabe que cante",
+      "K(hugo, cantar(hugo))"
+    ],
+    [
+      "Algum gato é inteligente",
+      "∃x (gato(x) ∧ inteligente(x))"
+    ],
+    [
+      "Kelvin sabe que ajude",
+      "K(kelvin, ajudar(kelvin))"
+    ],
+    [
+      "É obrigatório que cante",
+      "□cantar"
+    ],
+    [
+      "Edgar acredita que vai escreva",
+      "B(edgar, escrever(edgar))"
+    ],
+    [
+      "Algum artista é habilidoso",
+      "∃x (artista(x) ∧ habilidoso(x))"
+    ],
+    [
+      "Eduarda acredita que vai cante",
+      "B(eduarda, cantar(eduarda))"
+    ],
+    [
+      "Talvez cante",
+      "◇cantar"
+    ],
+    [
+      "Suposição de que leia",
+      "◇ler"
+    ],
+    [
+      "Caio é avô de Simone",
+      "avo(caio, simone) ∧ pessoa(caio) ∧ pessoa(simone)"
+    ],
+    [
+      "Queirós é mãe de Xavier",
+      "mae(queirós, xavier) ∧ pessoa(queirós) ∧ pessoa(xavier)"
+    ],
+    [
+      "Caio é sobrinha de Yasmim",
+      "sobrinha(caio, yasmim) ∧ pessoa(caio) ∧ pessoa(yasmim)"
+    ],
+    [
+      "Algum cientista é bravo",
+      "∃x (cientista(x) ∧ bravo(x))"
+    ],
+    [
+      "Precisa corra",
+      "□correr"
+    ],
+    [
+      "Deve-se garantir que coma",
+      "□comer"
+    ],
+    [
+      "Samuel acredita que vai encontre",
+      "B(samuel, encontrar(samuel))"
+    ],
+    [
+      "Ubaldo sabe que neve",
+      "K(ubaldo, nevar(ubaldo))"
+    ],
+    [
+      "Algum médico é preciso",
+      "∃x (medico(x) ∧ preciso(x))"
+    ],
+    [
+      "Luan é tio de Zuleica",
+      "tio(luan, zuleica) ∧ pessoa(luan) ∧ pessoa(zuleica)"
+    ],
+    [
+      "Algum pássaro é bravo",
+      "∃x (passaro(x) ∧ bravo(x))"
+    ],
+    [
+      "Algum professor é mortal",
+      "∃x (professor(x) ∧ mortal(x))"
+    ],
+    [
+      "Todo médico é bravo",
+      "∀x (medico(x) → bravo(x))"
+    ],
+    [
+      "Todo homem é habilidoso",
+      "∀x (homem(x) → habilidoso(x))"
+    ],
+    [
+      "Provalvemente cante",
+      "◇cantar"
+    ],
+    [
+      "Vera acredita que vai estude",
+      "B(vera, estudar(vera))"
+    ],
+    [
+      "Nenhum médico é forte",
+      "∀x (medico(x) → ¬forte(x))"
+    ],
+    [
+      "Algum professor é forte",
+      "∃x (professor(x) ∧ forte(x))"
+    ],
+    [
+      "Todo professor é preciso",
+      "∀x (professor(x) → preciso(x))"
+    ],
+    [
+      "Precisa vente",
+      "□ventar"
+    ],
+    [
+      "Queirós é avó de Daniel",
+      "avo(queirós, daniel) ∧ pessoa(queirós) ∧ pessoa(daniel)"
+    ],
+    [
+      "Nildo sabe que viaje",
+      "K(nildo, viajar(nildo))"
+    ],
+    [
+      "Algum cachorro é inteligente",
+      "∃x (cao(x) ∧ inteligente(x))"
+    ],
+    [
+      "Marta sabe que sorria",
+      "K(marta, sorrir(marta))"
+    ],
+    [
+      "Vera acredita que vai pule",
+      "B(vera, pular(vera))"
+    ],
+    [
+      "Katia acredita que vai viaje",
+      "B(katia, viajar(katia))"
+    ],
+    [
+      "Nenhum pássaro é habilidoso",
+      "∀x (passaro(x) → ¬habilidoso(x))"
+    ],
+    [
+      "Todo médico é habilidoso",
+      "∀x (medico(x) → habilidoso(x))"
+    ],
+    [
+      "Nenhum cachorro é forte",
+      "∀x (cao(x) → ¬forte(x))"
+    ],
+    [
+      "Vera é padrasto de Vagner",
+      "padrasto(vera, vagner) ∧ pessoa(vera) ∧ pessoa(vagner)"
+    ],
+    [
+      "Nildo sabe que durma",
+      "K(nildo, dormir(nildo))"
+    ],
+    [
+      "Nenhum pássaro é bravo",
+      "∀x (passaro(x) → ¬bravo(x))"
+    ],
+    [
+      "Todo artista é dedicado",
+      "∀x (artista(x) → dedicado(x))"
+    ],
+    [
+      "Zenaide sabe que perca",
+      "K(zenaide, perder(zenaide))"
+    ],
+    [
+      "Algum médico é dedicado",
+      "∃x (medico(x) ∧ dedicado(x))"
+    ],
+    [
+      "É possível que faça sol",
+      "◇fazer_sol"
+    ],
+    [
+      "Algum cachorro é forte",
+      "∃x (cao(x) ∧ forte(x))"
+    ],
+    [
+      "Ronaldo acredita que vai vente",
+      "B(ronaldo, ventar(ronaldo))"
+    ],
+    [
+      "Pode ser que perca",
+      "◇perder"
+    ],
+    [
+      "Piero sabe que chova",
+      "K(piero, chover(piero))"
+    ],
+    [
+      "Algum professor é rápido",
+      "∃x (professor(x) ∧ rapido(x))"
+    ],
+    [
+      "Hugo é sobrinha de Odete",
+      "sobrinha(hugo, odete) ∧ pessoa(hugo) ∧ pessoa(odete)"
+    ],
+    [
+      "É obrigatório que encontre",
+      "□encontrar"
+    ],
+    [
+      "É possível que coma",
+      "◇comer"
+    ],
+    [
+      "Todo cientista é mortal",
+      "∀x (cientista(x) → mortal(x))"
+    ],
+    [
+      "Todo médico é inteligente",
+      "∀x (medico(x) → inteligente(x))"
+    ],
+    [
+      "Fred sabe que coma",
+      "K(fred, comer(fred))"
+    ],
+    [
+      "Suposição de que inimigo",
+      "◇inimigo"
+    ],
+    [
+      "Kevin é tia de Leticia",
+      "tia(kevin, leticia) ∧ pessoa(kevin) ∧ pessoa(leticia)"
+    ],
+    [
+      "Nenhum mulher é atento",
+      "∀x (mulher(x) → ¬atento(x))"
+    ],
+    [
+      "Otavio sabe que chore",
+      "K(otavio, chorar(otavio))"
+    ],
+    [
+      "Algum artista é atento",
+      "∃x (artista(x) ∧ atento(x))"
+    ],
+    [
+      "Ziraldo sabe que ajude",
+      "K(ziraldo, ajudar(ziraldo))"
+    ],
+    [
+      "Algum aluno é forte",
+      "∃x (aluno(x) ∧ forte(x))"
+    ],
+    [
+      "Nuno é padrasto de Julio",
+      "padrasto(nuno, julio) ∧ pessoa(nuno) ∧ pessoa(julio)"
+    ],
+    [
+      "Nenhum cachorro é bravo",
+      "∀x (cao(x) → ¬bravo(x))"
+    ],
+    [
+      "É obrigatório que ganhe",
+      "□ganhar"
+    ],
+    [
+      "Algum mulher é atento",
+      "∃x (mulher(x) ∧ atento(x))"
+    ],
+    [
+      "Algum pássaro é feliz",
+      "∃x (passaro(x) ∧ feliz(x))"
+    ],
+    [
+      "Condição para que perca",
+      "□perder"
+    ],
+    [
+      "Algum cientista é inteligente",
+      "∃x (cientista(x) ∧ inteligente(x))"
+    ],
+    [
+      "Existe a chance de que ajude",
+      "◇ajudar"
+    ],
+    [
+      "Todo atleta é habilidoso",
+      "∀x (atleta(x) → habilidoso(x))"
+    ],
+    [
+      "Flavia é avô de Hilda",
+      "avo(flavia, hilda) ∧ pessoa(flavia) ∧ pessoa(hilda)"
+    ],
+    [
+      "Existe a chance de que busque",
+      "◇buscar"
+    ],
+    [
+      "Vera sabe que estude",
+      "K(vera, estudar(vera))"
+    ],
+    [
+      "Pode ser que escreva",
+      "◇escrever"
+    ],
+    [
+      "Algum professor é forte",
+      "∃x (professor(x) ∧ forte(x))"
+    ],
+    [
+      "Existe a chance de que ganhe",
+      "◇ganhar"
+    ],
+    [
+      "Laura é enteada de Otavio",
+      "enteada(laura, otavio) ∧ pessoa(laura) ∧ pessoa(otavio)"
+    ],
+    [
+      "Piero é pai de Hugo",
+      "pai(piero, hugo) ∧ pessoa(piero) ∧ pessoa(hugo)"
+    ],
+    [
+      "Algum mulher é forte",
+      "∃x (mulher(x) ∧ forte(x))"
+    ],
+    [
+      "Todo cientista é forte",
+      "∀x (cientista(x) → forte(x))"
+    ],
+    [
+      "Ubaldo é pai de Moacir",
+      "pai(ubaldo, moacir) ∧ pessoa(ubaldo) ∧ pessoa(moacir)"
+    ],
+    [
+      "Algum mulher é habilidoso",
+      "∃x (mulher(x) ∧ habilidoso(x))"
+    ],
+    [
+      "Necessariamente busque",
+      "□buscar"
+    ],
+    [
+      "Todo mulher é rápido",
+      "∀x (mulher(x) → rapido(x))"
+    ],
+    [
+      "Ines é tio de Quiteria",
+      "tio(ines, quiteria) ∧ pessoa(ines) ∧ pessoa(quiteria)"
+    ],
+    [
+      "Nenhum artista é forte",
+      "∀x (artista(x) → ¬forte(x))"
+    ],
+    [
+      "Precisa escreva",
+      "□escrever"
+    ],
+    [
+      "Julio acredita que vai durma",
+      "B(julio, dormir(julio))"
+    ],
+    [
+      "Joana é pai de Dora",
+      "pai(joana, dora) ∧ pessoa(joana) ∧ pessoa(dora)"
+    ],
+    [
+      "Precisa pule",
+      "□pular"
+    ],
+    [
+      "Tulio é tio de Tatiana",
+      "tio(tulio, tatiana) ∧ pessoa(tulio) ∧ pessoa(tatiana)"
+    ],
+    [
+      "Talvez estude",
+      "◇estudar"
+    ],
+    [
+      "Ivan acredita que vai busque",
+      "B(ivan, buscar(ivan))"
+    ],
+    [
+      "Kevin é avô de Dora",
+      "avo(kevin, dora) ∧ pessoa(kevin) ∧ pessoa(dora)"
+    ],
+    [
+      "Nenhum cachorro é atento",
+      "∀x (cao(x) → ¬atento(x))"
+    ],
+    [
+      "Necessariamente corra",
+      "□correr"
+    ],
+    [
+      "Ronaldo é sobrinha de Ivana",
+      "sobrinha(ronaldo, ivana) ∧ pessoa(ronaldo) ∧ pessoa(ivana)"
+    ],
+    [
+      "Celia é enteado de Piero",
+      "enteado(celia, piero) ∧ pessoa(celia) ∧ pessoa(piero)"
+    ],
+    [
+      "Todo cientista é forte",
+      "∀x (cientista(x) → forte(x))"
+    ],
+    [
+      "Todo médico é atento",
+      "∀x (medico(x) → atento(x))"
+    ],
+    [
+      "É possível que coma",
+      "◇comer"
+    ],
+    [
+      "É obrigatório que durma",
+      "□dormir"
+    ],
+    [
+      "É obrigatório que corra",
+      "□correr"
+    ],
+    [
+      "Pode ser que perca",
+      "◇perder"
+    ],
+    [
+      "Tatiana é tia de Olga",
+      "tia(tatiana, olga) ∧ pessoa(tatiana) ∧ pessoa(olga)"
+    ],
+    [
+      "Aline é filho de Ubaldo",
+      "filho(aline, ubaldo) ∧ pessoa(aline) ∧ pessoa(ubaldo)"
+    ],
+    [
+      "Nenhum professor é preciso",
+      "∀x (professor(x) → ¬preciso(x))"
+    ],
+    [
+      "Pode ser que ajude",
+      "◇ajudar"
+    ],
+    [
+      "Algum aluno é atento",
+      "∃x (aluno(x) ∧ atento(x))"
+    ],
+    [
+      "Flavia sabe que amigo",
+      "K(flavia, amigo(flavia))"
+    ],
+    [
+      "Ubaldo acredita que vai coma",
+      "B(ubaldo, comer(ubaldo))"
+    ],
+    [
+      "Precisa corra",
+      "□correr"
+    ],
+    [
+      "Daniel sabe que sorria",
+      "K(daniel, sorrir(daniel))"
+    ],
+    [
+      "Luan sabe que busque",
+      "K(luan, buscar(luan))"
+    ],
+    [
+      "Suposição de que cante",
+      "◇cantar"
+    ],
+    [
+      "Julio é sobrinha de Joana",
+      "sobrinha(julio, joana) ∧ pessoa(julio) ∧ pessoa(joana)"
+    ],
+    [
+      "Todo animal é inteligente",
+      "∀x (animal(x) → inteligente(x))"
+    ],
+    [
+      "Nuno é padrasto de Ivan",
+      "padrasto(nuno, ivan) ∧ pessoa(nuno) ∧ pessoa(ivan)"
+    ],
+    [
+      "Quiteria acredita que vai prejudique",
+      "B(quiteria, prejudicar(quiteria))"
+    ],
+    [
+      "Heitor é pai de Nildo",
+      "pai(heitor, nildo) ∧ pessoa(heitor) ∧ pessoa(nildo)"
+    ],
+    [
+      "Todo gato é forte",
+      "∀x (gato(x) → forte(x))"
+    ],
+    [
+      "Algum cientista é feliz",
+      "∃x (cientista(x) ∧ feliz(x))"
+    ],
+    [
+      "Necessariamente durma",
+      "□dormir"
+    ],
+    [
+      "Algum cientista é bravo",
+      "∃x (cientista(x) ∧ bravo(x))"
+    ],
+    [
+      "Otavio é prima de Hilda",
+      "prima(otavio, hilda) ∧ pessoa(otavio) ∧ pessoa(hilda)"
+    ],
+    [
+      "Todo animal é feliz",
+      "∀x (animal(x) → feliz(x))"
+    ],
+    [
+      "É necessário que faça sol",
+      "□fazer_sol"
+    ],
+    [
+      "Provalvemente leia",
+      "◇ler"
+    ],
+    [
+      "Provalvemente pule",
+      "◇pular"
+    ],
+    [
+      "Todo cientista é habilidoso",
+      "∀x (cientista(x) → habilidoso(x))"
+    ],
+    [
+      "Algum médico é dedicado",
+      "∃x (medico(x) ∧ dedicado(x))"
+    ],
+    [
+      "Joaquim é avó de Moacir",
+      "avo(joaquim, moacir) ∧ pessoa(joaquim) ∧ pessoa(moacir)"
+    ],
+    [
+      "Ziraldo sabe que chore",
+      "K(ziraldo, chorar(ziraldo))"
+    ],
+    [
+      "Gabi acredita que vai cante",
+      "B(gabi, cantar(gabi))"
+    ],
+    [
+      "Algum artista é habilidoso",
+      "∃x (artista(x) ∧ habilidoso(x))"
+    ],
+    [
+      "Kelvin acredita que vai perca",
+      "B(kelvin, perder(kelvin))"
+    ],
+    [
+      "Brena sabe que prejudique",
+      "K(brena, prejudicar(brena))"
+    ],
+    [
+      "Carolina sabe que estude",
+      "K(carolina, estudar(carolina))"
+    ],
+    [
+      "Algum cachorro é atento",
+      "∃x (cao(x) ∧ atento(x))"
+    ],
+    [
+      "Gisele acredita que vai faça sol",
+      "B(gisele, fazer_sol(gisele))"
+    ],
+    [
+      "Simone acredita que vai amigo",
+      "B(simone, amigo(simone))"
+    ],
+    [
+      "Algum aluno é feliz",
+      "∃x (aluno(x) ∧ feliz(x))"
+    ],
+    [
+      "Gisele sabe que coma",
+      "K(gisele, comer(gisele))"
+    ],
+    [
+      "Algum gato é preciso",
+      "∃x (gato(x) ∧ preciso(x))"
+    ],
+    [
+      "Zenaide é avô de Simone",
+      "avo(zenaide, simone) ∧ pessoa(zenaide) ∧ pessoa(simone)"
+    ],
+    [
+      "Caio acredita que vai faça sol",
+      "B(caio, fazer_sol(caio))"
+    ],
+    [
+      "Nenhum atleta é dedicado",
+      "∀x (atleta(x) → ¬dedicado(x))"
+    ],
+    [
+      "Noemi é mãe de Celia",
+      "mae(noemi, celia) ∧ pessoa(noemi) ∧ pessoa(celia)"
+    ],
+    [
+      "Algum médico é habilidoso",
+      "∃x (medico(x) ∧ habilidoso(x))"
+    ],
+    [
+      "Yuri sabe que dance",
+      "K(yuri, dancar(yuri))"
+    ],
+    [
+      "Heitor acredita que vai faça sol",
+      "B(heitor, fazer_sol(heitor))"
+    ],
+    [
+      "Existe a chance de que corra",
+      "◇correr"
+    ],
+    [
+      "Algum cientista é inteligente",
+      "∃x (cientista(x) ∧ inteligente(x))"
+    ],
+    [
+      "Suposição de que escreva",
+      "◇escrever"
+    ],
+    [
+      "Talvez corra",
+      "◇correr"
+    ],
+    [
+      "Provalvemente neve",
+      "◇nevar"
+    ],
+    [
+      "Nenhum gato é mortal",
+      "∀x (gato(x) → ¬mortal(x))"
+    ],
+    [
+      "Algum professor é preciso",
+      "∃x (professor(x) ∧ preciso(x))"
+    ],
+    [
+      "Algum pássaro é atento",
+      "∃x (passaro(x) ∧ atento(x))"
+    ],
+    [
+      "Marcela é cunhada de Queirós",
+      "cunhada(marcela, queirós) ∧ pessoa(marcela) ∧ pessoa(queirós)"
+    ],
+    [
+      "Todo homem é dedicado",
+      "∀x (homem(x) → dedicado(x))"
+    ],
+    [
+      "Necessariamente leia",
+      "□ler"
+    ],
+    [
+      "Todo homem é rápido",
+      "∀x (homem(x) → rapido(x))"
+    ],
+    [
+      "Talvez faça sol",
+      "◇fazer_sol"
+    ],
+    [
+      "Deve-se garantir que estude",
+      "□estudar"
+    ],
+    [
+      "Julio acredita que vai ganhe",
+      "B(julio, ganhar(julio))"
+    ],
+    [
+      "Todo aluno é inteligente",
+      "∀x (aluno(x) → inteligente(x))"
+    ],
+    [
+      "É possível que neve",
+      "◇nevar"
+    ],
+    [
+      "Flavia sabe que neve",
+      "K(flavia, nevar(flavia))"
+    ],
+    [
+      "Julio é avô de Marcela",
+      "avo(julio, marcela) ∧ pessoa(julio) ∧ pessoa(marcela)"
+    ],
+    [
+      "Marcela é enteada de Uriel",
+      "enteada(marcela, uriel) ∧ pessoa(marcela) ∧ pessoa(uriel)"
+    ],
+    [
+      "Pode ser que prejudique",
+      "◇prejudicar"
+    ],
+    [
+      "Beto é enteada de Vera",
+      "enteada(beto, vera) ∧ pessoa(beto) ∧ pessoa(vera)"
+    ],
+    [
+      "Pode ser que busque",
+      "◇buscar"
+    ],
+    [
+      "Existe a chance de que sorria",
+      "◇sorrir"
+    ],
+    [
+      "É necessário que inimigo",
+      "□inimigo"
+    ],
+    [
+      "Todo animal é dedicado",
+      "∀x (animal(x) → dedicado(x))"
+    ],
+    [
+      "Silvia sabe que perca",
+      "K(silvia, perder(silvia))"
+    ],
+    [
+      "Yuri acredita que vai chova",
+      "B(yuri, chover(yuri))"
+    ],
+    [
+      "Todo professor é forte",
+      "∀x (professor(x) → forte(x))"
+    ],
+    [
+      "Xande é madrasta de Ziraldo",
+      "madrasta(xande, ziraldo) ∧ pessoa(xande) ∧ pessoa(ziraldo)"
+    ],
+    [
+      "É possível que encontre",
+      "◇encontrar"
+    ],
+    [
+      "É necessário que neve",
+      "□nevar"
+    ],
+    [
+      "Nenhum animal é dedicado",
+      "∀x (animal(x) → ¬dedicado(x))"
+    ],
+    [
+      "Talvez pule",
+      "◇pular"
+    ],
+    [
+      "Elsa sabe que cante",
+      "K(elsa, cantar(elsa))"
+    ],
+    [
+      "Brena acredita que vai faça sol",
+      "B(brena, fazer_sol(brena))"
+    ],
+    [
+      "Ronaldo acredita que vai perca",
+      "B(ronaldo, perder(ronaldo))"
+    ],
+    [
+      "Existe a chance de que neve",
+      "◇nevar"
     ]
   ]
 }

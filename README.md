@@ -1,92 +1,67 @@
-# Treinamento de LLM para Lógica Modal
+# Tradução de Linguagem Natural para Lógica Modal com LLM
 
-Este projeto implementa um sistema modular para treinar um modelo de linguagem (LLM) de maneira supervisionada, convertendo descrições em linguagem natural (em português) para fórmulas de lógica modal e predicativa. O objetivo é demonstrar como LLMs podem ser fine-tuned para tarefas de tradução simbólica, aplicando conceitos de lógica modal a cenários cotidianos.
+Este projeto implementa um sistema de processamento de linguagem natural (NLP) para converter sentenças em português para fórmulas de lógica modal (usando operadores de necessidade □ e possibilidade ◇). O sistema utiliza um modelo **mT5-base** fine-tuned para tradução simbólica.
 
-## Teoria por Trás do Projeto
+## 🧠 Teoria e Modelo
 
 ### Lógica Modal
-A lógica modal estende a lógica clássica com operadores modais como:
-- **□ (necessidade)**: Indica que algo é necessariamente verdadeiro (ex.: "É necessário respirar para viver").
-- **◇ (possibilidade)**: Indica que algo pode ser verdadeiro (ex.: "É possível que chova amanhã").
+Diferente da lógica proposicional clássica, a lógica modal introduz operadores que qualificam a verdade de uma sentença:
+- **□ (Necessidade)**: O que deve ser verdade (ex: "É obrigatório que X").
+- **◇ (Possibilidade)**: O que pode ser verdade (ex: "É possível que X").
 
-Esses operadores permitem modelar conceitos como obrigatoriedade, possibilidade e conhecimento em contextos normais, como regras diárias, probabilidades e obrigações.
+### Modelo mT5-base
+O projeto utiliza o **google/mt5-base**, um modelo encoder-decoder multilíngue da Hugging Face. Ele foi escolhido por sua robustez e capacidade de lidar com a complexidade da gramática portuguesa ao mapeá-la para estruturas lógicas rigorosas.
 
-### Modelo de Linguagem (mt5-small)
-O projeto utiliza o modelo **mt5-small** (Multilingual Text-to-Text Transfer Transformer) da Hugging Face. O T5 trata todas as tarefas de NLP como geração de texto. Neste projeto, ele é fine-tuned para seq2seq (sequência-para-sequência), mapeando frases em português para expressões lógicas.
+## 🚀 Otimizações de Memória (Limite de 15GB)
 
-- **Fine-tuning supervisionado**: O modelo aprende a traduzir entradas naturais para saídas simbólicas usando pares de treinamento.
-- **Arquitetura**: Encoder-decoder, ideal para tarefas de tradução.
-- **Base**: `google/mt5-small`, adequado para protótipos e datasets pequenos devido ao seu tamanho reduzido e eficiência.
+Para permitir o treinamento em máquinas com hardware limitado (como GPUs com 12GB-16GB de VRAM ou 16GB de RAM total), o projeto implementa várias técnicas de eficiência:
 
-## Estrutura do Repositório
+1.  **Gradient Checkpointing**: Reduz drasticamente o uso de VRAM ao recalcular ativações intermediárias em vez de armazená-las.
+2.  **Acúmulo de Gradientes**: Permite treinar com lotes pequenos (`batch_size=4`), mas mantendo a estabilidade de lotes maiores através de acumulação (`accumulation_steps=4`).
+3.  **Precisão Mista (FP16)**: Utiliza tensores de 16-bits para acelerar o treino e reduzir o consumo de memória pela metade (quando disponível).
+4.  **Low CPU Memory Usage**: Carregamento otimizado para evitar picos de consumo de RAM do sistema durante a inicialização.
+
+## 📂 Estrutura do Projeto
 
 ```text
-Algoritmos LLM/
-├── modelo_final/
-├── modelo_treinado/
-├── results/
-├── venv/
-├── configuracao.py
-├── configurar_ambiente.sh
-├── dataset.json
-├── README.md
-├── requirements.txt
-├── testar_modelo.py
-└── treinar_modelo.py
+nlp-to-modal-logic/
+├── dataset.json            # Dados para treinamento
+├── dataset_teste.json      # Dados para avaliação (validação)
+├── configuracao.py         # Hiperparâmetros e constantes
+├── treinar_modelo.py       # Script principal de fine-tuning
+├── testar_modelo.py        # Interface interativa para inferência
+├── modelo_final/           # Modelo treinado e salvo
+├── requirements.txt        # Dependências do Python
+└── configurar_ambiente.sh  # Script de setup automatizado
 ```
 
-### Funcionalidade das Pastas e Arquivos
+## 🛠️ Como Usar
 
-- **`modelo_final/`**: Diretório que armazena o modelo T5 após o fim do treinamento, pronto para uso.
-- **`modelo_treinado/`**: Contém os checkpoints salvos automaticamente durante o processo de treino.
-- **`results/`**: Pasta gerada pelo Trainer para armazenar logs de métricas e progresso.
-- **`venv/`**: Ambiente virtual que isola as dependências do projeto do restante do sistema.
-- **`configuracao.py`**: Centraliza todas as variáveis técnicas (épocas, batch size, learning rate) e caminhos globais.
-- **`configurar_ambiente.sh`**: Automatiza a criação da `venv` e a instalação dos pacotes necessários via `pip`.
-- **`dataset.json`**: Arquivo base com exemplos estruturados de linguagem natural e suas respectivas fórmulas lógicas.
-- **`README.md`**: Documentação técnica contendo instruções de configuração, teoria e uso do projeto.
-- **`requirements.txt`**: Lista detalhada de bibliotecas externas (Transformers, PyTorch, etc.) exigidas.
-- **`testar_modelo.py`**: Interface interativa em Tkinter para realizar inferências rápidas com o modelo treinado.
-- **`treinar_modelo.py`**: Motor principal que carrega os dados, inicializa o modelo e executa o fine-tuning.
-
-## Como Usar
-
-### 1. Configuração Inicial
-O projeto inclui um script de automação para facilitar o setup inicial em ambiente Linux:
-
+### 1. Preparação do Ambiente
+Execute o script de automação (disponível para Linux):
 ```bash
 chmod +x configurar_ambiente.sh
 ./configurar_ambiente.sh
 ```
 
-Isso criará a pasta `venv` e instalará tudo o que é necessário. Caso queira fazer manualmente:
-1. `python3 -m venv venv`
-2. `source venv/bin/activate`
-3. `pip install -r requirements.txt`
-
-### 2. Treinamento do Modelo
-Para treinar o modelo com os dados do `dataset.json`:
-
+### 2. Treinamento
+Para iniciar o treinamento e avaliação:
 ```bash
-python treinar_modelo.py
+python3 treinar_modelo.py
 ```
-- O modelo será salvo automaticamente em `modelo_final/` após o término das épocas configuradas.
-- Checkpoints intermediários ficarão em `modelo_treinado/`.
+O treino utiliza o `dataset.json` para aprendizado e o `dataset_teste.json` para medir a performance usando a métrica **ROUGE**. O modelo final será salvo em `modelo_final/`.
 
-### 3. Teste e Inferência
-Para utilizar o modelo treinado através da interface visual:
-
+### 3. Inferência (Teste Manual)
+Após o treino, você pode testar o modelo com a interface interativa:
 ```bash
-python testar_modelo.py
+python3 testar_modelo.py
 ```
-1. A interface carregará o modelo de `modelo_final/`.
-2. Digite uma frase (ex: "Talvez chova amanhã") e clique em **GERAR TRADUÇÃO**.
-3. O resultado aparecerá na caixa de texto inferior.
 
-## Personalização
-- **Adicionar Dados**: Edite o `dataset.json` seguindo o formato existente e execute `treinar_modelo.py` novamente para que o modelo aprenda os novos padrões.
-- **Ajustar Qualidade**: Se as traduções não estiverem precisas, aumente o `NUMERO_EPOCAS` ou adicione mais polimento ao `dataset.json` em `configuracao.py`.
+## 📊 Avaliação e Métricas
+O projeto utiliza a biblioteca `evaluate` da Hugging Face para calcular métricas ROUGE durante o treino, garantindo que a tradução sintática das fórmulas lógicas esteja o mais próxima possível do alvo esperado.
 
-## Notas Técnicas
-- **Dispositivo**: O código detecta automaticamente se você possui uma GPU (CUDA) disponível para acelerar o treino; caso contrário, usará a CPU.
-- **mt5-small**: Escolhido por ser multilíngue e leve, ideal para rodar em hardware doméstico sem necessidade de recursos massivos.
+## ⚙️ Personalização
+Você pode ajustar o comportamento do sistema editando `configuracao.py`:
+- **TAMANHO_LOTE**: Aumente se tiver mais de 16GB de RAM.
+- **NUMERO_EPOCAS**: Aumente para treinos mais longos e precisos.
+- **NOME_MODELO**: Pode ser trocado por `mt5-small` para máquinas muito básicas ou `mt5-large` para máxima performance.

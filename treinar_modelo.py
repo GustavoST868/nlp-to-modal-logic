@@ -51,18 +51,30 @@ class ModuloTreinamento:
         self.ds_treino = ds_treino
         self.ds_teste = ds_teste
         self.tokenizador = tokenizador
-        self.metric = evaluate.load("rouge")
 
     def calcular_metricas(self, pred):
+        from sklearn.metrics import accuracy_score, f1_score
+        
         labels_ids = pred.label_ids
         pred_ids = pred.predictions
         
+        # Decodifica as predições e rótulos
         decoded_preds = self.tokenizador.batch_decode(pred_ids, skip_special_tokens=True)
         labels_ids[labels_ids == -100] = self.tokenizador.pad_token_id
         decoded_labels = self.tokenizador.batch_decode(labels_ids, skip_special_tokens=True)
         
-        result = self.metric.compute(predictions=decoded_preds, references=decoded_labels, use_stemmer=True)
-        return {k: round(v, 4) for k, v in result.items()}
+        # Limpeza para evitar erros de espaços
+        decoded_preds = [p.strip() for p in decoded_preds]
+        decoded_labels = [l.strip() for l in decoded_labels]
+        
+        # Calcula as métricas tratando cada string como uma classe (Exact Match)
+        acc = accuracy_score(decoded_labels, decoded_preds)
+        f1 = f1_score(decoded_labels, decoded_preds, average='macro', zero_division=0)
+        
+        return {
+            "accuracy": round(acc, 4),
+            "f1": round(f1, 4)
+        }
 
     def treinar(self):
         args = Seq2SeqTrainingArguments(
@@ -71,12 +83,15 @@ class ModuloTreinamento:
             learning_rate=self.configuracao.TAXA_APRENDIZADO,
             per_device_train_batch_size=self.configuracao.TAMANHO_LOTE,
             per_device_eval_batch_size=self.configuracao.TAMANHO_LOTE,
+            gradient_accumulation_steps=self.configuracao.GRADIENT_ACCUMULATION,
+            gradient_checkpointing=True,
             num_train_epochs=self.configuracao.NUMERO_EPOCAS,
             weight_decay=self.configuracao.DECAIMENTO_PESO,
             save_total_limit=3,
             logging_steps=10,
             predict_with_generate=True,
-            fp16=False, # AMD ROCm might work better without fp16 unless specifically configured
+            fp16=torch.cuda.is_available(),
+            dataloader_num_workers=0,
             report_to="none"
         )
         
@@ -103,7 +118,7 @@ def main():
     carregador = CarregadorDados(configuracao)
     ds_treino, ds_teste = carregador.obter_datasets()
     
-    modelo_obj = AutoModelForSeq2SeqLM.from_pretrained(configuracao.NOME_MODELO)
+    modelo_obj = AutoModelForSeq2SeqLM.from_pretrained(configuracao.NOME_MODELO, low_cpu_mem_usage=True)
     
     modulo = ModuloTreinamento(configuracao, modelo_obj, ds_treino, ds_teste, carregador.tokenizador)
     treinador = modulo.treinar()

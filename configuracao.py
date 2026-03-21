@@ -13,14 +13,14 @@ class Configuracao:
     COMPRIMENTO_MAXIMO_ENTRADA = 128
     COMPRIMENTO_MAXIMO_ALVO = 128
 
-    TAMANHO_LOTE = 16            
+    TAMANHO_LOTE = 4            
     NUMERO_EPOCAS = 15           
 
     TAXA_APRENDIZADO = 1e-4      
     DECAIMENTO_PESO = 0.01
 
     WARMUP_STEPS = 500          
-    GRADIENT_ACCUMULATION = 2   
+    GRADIENT_ACCUMULATION = 4  
 
     PREFIXO_TASK = "traduzir portugues para logica: "
 

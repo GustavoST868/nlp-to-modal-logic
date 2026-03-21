@@ -59,6 +59,406 @@
     [
       "Se eu estudo muito, então eu passo",
       "estudar_muito → passar"
+    ],
+    [
+      "Precisa estudar",
+      "□estudar"
+    ],
+    [
+      "Bruno sabe que sorrir",
+      "K(bruno, sorrir(bruno))"
+    ],
+    [
+      "Talvez comer",
+      "◇comer"
+    ],
+    [
+      "É obrigatório que ventar",
+      "□ventar"
+    ],
+    [
+      "Algum homem é forte",
+      "∃x (homem(x) ∧ forte(x))"
+    ],
+    [
+      "Vitor é prima de Mateus",
+      "prima(vitor, mateus) ∧ pessoa(vitor) ∧ pessoa(mateus)"
+    ],
+    [
+      "Otavio é cunhada de Zuleica",
+      "cunhada(otavio, zuleica) ∧ pessoa(otavio) ∧ pessoa(zuleica)"
+    ],
+    [
+      "É obrigatório que sorrir",
+      "□sorrir"
+    ],
+    [
+      "Hugo acredita que vai faça sol",
+      "B(hugo, fazer_sol(hugo))"
+    ],
+    [
+      "Nenhum aluno é feliz",
+      "∀x (aluno(x) → ¬feliz(x))"
+    ],
+    [
+      "Livia é sobrinho de Vitor",
+      "sobrinho(livia, vitor) ∧ pessoa(livia) ∧ pessoa(vitor)"
+    ],
+    [
+      "Pilar é avô de Gabi",
+      "avo(pilar, gabi) ∧ pessoa(pilar) ∧ pessoa(gabi)"
+    ],
+    [
+      "Ubaldo é sobrinho de Sonia",
+      "sobrinho(ubaldo, sonia) ∧ pessoa(ubaldo) ∧ pessoa(sonia)"
+    ],
+    [
+      "Necessariamente chorar",
+      "□chorar"
+    ],
+    [
+      "É possível que estudar",
+      "◇estudar"
+    ],
+    [
+      "Algum animal é inteligente",
+      "∃x (animal(x) ∧ inteligente(x))"
+    ],
+    [
+      "Caio é pai de Mateus",
+      "pai(caio, mateus) ∧ pessoa(caio) ∧ pessoa(mateus)"
+    ],
+    [
+      "Todo homem é feliz",
+      "∀x (homem(x) → feliz(x))"
+    ],
+    [
+      "Provalvemente chova",
+      "◇chover"
+    ],
+    [
+      "Julia é prima de Helena",
+      "prima(julia, helena) ∧ pessoa(julia) ∧ pessoa(helena)"
+    ],
+    [
+      "Algum aluno é bravo",
+      "∃x (aluno(x) ∧ bravo(x))"
+    ],
+    [
+      "Provalvemente ganhar",
+      "◇ganhar"
+    ],
+    [
+      "Bruno sabe que ganhar",
+      "K(bruno, ganhar(bruno))"
+    ],
+    [
+      "Rosa é filho de Íris",
+      "filho(rosa, íris) ∧ pessoa(rosa) ∧ pessoa(íris)"
+    ],
+    [
+      "Algum mulher é rápido",
+      "∃x (mulher(x) ∧ rapido(x))"
+    ],
+    [
+      "Otavio acredita que vai estudar",
+      "B(otavio, estudar(otavio))"
+    ],
+    [
+      "Algum médico é rápido",
+      "∃x (medico(x) ∧ rapido(x))"
+    ],
+    [
+      "É necessário que perder",
+      "□perder"
+    ],
+    [
+      "Nenhum aluno é forte",
+      "∀x (aluno(x) → ¬forte(x))"
+    ],
+    [
+      "Precisa viajar",
+      "□viajar"
+    ],
+    [
+      "Pedro acredita que vai estudar",
+      "B(pedro, estudar(pedro))"
+    ],
+    [
+      "Todo gato é bravo",
+      "∀x (gato(x) → bravo(x))"
+    ],
+    [
+      "Precisa ventar",
+      "□ventar"
+    ],
+    [
+      "Helena acredita que vai cantar",
+      "B(helena, cantar(helena))"
+    ],
+    [
+      "Precisa estudar",
+      "□estudar"
+    ],
+    [
+      "Todo mulher é inteligente",
+      "∀x (mulher(x) → inteligente(x))"
+    ],
+    [
+      "Algum aluno é forte",
+      "∃x (aluno(x) ∧ forte(x))"
+    ],
+    [
+      "Algum pássaro é mortal",
+      "∃x (passaro(x) ∧ mortal(x))"
+    ],
+    [
+      "Provalvemente correr",
+      "◇correr"
+    ],
+    [
+      "Provalvemente pular",
+      "◇pular"
+    ],
+    [
+      "Luan sabe que ganhar",
+      "K(luan, ganhar(luan))"
+    ],
+    [
+      "Yago é prima de Livia",
+      "prima(yago, livia) ∧ pessoa(yago) ∧ pessoa(livia)"
+    ],
+    [
+      "É necessário que pular",
+      "□pular"
+    ],
+    [
+      "É possível que dançar",
+      "◇dancar"
+    ],
+    [
+      "Precisa dormir",
+      "□dormir"
+    ],
+    [
+      "Todo pássaro é inteligente",
+      "∀x (passaro(x) → inteligente(x))"
+    ],
+    [
+      "Todo mulher é mortal",
+      "∀x (mulher(x) → mortal(x))"
+    ],
+    [
+      "Todo mulher é feliz",
+      "∀x (mulher(x) → feliz(x))"
+    ],
+    [
+      "Nenhum gato é rápido",
+      "∀x (gato(x) → ¬rapido(x))"
+    ],
+    [
+      "Algum aluno é feliz",
+      "∃x (aluno(x) ∧ feliz(x))"
+    ],
+    [
+      "Todo gato é mortal",
+      "∀x (gato(x) → mortal(x))"
+    ],
+    [
+      "Nenhum aluno é feliz",
+      "∀x (aluno(x) → ¬feliz(x))"
+    ],
+    [
+      "Dora sabe que ganhar",
+      "K(dora, ganhar(dora))"
+    ],
+    [
+      "É necessário que chova",
+      "□chover"
+    ],
+    [
+      "Talvez dormir",
+      "◇dormir"
+    ],
+    [
+      "Precisa cantar",
+      "□cantar"
+    ],
+    [
+      "É possível que cantar",
+      "◇cantar"
+    ],
+    [
+      "Nenhum homem é inteligente",
+      "∀x (homem(x) → ¬inteligente(x))"
+    ],
+    [
+      "Jorge é sobrinha de Luan",
+      "sobrinha(jorge, luan) ∧ pessoa(jorge) ∧ pessoa(luan)"
+    ],
+    [
+      "Todo animal é feliz",
+      "∀x (animal(x) → feliz(x))"
+    ],
+    [
+      "Pedro é cunhado de Lara",
+      "cunhado(pedro, lara) ∧ pessoa(pedro) ∧ pessoa(lara)"
+    ],
+    [
+      "Todo homem é bravo",
+      "∀x (homem(x) → bravo(x))"
+    ],
+    [
+      "É possível que dormir",
+      "◇dormir"
+    ],
+    [
+      "Nenhum gato é inteligente",
+      "∀x (gato(x) → ¬inteligente(x))"
+    ],
+    [
+      "Jorge acredita que vai sorrir",
+      "B(jorge, sorrir(jorge))"
+    ],
+    [
+      "Necessariamente perder",
+      "□perder"
+    ],
+    [
+      "Todo animal é forte",
+      "∀x (animal(x) → forte(x))"
+    ],
+    [
+      "Algum aluno é bravo",
+      "∃x (aluno(x) ∧ bravo(x))"
+    ],
+    [
+      "Todo gato é bravo",
+      "∀x (gato(x) → bravo(x))"
+    ],
+    [
+      "Necessariamente correr",
+      "□correr"
+    ],
+    [
+      "Fábio é avó de Zeca",
+      "avo(fábio, zeca) ∧ pessoa(fábio) ∧ pessoa(zeca)"
+    ],
+    [
+      "Nenhum médico é forte",
+      "∀x (medico(x) → ¬forte(x))"
+    ],
+    [
+      "Necessariamente viajar",
+      "□viajar"
+    ],
+    [
+      "Tânia sabe que estudar",
+      "K(tânia, estudar(tânia))"
+    ],
+    [
+      "Jorge é sobrinho de Pilar",
+      "sobrinho(jorge, pilar) ∧ pessoa(jorge) ∧ pessoa(pilar)"
+    ],
+    [
+      "É obrigatório que correr",
+      "□correr"
+    ],
+    [
+      "Algum pássaro é feliz",
+      "∃x (passaro(x) ∧ feliz(x))"
+    ],
+    [
+      "Nenhum médico é forte",
+      "∀x (medico(x) → ¬forte(x))"
+    ],
+    [
+      "Raul é irmã de Olívia",
+      "irma(raul, olívia) ∧ pessoa(raul) ∧ pessoa(olívia)"
+    ],
+    [
+      "É necessário que sorrir",
+      "□sorrir"
+    ],
+    [
+      "Todo pássaro é feliz",
+      "∀x (passaro(x) → feliz(x))"
+    ],
+    [
+      "Zeca é filha de Caio",
+      "filha(zeca, caio) ∧ pessoa(zeca) ∧ pessoa(caio)"
+    ],
+    [
+      "Algum médico é feliz",
+      "∃x (medico(x) ∧ feliz(x))"
+    ],
+    [
+      "Otavio sabe que chova",
+      "K(otavio, chover(otavio))"
+    ],
+    [
+      "Nenhum gato é inteligente",
+      "∀x (gato(x) → ¬inteligente(x))"
+    ],
+    [
+      "Nenhum pássaro é forte",
+      "∀x (passaro(x) → ¬forte(x))"
+    ],
+    [
+      "Nenhum homem é mortal",
+      "∀x (homem(x) → ¬mortal(x))"
+    ],
+    [
+      "Jorge acredita que vai cantar",
+      "B(jorge, cantar(jorge))"
+    ],
+    [
+      "Necessariamente comer",
+      "□comer"
+    ],
+    [
+      "Luan é tio de Fábio",
+      "tio(luan, fábio) ∧ pessoa(luan) ∧ pessoa(fábio)"
+    ],
+    [
+      "Todo médico é feliz",
+      "∀x (medico(x) → feliz(x))"
+    ],
+    [
+      "É possível que perder",
+      "◇perder"
+    ],
+    [
+      "Todo médico é rápido",
+      "∀x (medico(x) → rapido(x))"
+    ],
+    [
+      "Precisa cantar",
+      "□cantar"
+    ],
+    [
+      "Nenhum homem é mortal",
+      "∀x (homem(x) → ¬mortal(x))"
+    ],
+    [
+      "Algum aluno é feliz",
+      "∃x (aluno(x) ∧ feliz(x))"
+    ],
+    [
+      "Otavio é tio de Mara",
+      "tio(otavio, mara) ∧ pessoa(otavio) ∧ pessoa(mara)"
+    ],
+    [
+      "É possível que ganhar",
+      "◇ganhar"
+    ],
+    [
+      "Olívia é sobrinho de Gabi",
+      "sobrinho(olívia, gabi) ∧ pessoa(olívia) ∧ pessoa(gabi)"
+    ],
+    [
+      "Algum mulher é feliz",
+      "∃x (mulher(x) ∧ feliz(x))"
     ]
   ]
 }

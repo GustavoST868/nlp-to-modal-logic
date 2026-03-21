@@ -17,8 +17,8 @@
         <!-- Sidebar -->
         <aside class="sidebar" id="sidebar">
             <button class="new-chat-btn" onclick="newChat()">
-                <i class="ph ph-plus-circle"></i>
                 <span>Nova Conversa</span>
+                <i class="ph ph-plus-circle"></i>
             </button>
             <div class="history-list" id="history-list">
                 <!-- Histórico será inserido aqui -->
@@ -26,7 +26,7 @@
             <div class="sidebar-footer">
                 <button class="footer-item" onclick="togglePerformance()">
                     <i class="ph ph-chart-bar"></i>
-                    <span>Desempenho</span>
+                    <span>Desempenho de Treino</span>
                 </button>
             </div>
         </aside>
@@ -37,28 +37,36 @@
                 <button class="menu-toggle" onclick="toggleSidebar()">
                     <i class="ph ph-list"></i>
                 </button>
-                <div class="model-info">Modal Logic Translator v1.0</div>
+                <div class="model-selector">
+                    <span>Modal Logic AI</span>
+                    <i class="ph ph-caret-down"></i>
+                </div>
+                <div style="width: 40px;"></div> <!-- Spacer to center model-selector -->
             </header>
 
             <div class="chat-container" id="chat-container">
                 <!-- Welcome View -->
                 <div id="welcome-view" class="welcome-view">
                     <div class="logo">
-                        <i class="ph ph-crystal-ball"></i>
+                        <i class="ph ph-sparkle"></i>
                     </div>
                     <h1>Como posso ajudar hoje?</h1>
                     <div class="example-grid">
                         <button class="example-card" onclick="useExample('a é pai de b')">
                             <span class="example-text">"a é pai de b"</span>
-                            <span class="example-sub">Lógica de Predicados/Modal</span>
+                            <span class="example-sub">Traduz para Predicados</span>
                         </button>
                         <button class="example-card" onclick="useExample('Talvez chova amanhã')">
                             <span class="example-text">"Talvez chova amanhã"</span>
-                            <span class="example-sub">Lógica Alética</span>
+                            <span class="example-sub">Lógica Alética (Possibilidade)</span>
                         </button>
                         <button class="example-card" onclick="useExample('João sabe que Maria está em casa')">
-                            <span class="example-text">"João sabe que Maria em casa"</span>
-                            <span class="example-sub">Lógica Epistêmica</span>
+                            <span class="example-text">"João sabe que Maria está em casa"</span>
+                            <span class="example-sub">Lógica Epistêmica (Saber)</span>
+                        </button>
+                        <button class="example-card" onclick="useExample('É necessário que p')">
+                            <span class="example-text">"É necessário que p"</span>
+                            <span class="example-sub">Lógica Modal (Necessidade)</span>
                         </button>
                     </div>
                 </div>
@@ -73,7 +81,7 @@
                     <textarea id="input-text" placeholder="Traduza para lógica modal..." rows="1"
                         oninput="autoResize(this)" onkeydown="handleKeyDown(event)"></textarea>
                     <button id="btn-translate" onclick="performTranslation()">
-                        <i class="ph ph-paper-plane-right"></i>
+                        <i class="ph ph-arrow-up"></i>
                     </button>
                 </div>
                 <div class="input-footer">

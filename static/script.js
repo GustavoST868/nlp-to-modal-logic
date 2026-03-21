@@ -67,9 +67,20 @@ function addMessage(content, role, isThinking = false) {
     
     const icon = role === 'user' ? 'ph ph-user' : 'ph ph-sparkle';
     
+    let messageContent = content;
+    if (isThinking) {
+        messageContent = `
+            <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        `;
+    }
+    
     messageDiv.innerHTML = `
         <div class="avatar"><i class="${icon}"></i></div>
-        <div class="msg-content">${content}</div>
+        <div class="msg-content">${messageContent}</div>
     `;
     
     historyContainer.appendChild(messageDiv);
@@ -85,12 +96,12 @@ function removeMessage(id) {
 function updateSidebar(text) {
     const list = document.getElementById('history-list');
     const item = document.createElement('div');
-    item.className = 'footer-item';
-    item.style.fontSize = '0.85rem';
-    item.style.whiteSpace = 'nowrap';
-    item.style.overflow = 'hidden';
-    item.style.textOverflow = 'ellipsis';
+    item.className = 'history-item';
     item.innerHTML = `<i class="ph ph-chat-centered-text"></i> ${text}`;
+    item.onclick = () => {
+        // In a real app we would load the chat, for now just a mockup
+        showToast("Histórico carregado (Simulação)");
+    };
     list.prepend(item);
 }
 
