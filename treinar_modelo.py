@@ -1,50 +1,92 @@
 import json
 import torch
 import os
+import sys
+import resource
 import numpy as np
 import evaluate
 from datasets import Dataset
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, Seq2SeqTrainer, Seq2SeqTrainingArguments
 from configuracao import Configuracao
+from pre_processamento import PreProcessador
 
 class CarregadorDados:
-    """
-    Carrega os arquivos JSON de treino e teste e realiza o pré-processamento.
-    Loads the training and test JSON files and performs preprocessing.
-    """
     def __init__(self, configuracao):
         self.configuracao = configuracao
         self.tokenizador = AutoTokenizer.from_pretrained(configuracao.NOME_MODELO, use_fast=False)
+        self.pre_processador = PreProcessador()
     
     def carregar(self, caminho):
         with open(caminho, 'r', encoding='utf-8') as f:
-            dados = json.load(f)["data"]
-        dicionario = {"input": [item[0] for item in dados], "output": [item[1] for item in dados]}
+            arquivo = json.load(f)
+            dados = arquivo["data"]
+        
+        lista_input = []
+        lista_output = []
+        
+        for item in dados:
+            lista_input.append(item[0])
+            lista_output.append(item[1])
+            
+        dicionario = {
+            "input": lista_input, 
+            "output": lista_output
+        }
         return Dataset.from_dict(dicionario)
     
     def funcao_preprocessamento(self, exemplos):
-        entradas = [self.configuracao.PREFIXO_TASK + e for e in exemplos["input"]]
-        alvos = exemplos["output"]
+        entradas_originais = exemplos["input"]
+        entradas_limpas = []
+        for e in entradas_originais:
+            limpo = self.pre_processador.limpar_texto(e)
+            entradas_limpas.append(limpo)
         
-        entradas_modelo = self.tokenizador(entradas, max_length=self.configuracao.COMPRIMENTO_MAXIMO_ENTRADA, truncation=True, padding="max_length")
-        rotulos = self.tokenizador(alvos, max_length=self.configuracao.COMPRIMENTO_MAXIMO_ALVO, truncation=True, padding="max_length")
+        alvos_originais = exemplos["output"]
         
-        labels = rotulos["input_ids"]
-        labels = [[(l if l != self.tokenizador.pad_token_id else -100) for l in label] for label in labels]
+        entradas_preparadas = []
+        for e in entradas_limpas:
+            final = self.configuracao.PREFIXO_TASK + e
+            entradas_preparadas.append(final)
         
-        entradas_modelo["labels"] = labels
+        entradas_modelo = self.tokenizador(
+            entradas_preparadas, 
+            max_length=self.configuracao.COMPRIMENTO_MAXIMO_ENTRADA, 
+            truncation=True, 
+            padding="max_length"
+        )
+        
+        rotulos_modelo = self.tokenizador(
+            alvos_originais, 
+            max_length=self.configuracao.COMPRIMENTO_MAXIMO_ALVO, 
+            truncation=True, 
+            padding="max_length"
+        )
+        
+        lista_labels = []
+        token_ids_alvo = rotulos_modelo["input_ids"]
+        
+        for label in token_ids_alvo:
+            nova_label = []
+            for l in label:
+                if l != self.tokenizador.pad_token_id:
+                    nova_label.append(l)
+                else:
+                    nova_label.append(-100)
+            lista_labels.append(nova_label)
+        
+        entradas_modelo["labels"] = lista_labels
         return entradas_modelo
     
     def obter_datasets(self):
-        ds_treino = self.carregar(self.configuracao.CAMINHO_CONJUNTO_TRAIN).map(self.funcao_preprocessamento, batched=True)
-        ds_teste = self.carregar(self.configuracao.CAMINHO_CONJUNTO_TEST).map(self.funcao_preprocessamento, batched=True)
+        ds_treino_bruto = self.carregar(self.configuracao.CAMINHO_CONJUNTO_TRAIN)
+        ds_treino = ds_treino_bruto.map(self.funcao_preprocessamento, batched=True)
+        
+        ds_teste_bruto = self.carregar(self.configuracao.CAMINHO_CONJUNTO_TEST)
+        ds_teste = ds_teste_bruto.map(self.funcao_preprocessamento, batched=True)
+        
         return ds_treino, ds_teste
 
 class ModuloTreinamento:
-    """
-    Gerencia o processo de treinamento e avaliação com suporte a Seq2Seq.
-    Manages the training and evaluation process with Seq2Seq support.
-    """
     def __init__(self, configuracao, modelo, ds_treino, ds_teste, tokenizador):
         self.configuracao = configuracao
         self.modelo = modelo
@@ -58,16 +100,23 @@ class ModuloTreinamento:
         labels_ids = pred.label_ids
         pred_ids = pred.predictions
         
-        # Decodifica as predições e rótulos
-        decoded_preds = self.tokenizador.batch_decode(pred_ids, skip_special_tokens=True)
-        labels_ids[labels_ids == -100] = self.tokenizador.pad_token_id
-        decoded_labels = self.tokenizador.batch_decode(labels_ids, skip_special_tokens=True)
+        decoded_preds_bruto = self.tokenizador.batch_decode(pred_ids, skip_special_tokens=True)
         
-        # Limpeza para evitar erros de espaços
-        decoded_preds = [p.strip() for p in decoded_preds]
-        decoded_labels = [l.strip() for l in decoded_labels]
+        for i in range(len(labels_ids)):
+            for j in range(len(labels_ids[i])):
+                if labels_ids[i][j] == -100:
+                    labels_ids[i][j] = self.tokenizador.pad_token_id
+                    
+        decoded_labels_bruto = self.tokenizador.batch_decode(labels_ids, skip_special_tokens=True)
         
-        # Calcula as métricas tratando cada string como uma classe (Exact Match)
+        decoded_preds = []
+        for p in decoded_preds_bruto:
+            decoded_preds.append(p.strip())
+            
+        decoded_labels = []
+        for l in decoded_labels_bruto:
+            decoded_labels.append(l.strip())
+        
         acc = accuracy_score(decoded_labels, decoded_preds)
         f1 = f1_score(decoded_labels, decoded_preds, average='macro', zero_division=0)
         
@@ -106,21 +155,41 @@ class ModuloTreinamento:
         
         treinador.train()
         
-        with open(os.path.join(self.configuracao.DIRETORIO_SAIDA, "historico_treinamento.json"), "w") as f:
+        caminho_hist = os.path.join(self.configuracao.DIRETORIO_SAIDA, "historico_treinamento.json")
+        with open(caminho_hist, "w") as f:
             json.dump(treinador.state.log_history, f)
             
         return treinador
 
 def main():
+    # Limitar RAM para 15GB (15 * 1024 * 1024 * 1024 bytes)
+    try:
+        limite_ram = 15 * 1024 * 1024 * 1024
+        resource.setrlimit(resource.RLIMIT_AS, (limite_ram, limite_ram))
+        print(f"Limite de RAM definido para 15GB.")
+    except Exception as e:
+        print(f"Não foi possível definir o limite de RAM: {e}")
+
     configuracao = Configuracao()
     torch.manual_seed(configuracao.SEMENTE)
     
     carregador = CarregadorDados(configuracao)
-    ds_treino, ds_teste = carregador.obter_datasets()
+    datasets = carregador.obter_datasets()
+    ds_treino = datasets[0]
+    ds_teste = datasets[1]
     
-    modelo_obj = AutoModelForSeq2SeqLM.from_pretrained(configuracao.NOME_MODELO, low_cpu_mem_usage=True)
+    modelo_obj = AutoModelForSeq2SeqLM.from_pretrained(
+        configuracao.NOME_MODELO, 
+        low_cpu_mem_usage=True
+    ).to(configuracao.DISPOSITIVO)
     
-    modulo = ModuloTreinamento(configuracao, modelo_obj, ds_treino, ds_teste, carregador.tokenizador)
+    modulo = ModuloTreinamento(
+        configuracao, 
+        modelo_obj, 
+        ds_treino, 
+        ds_teste, 
+        carregador.tokenizador
+    )
     treinador = modulo.treinar()
     
     treinador.save_model(configuracao.DIRETORIO_SAIDA)

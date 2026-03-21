@@ -1,10 +1,6 @@
 import torch
 
 class Configuracao:
-    """
-    Define todas as variáveis de configuração, hiperparâmetros e caminhos para o projeto de lógica modal.
-    Defines all configuration variables, hyperparameters and paths for the modal logic project.
-    """
     CAMINHO_CONJUNTO_TRAIN = "dataset.json"
     CAMINHO_CONJUNTO_TEST = "dataset_teste.json"
     NOME_MODELO = "google/mt5-base"
@@ -14,7 +10,7 @@ class Configuracao:
     COMPRIMENTO_MAXIMO_ALVO = 128
 
     TAMANHO_LOTE = 4            
-    NUMERO_EPOCAS = 15           
+    NUMERO_EPOCAS = 5           
 
     TAXA_APRENDIZADO = 1e-4      
     DECAIMENTO_PESO = 0.01

@@ -12,3 +12,4 @@ sacrebleu
 scipy
 seaborn
 flask
+nltk
