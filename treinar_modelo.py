@@ -8,13 +8,16 @@ import evaluate
 from datasets import Dataset
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, Seq2SeqTrainer, Seq2SeqTrainingArguments
 from configuracao import Configuracao
-from pre_processamento import PreProcessador
+# from pre_processamento import PreProcessador 
+
 
 class CarregadorDados:
     def __init__(self, configuracao):
         self.configuracao = configuracao
         self.tokenizador = AutoTokenizer.from_pretrained(configuracao.NOME_MODELO, use_fast=False)
-        self.pre_processador = PreProcessador()
+        
+        # pre-processador
+        # self.pre_processador = PreProcessador()
     
     def carregar(self, caminho):
         with open(caminho, 'r', encoding='utf-8') as f:
@@ -36,11 +39,15 @@ class CarregadorDados:
     
     def funcao_preprocessamento(self, exemplos):
         entradas_originais = exemplos["input"]
-        entradas_limpas = []
-        for e in entradas_originais:
-            limpo = self.pre_processador.limpar_texto(e)
-            entradas_limpas.append(limpo)
         
+        # limpeza de texto
+        # entradas_limpas = []
+        # for e in entradas_originais:
+        #     limpo = self.pre_processador.limpar_texto(e)
+        #     entradas_limpas.append(limpo)
+        
+        entradas_limpas = entradas_originais
+
         alvos_originais = exemplos["output"]
         
         entradas_preparadas = []
@@ -55,6 +62,7 @@ class CarregadorDados:
             padding="max_length"
         )
         
+        # saída também sem preprocessamento
         rotulos_modelo = self.tokenizador(
             alvos_originais, 
             max_length=self.configuracao.COMPRIMENTO_MAXIMO_ALVO, 
@@ -109,13 +117,8 @@ class ModuloTreinamento:
                     
         decoded_labels_bruto = self.tokenizador.batch_decode(labels_ids, skip_special_tokens=True)
         
-        decoded_preds = []
-        for p in decoded_preds_bruto:
-            decoded_preds.append(p.strip())
-            
-        decoded_labels = []
-        for l in decoded_labels_bruto:
-            decoded_labels.append(l.strip())
+        decoded_preds = [p.strip() for p in decoded_preds_bruto]
+        decoded_labels = [l.strip() for l in decoded_labels_bruto]
         
         acc = accuracy_score(decoded_labels, decoded_preds)
         f1 = f1_score(decoded_labels, decoded_preds, average='macro', zero_division=0)
@@ -162,21 +165,20 @@ class ModuloTreinamento:
         return treinador
 
 def main():
-    # Limitar RAM para 15GB (15 * 1024 * 1024 * 1024 bytes)
     try:
-        limite_ram = 15 * 1024 * 1024 * 1024
+        limite_ram = 18 * 1024 * 1024 * 1024
         resource.setrlimit(resource.RLIMIT_AS, (limite_ram, limite_ram))
-        print(f"Limite de RAM definido para 15GB.")
+        print(f"Limite de RAM (Virtual) definido para 18GB.")
     except Exception as e:
         print(f"Não foi possível definir o limite de RAM: {e}")
+
+    torch.set_num_threads(1)
 
     configuracao = Configuracao()
     torch.manual_seed(configuracao.SEMENTE)
     
     carregador = CarregadorDados(configuracao)
-    datasets = carregador.obter_datasets()
-    ds_treino = datasets[0]
-    ds_teste = datasets[1]
+    ds_treino, ds_teste = carregador.obter_datasets()
     
     modelo_obj = AutoModelForSeq2SeqLM.from_pretrained(
         configuracao.NOME_MODELO, 
@@ -190,6 +192,7 @@ def main():
         ds_teste, 
         carregador.tokenizador
     )
+    
     treinador = modulo.treinar()
     
     treinador.save_model(configuracao.DIRETORIO_SAIDA)
