@@ -1,7 +1,3 @@
-# Experimentos - Pacotes e Recursos (Treinamento e Processamento)
-
-Tabela contendo as versões exatas dos pacotes e recursos utilizados para o treinamento e processamento da Inteligência Artificial.
-
 ## Tabela de Pacotes e Recursos
 
 | Categoria | Nome do Recurso / Pacote | Versão | Descrição |
